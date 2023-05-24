@@ -36,22 +36,22 @@ UrbanSound8K can be downloaded from [UrbanSound8K | Kaggle](https://www.kaggle.c
 - To run our method *FLea* on CIFAR10, the following commend can be used 
 
 ```
-python main.py --dataset Cifar10 \
-               --split_method quantity \
-			   --split_para 3 \
-			   --split_num 100 \
-			   --client_num 10 \
-			   --class_num 10 \
-			   --local_epochs 10 \
-			   --batch_size 64 \
-			   --num_global_iters 100 \
-			   --personal_learning_rate 0.001 \
-			   --modelname MOBNET \
-			   --algorithm FLea \
-                           --loss CE_CE_KL \
-			   --layer 1 \
-			   --fea_percent 0.1 \
-			   --seed 0 
+python main.py     --dataset Cifar10 \
+                   --split_method quantity \
+		   --split_para 3 \
+		   --split_num 100 \
+		   --client_num 10 \
+		   --class_num 10 \
+		   --local_epochs 10 \
+		   --batch_size 64 \
+		   --num_global_iters 100 \
+		   --personal_learning_rate 0.001 \
+		   --modelname MOBNET \
+		   --algorithm FLea \
+		   --loss CE_CE_KL \
+		   --layer 1 \
+		   --fea_percent 0.1 \
+		   --seed 0 
 ```
 
 To compare with *FedAvg*, replace `--algorithm FLea  --loss CE_CE_KL`  by `--algorithm FedAvg` . Additional commands to run *FLea* using different data splits can be found in the directories `run\audio\` and `run\image\`. Baseline implementations are also included in this repository, along with examples of running comments provided in the same path.
@@ -61,23 +61,23 @@ To compare with *FedAvg*, replace `--algorithm FLea  --loss CE_CE_KL`  by `--alg
 - To run our feature-interpolated  *FLea* ,  `is_interpolated` should be set as `True` , for example, 
 
 ```
-python main.py --dataset Cifar10 \
-               --split_method quantity \
-			   --split_para 3 \
-			   --split_num 100 \
-			   --client_num 10 \
-			   --class_num 10 \
-			   --local_epochs 10 \
-			   --batch_size 64 \
-			   --num_global_iters 100 \
-			   --personal_learning_rate 0.001 \
-			   --modelname MOBNET \
-			   --algorithm FLea \
-			   --is_interpolated True \
-                           --loss CE_CE_KL \
-			   --layer 1 \
-			   --fea_percent 0.1 \
-			   --seed 0  
+python main.py     --dataset Cifar10 \
+                   --split_method quantity \
+		   --split_para 3 \
+		   --split_num 100 \
+		   --client_num 10 \
+		   --class_num 10 \
+		   --local_epochs 10 \
+		   --batch_size 64 \
+		   --num_global_iters 100 \
+		   --personal_learning_rate 0.001 \
+		   --modelname MOBNET \
+		   --algorithm FLea \
+		   --is_interpolated True \
+		   --loss CE_CE_KL \
+		   --layer 1 \
+		   --fea_percent 0.1 \
+		   --seed 0  
 ```
 
 *A detailed explanation for all comments will be available soon.*
