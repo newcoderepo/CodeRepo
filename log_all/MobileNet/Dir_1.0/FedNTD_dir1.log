@@ -1,0 +1,2550 @@
+nohup: ignoring input
+================================================================================
+Summary of training process:
+Dataset:                 Cifar10
+Batch size:              64
+Learing rate :           0.001
+personal learning rate : 0.001
+Number of total clients: 100
+Split parameter        : 1.0
+Clients per round      : 10
+Number of global rounds: 100
+Number of local rounds : 10
+Feature from layer     : 11
+Feature reduction      : 64
+Local training loss    : NT_CE
+Loss of beta           : 1.0
+Algorithm              : FedAvg
+Modelname              : MOBNET
+Mode                   : training
+================================================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Here
+Done
+Class frequencies:
+client,class0,class1,class2,class3,class4,class5,class6,class7,class8,class9,Amount
+Client   0,0.030,0.038,0.170,0.050,0.006,0.110,0.088,0.146,0.114,0.250,501
+Client   1,0.185,0.153,0.00,0.052,0.045,0.072,0.00,0.095,0.150,0.250,601
+Client   2,0.116,0.061,0.133,0.177,0.110,0.041,0.026,0.057,0.279,0.00,610
+Client   3,0.030,0.075,0.144,0.033,0.234,0.063,0.048,0.075,0.210,0.090,334
+Client   4,0.042,0.023,0.069,0.031,0.023,0.027,0.025,0.084,0.322,0.354,478
+Client   5,0.103,0.451,0.099,0.009,0.023,0.026,0.033,0.007,0.171,0.077,426
+Client   6,0.187,0.136,0.033,0.041,0.012,0.022,0.138,0.196,0.236,0.00,509
+Client   7,0.019,0.035,0.010,0.027,0.085,0.022,0.083,0.034,0.259,0.426,625
+Client   8,0.010,0.221,0.014,0.019,0.027,0.171,0.539,0.00,0.00,0.00,592
+Client   9,0.035,0.063,0.033,0.056,0.038,0.161,0.090,0.035,0.163,0.327,735
+Client  10,0.226,0.027,0.039,0.027,0.065,0.044,0.126,0.277,0.168,0.00,585
+Client  11,0.073,0.145,0.021,0.043,0.038,0.103,0.009,0.209,0.098,0.261,234
+Client  12,0.011,0.051,0.021,0.151,0.030,0.091,0.042,0.285,0.319,0.00,571
+Client  13,0.008,0.051,0.107,0.027,0.035,0.011,0.238,0.112,0.043,0.369,374
+Client  14,0.046,0.109,0.228,0.352,0.133,0.012,0.081,0.040,0.00,0.00,505
+Client  15,0.007,0.196,0.017,0.063,0.029,0.419,0.070,0.010,0.058,0.131,413
+Client  16,0.069,0.032,0.262,0.052,0.013,0.146,0.004,0.074,0.044,0.303,679
+Client  17,0.089,0.045,0.206,0.092,0.006,0.066,0.021,0.095,0.380,0.00,671
+Client  18,0.062,0.310,0.049,0.204,0.015,0.056,0.084,0.220,0.00,0.00,549
+Client  19,0.122,0.025,0.466,0.144,0.243,0.00,0.00,0.00,0.00,0.00,597
+Client  20,0.091,0.158,0.017,0.065,0.041,0.129,0.065,0.179,0.067,0.189,418
+Client  21,0.110,0.166,0.030,0.157,0.00,0.025,0.120,0.102,0.289,0.00,591
+Client  22,0.027,0.123,0.216,0.109,0.189,0.016,0.130,0.014,0.176,0.00,561
+Client  23,0.164,0.029,0.027,0.252,0.137,0.038,0.027,0.066,0.027,0.235,452
+Client  24,0.069,0.054,0.065,0.072,0.180,0.113,0.281,0.030,0.017,0.120,540
+Client  25,0.150,0.110,0.018,0.204,0.004,0.105,0.049,0.034,0.034,0.293,447
+Client  26,0.068,0.098,0.088,0.015,0.009,0.051,0.034,0.030,0.045,0.562,468
+Client  27,0.067,0.275,0.009,0.016,0.046,0.106,0.033,0.158,0.129,0.162,568
+Client  28,0.005,0.057,0.069,0.017,0.104,0.084,0.366,0.040,0.030,0.228,404
+Client  29,0.062,0.066,0.160,0.027,0.008,0.012,0.289,0.094,0.282,0.00,595
+Client  30,0.019,0.062,0.190,0.093,0.062,0.050,0.228,0.081,0.211,0.005,421
+Client  31,0.020,0.124,0.037,0.057,0.201,0.119,0.072,0.117,0.132,0.122,403
+Client  32,0.081,0.083,0.130,0.010,0.119,0.073,0.023,0.034,0.055,0.392,385
+Client  33,0.092,0.314,0.016,0.149,0.084,0.035,0.287,0.022,0.00,0.00,509
+Client  34,0.043,0.126,0.266,0.185,0.239,0.053,0.028,0.059,0.00,0.00,507
+Client  35,0.017,0.058,0.322,0.053,0.102,0.135,0.043,0.054,0.216,0.00,606
+Client  36,0.152,0.073,0.186,0.031,0.169,0.033,0.010,0.219,0.058,0.067,479
+Client  37,0.285,0.024,0.041,0.029,0.006,0.164,0.084,0.137,0.229,0.00,628
+Client  38,0.218,0.036,0.088,0.055,0.097,0.027,0.012,0.042,0.121,0.303,330
+Client  39,0.011,0.068,0.092,0.279,0.068,0.014,0.014,0.141,0.136,0.179,369
+Client  40,0.154,0.026,0.003,0.025,0.046,0.003,0.109,0.020,0.159,0.455,649
+Client  41,0.007,0.044,0.056,0.322,0.065,0.061,0.080,0.017,0.015,0.334,413
+Client  42,0.060,0.023,0.271,0.006,0.050,0.175,0.194,0.027,0.194,0.00,520
+Client  43,0.406,0.082,0.003,0.023,0.237,0.014,0.020,0.073,0.127,0.017,355
+Client  44,0.031,0.027,0.236,0.100,0.253,0.110,0.133,0.110,0.00,0.00,518
+Client  45,0.035,0.126,0.113,0.100,0.013,0.026,0.278,0.017,0.204,0.087,230
+Client  46,0.155,0.137,0.040,0.258,0.149,0.002,0.058,0.201,0.00,0.00,503
+Client  47,0.333,0.026,0.119,0.117,0.037,0.133,0.056,0.047,0.070,0.063,429
+Client  48,0.038,0.372,0.147,0.053,0.059,0.055,0.005,0.271,0.00,0.00,546
+Client  49,0.027,0.029,0.012,0.018,0.271,0.082,0.076,0.107,0.012,0.366,513
+Client  50,0.032,0.014,0.346,0.017,0.046,0.101,0.121,0.092,0.130,0.101,347
+Client  51,0.358,0.112,0.180,0.320,0.008,0.008,0.014,0.00,0.00,0.00,500
+Client  52,0.098,0.013,0.163,0.075,0.117,0.002,0.293,0.017,0.071,0.151,478
+Client  53,0.208,0.063,0.029,0.308,0.118,0.275,0.00,0.00,0.00,0.00,510
+Client  54,0.035,0.074,0.030,0.248,0.058,0.049,0.100,0.081,0.056,0.268,568
+Client  55,0.008,0.249,0.008,0.277,0.018,0.440,0.00,0.00,0.00,0.00,502
+Client  56,0.047,0.138,0.009,0.111,0.239,0.074,0.016,0.061,0.306,0.00,687
+Client  57,0.026,0.065,0.043,0.002,0.036,0.022,0.103,0.361,0.156,0.187,507
+Client  58,0.079,0.217,0.061,0.178,0.097,0.368,0.00,0.00,0.00,0.00,506
+Client  59,0.081,0.169,0.318,0.008,0.179,0.035,0.010,0.200,0.00,0.00,509
+Client  60,0.027,0.016,0.033,0.123,0.006,0.349,0.106,0.011,0.329,0.00,705
+Client  61,0.039,0.114,0.091,0.171,0.030,0.159,0.167,0.130,0.065,0.033,508
+Client  62,0.003,0.100,0.006,0.173,0.128,0.116,0.145,0.034,0.031,0.264,648
+Client  63,0.069,0.132,0.057,0.033,0.230,0.065,0.278,0.045,0.033,0.057,418
+Client  64,0.039,0.050,0.013,0.161,0.094,0.131,0.142,0.030,0.083,0.258,542
+Client  65,0.090,0.003,0.189,0.037,0.048,0.185,0.284,0.163,0.00,0.00,588
+Client  66,0.196,0.044,0.063,0.035,0.083,0.093,0.094,0.391,0.00,0.00,540
+Client  67,0.074,0.004,0.145,0.004,0.495,0.278,0.00,0.00,0.00,0.00,503
+Client  68,0.012,0.036,0.017,0.010,0.046,0.017,0.017,0.065,0.072,0.708,414
+Client  69,0.296,0.192,0.132,0.045,0.014,0.018,0.204,0.055,0.006,0.038,494
+Client  70,0.167,0.061,0.406,0.131,0.130,0.106,0.00,0.00,0.00,0.00,540
+Client  71,0.046,0.020,0.027,0.108,0.179,0.207,0.201,0.060,0.150,0.00,546
+Client  72,0.039,0.261,0.076,0.061,0.002,0.011,0.007,0.345,0.197,0.00,537
+Client  73,0.296,0.020,0.010,0.298,0.039,0.125,0.088,0.124,0.00,0.00,510
+Client  74,0.054,0.139,0.246,0.037,0.070,0.048,0.126,0.039,0.128,0.113,460
+Client  75,0.110,0.030,0.002,0.114,0.184,0.042,0.291,0.066,0.082,0.078,499
+Client  76,0.411,0.013,0.002,0.074,0.025,0.009,0.101,0.366,0.00,0.00,557
+Client  77,0.007,0.093,0.057,0.073,0.177,0.023,0.007,0.147,0.087,0.330,300
+Client  78,0.054,0.049,0.003,0.005,0.132,0.130,0.280,0.067,0.010,0.269,386
+Client  79,0.027,0.082,0.012,0.051,0.133,0.039,0.329,0.327,0.00,0.00,513
+Client  80,0.257,0.00,0.056,0.021,0.160,0.506,0.00,0.00,0.00,0.00,536
+Client  81,0.085,0.050,0.312,0.025,0.088,0.010,0.310,0.015,0.106,0.00,520
+Client  82,0.005,0.037,0.136,0.198,0.285,0.115,0.030,0.047,0.014,0.133,572
+Client  83,0.151,0.024,0.070,0.209,0.064,0.121,0.087,0.141,0.133,0.00,503
+Client  84,0.110,0.131,0.046,0.065,0.058,0.210,0.018,0.362,0.00,0.00,566
+Client  85,0.107,0.024,0.033,0.228,0.239,0.031,0.042,0.108,0.190,0.00,553
+Client  86,0.324,0.044,0.056,0.073,0.321,0.060,0.023,0.100,0.00,0.00,521
+Client  87,0.212,0.008,0.008,0.053,0.021,0.120,0.214,0.143,0.222,0.00,532
+Client  88,0.148,0.160,0.086,0.051,0.121,0.058,0.201,0.103,0.072,0.00,513
+Client  89,0.025,0.195,0.338,0.135,0.174,0.132,0.00,0.00,0.00,0.00,517
+Client  90,0.016,0.395,0.165,0.054,0.171,0.200,0.00,0.00,0.00,0.00,504
+Client  91,0.035,0.388,0.058,0.045,0.088,0.018,0.020,0.090,0.183,0.075,399
+Client  92,0.039,0.111,0.098,0.007,0.160,0.186,0.046,0.049,0.124,0.182,307
+Client  93,0.121,0.047,0.103,0.224,0.222,0.037,0.018,0.079,0.018,0.129,379
+Client  94,0.161,0.166,0.199,0.030,0.033,0.035,0.035,0.202,0.106,0.033,367
+Client  95,0.081,0.135,0.010,0.111,0.164,0.006,0.143,0.265,0.00,0.085,495
+Client  96,0.010,0.262,0.081,0.008,0.043,0.096,0.242,0.020,0.128,0.111,397
+Client  97,0.055,0.027,0.018,0.191,0.205,0.320,0.068,0.011,0.093,0.011,440
+Client  98,0.307,0.043,0.083,0.002,0.026,0.201,0.021,0.120,0.196,0.00,606
+Client  99,0.129,0.160,0.055,0.311,0.091,0.050,0.020,0.182,0.002,0.00,505
+Num_samples of Training set per client: [501, 601, 610, 334, 478, 426, 509, 625, 592, 735, 585, 234, 571, 374, 505, 413, 679, 671, 549, 597, 418, 591, 561, 452, 540, 447, 468, 568, 404, 595, 421, 403, 385, 509, 507, 606, 479, 628, 330, 369, 649, 413, 520, 355, 518, 230, 503, 429, 546, 513, 347, 500, 478, 510, 568, 502, 687, 507, 506, 509, 705, 508, 648, 418, 542, 588, 540, 503, 414, 494, 540, 546, 537, 510, 460, 499, 557, 300, 386, 513, 536, 520, 572, 503, 566, 553, 521, 532, 513, 517, 504, 399, 307, 379, 367, 495, 397, 440, 606, 505]
+Total_training_samples: 50000
+Global test set: 10000
+Finish Generating Samples, distribution saved
+MobileNetV2(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layers): Sequential(
+    (0): Block(
+      (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Block(
+      (conv1): Conv2d(16, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=96, bias=False)
+      (bn2): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(96, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(16, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (3): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (4): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (5): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (6): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (7): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (8): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (9): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (10): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (11): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (12): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (13): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (14): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (15): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (16): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(160, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (conv2): Conv2d(320, 1280, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn2): BatchNorm2d(1280, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear): Linear(in_features=1280, out_features=10, bias=True)
+)
+number of parameters: 2296922
+clients initializting...
+output size: 10
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<01:34,  1.05it/s]  2%|▏         | 2/100 [00:05<03:05,  1.89s/it]  3%|▎         | 3/100 [00:05<02:34,  1.60s/it]  4%|▍         | 4/100 [00:06<02:14,  1.40s/it]  5%|▌         | 5/100 [00:07<01:59,  1.26s/it]  6%|▌         | 6/100 [00:08<01:49,  1.16s/it]  7%|▋         | 7/100 [00:09<01:40,  1.08s/it]  8%|▊         | 8/100 [00:10<01:35,  1.04s/it]  9%|▉         | 9/100 [00:11<01:29,  1.02it/s] 10%|█         | 10/100 [00:12<01:27,  1.03it/s] 11%|█         | 11/100 [00:13<01:24,  1.05it/s] 12%|█▏        | 12/100 [00:14<01:22,  1.07it/s] 13%|█▎        | 13/100 [00:15<01:20,  1.08it/s] 14%|█▍        | 14/100 [00:16<01:20,  1.07it/s] 15%|█▌        | 15/100 [00:16<01:16,  1.10it/s] 16%|█▌        | 16/100 [00:17<01:16,  1.09it/s] 17%|█▋        | 17/100 [00:18<01:16,  1.09it/s] 18%|█▊        | 18/100 [00:19<01:14,  1.10it/s] 19%|█▉        | 19/100 [00:20<01:12,  1.12it/s] 20%|██        | 20/100 [00:21<01:07,  1.19it/s] 21%|██        | 21/100 [00:22<01:08,  1.15it/s] 22%|██▏       | 22/100 [00:22<01:07,  1.16it/s] 23%|██▎       | 23/100 [00:23<01:06,  1.15it/s] 24%|██▍       | 24/100 [00:24<01:07,  1.13it/s] 25%|██▌       | 25/100 [00:25<01:07,  1.11it/s] 26%|██▌       | 26/100 [00:26<01:07,  1.10it/s] 27%|██▋       | 27/100 [00:30<02:20,  1.92s/it] 28%|██▊       | 28/100 [00:31<01:57,  1.63s/it] 29%|██▉       | 29/100 [00:32<01:40,  1.42s/it] 30%|███       | 30/100 [00:33<01:28,  1.26s/it] 31%|███       | 31/100 [00:34<01:20,  1.16s/it] 32%|███▏      | 32/100 [00:35<01:14,  1.09s/it] 33%|███▎      | 33/100 [00:36<01:09,  1.04s/it] 34%|███▍      | 34/100 [00:37<01:04,  1.02it/s] 35%|███▌      | 35/100 [00:38<01:00,  1.07it/s] 36%|███▌      | 36/100 [00:39<00:58,  1.09it/s] 37%|███▋      | 37/100 [00:39<00:57,  1.09it/s] 38%|███▊      | 38/100 [00:40<00:56,  1.10it/s] 39%|███▉      | 39/100 [00:41<00:55,  1.10it/s] 40%|████      | 40/100 [00:42<00:54,  1.10it/s] 41%|████      | 41/100 [00:43<00:53,  1.09it/s] 42%|████▏     | 42/100 [00:44<00:52,  1.09it/s] 43%|████▎     | 43/100 [00:45<00:51,  1.11it/s] 44%|████▍     | 44/100 [00:46<00:50,  1.10it/s] 45%|████▌     | 45/100 [00:47<00:48,  1.13it/s] 46%|████▌     | 46/100 [00:48<00:48,  1.12it/s] 47%|████▋     | 47/100 [00:48<00:46,  1.14it/s] 48%|████▊     | 48/100 [00:49<00:46,  1.13it/s] 49%|████▉     | 49/100 [00:50<00:44,  1.14it/s] 50%|█████     | 50/100 [00:51<00:44,  1.11it/s] 51%|█████     | 51/100 [00:52<00:44,  1.10it/s] 52%|█████▏    | 52/100 [00:56<01:28,  1.83s/it] 53%|█████▎    | 53/100 [00:57<01:13,  1.56s/it] 54%|█████▍    | 54/100 [00:58<01:00,  1.32s/it] 55%|█████▌    | 55/100 [00:59<00:53,  1.20s/it] 56%|█████▌    | 56/100 [00:59<00:46,  1.07s/it] 57%|█████▋    | 57/100 [01:00<00:43,  1.02s/it] 58%|█████▊    | 58/100 [01:01<00:41,  1.01it/s] 59%|█████▉    | 59/100 [01:02<00:38,  1.08it/s] 60%|██████    | 60/100 [01:03<00:36,  1.10it/s] 61%|██████    | 61/100 [01:04<00:35,  1.10it/s] 62%|██████▏   | 62/100 [01:05<00:34,  1.09it/s] 63%|██████▎   | 63/100 [01:06<00:34,  1.07it/s] 64%|██████▍   | 64/100 [01:07<00:33,  1.06it/s] 65%|██████▌   | 65/100 [01:08<00:32,  1.07it/s] 66%|██████▌   | 66/100 [01:08<00:31,  1.10it/s] 67%|██████▋   | 67/100 [01:09<00:29,  1.12it/s] 68%|██████▊   | 68/100 [01:10<00:27,  1.17it/s] 69%|██████▉   | 69/100 [01:11<00:27,  1.13it/s] 70%|███████   | 70/100 [01:12<00:27,  1.10it/s] 71%|███████   | 71/100 [01:13<00:25,  1.16it/s] 72%|███████▏  | 72/100 [01:14<00:24,  1.15it/s] 73%|███████▎  | 73/100 [01:14<00:23,  1.14it/s] 74%|███████▍  | 74/100 [01:15<00:22,  1.15it/s] 75%|███████▌  | 75/100 [01:16<00:22,  1.13it/s] 76%|███████▌  | 76/100 [01:17<00:21,  1.11it/s] 77%|███████▋  | 77/100 [01:18<00:20,  1.13it/s] 78%|███████▊  | 78/100 [01:22<00:42,  1.92s/it] 79%|███████▉  | 79/100 [01:23<00:33,  1.61s/it] 80%|████████  | 80/100 [01:24<00:27,  1.38s/it] 81%|████████  | 81/100 [01:25<00:22,  1.18s/it] 82%|████████▏ | 82/100 [01:26<00:19,  1.09s/it] 83%|████████▎ | 83/100 [01:27<00:17,  1.04s/it] 84%|████████▍ | 84/100 [01:28<00:16,  1.00s/it] 85%|████████▌ | 85/100 [01:28<00:14,  1.05it/s] 86%|████████▌ | 86/100 [01:29<00:13,  1.07it/s] 87%|████████▋ | 87/100 [01:30<00:11,  1.11it/s] 88%|████████▊ | 88/100 [01:31<00:10,  1.11it/s] 89%|████████▉ | 89/100 [01:32<00:09,  1.11it/s] 90%|█████████ | 90/100 [01:33<00:08,  1.17it/s] 91%|█████████ | 91/100 [01:33<00:07,  1.21it/s] 92%|█████████▏| 92/100 [01:34<00:06,  1.18it/s] 93%|█████████▎| 93/100 [01:35<00:06,  1.15it/s] 94%|█████████▍| 94/100 [01:36<00:05,  1.13it/s] 95%|█████████▌| 95/100 [01:37<00:04,  1.11it/s] 96%|█████████▌| 96/100 [01:38<00:03,  1.12it/s] 97%|█████████▋| 97/100 [01:39<00:02,  1.11it/s] 98%|█████████▊| 98/100 [01:40<00:01,  1.11it/s] 99%|█████████▉| 99/100 [01:41<00:00,  1.11it/s]100%|██████████| 100/100 [01:42<00:00,  1.12it/s]100%|██████████| 100/100 [01:42<00:00,  1.02s/it]
+Number of users per round / total users: 10  /  100
+Finished creating FedAvg server.
+=== FedAvg ===
+-------------Round number:  0  -------------
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.3037) KL loss: tensor(0.1967)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.3819) KL loss: tensor(0.2116)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.5029) KL loss: tensor(0.2197)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.0445) KL loss: tensor(0.2124)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.4800) KL loss: tensor(0.2380)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.4959) KL loss: tensor(0.2243)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.4331) KL loss: tensor(0.1997)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.2639) KL loss: tensor(0.2172)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.4876) KL loss: tensor(0.2193)
+loss: NT_CE learning rate: 0.001
+training loss: tensor(1.4543) KL loss: tensor(0.2425)
+         GM acc on global data: 0.1027 length of data: 10000
+save a model
+-------------Round number:  1  -------------
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(0.8248) KL loss: tensor(0.1688)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.1318) KL loss: tensor(0.2138)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.0763) KL loss: tensor(0.2076)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.2225) KL loss: tensor(0.2347)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.0704) KL loss: tensor(0.2204)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.1325) KL loss: tensor(0.2112)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.2375) KL loss: tensor(0.2388)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.1751) KL loss: tensor(0.2155)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.1161) KL loss: tensor(0.2171)
+loss: NT_CE learning rate: 0.000982
+training loss: tensor(1.2162) KL loss: tensor(0.2160)
+         GM acc on global data: 0.1145 length of data: 10000
+save a model
+-------------Round number:  2  -------------
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(1.0273) KL loss: tensor(0.2345)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(0.8534) KL loss: tensor(0.2068)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(0.8998) KL loss: tensor(0.2138)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(0.9672) KL loss: tensor(0.2175)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(0.9316) KL loss: tensor(0.2175)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(1.1159) KL loss: tensor(0.2565)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(0.9925) KL loss: tensor(0.2338)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(1.0046) KL loss: tensor(0.2496)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(0.8806) KL loss: tensor(0.2241)
+loss: NT_CE learning rate: 0.000964
+training loss: tensor(0.8176) KL loss: tensor(0.2070)
+         GM acc on global data: 0.1272 length of data: 10000
+save a model
+-------------Round number:  3  -------------
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.7378) KL loss: tensor(0.2164)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.6110) KL loss: tensor(0.1654)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.8811) KL loss: tensor(0.2644)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.9513) KL loss: tensor(0.2618)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.8189) KL loss: tensor(0.2475)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.8599) KL loss: tensor(0.2501)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.9432) KL loss: tensor(0.2639)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.8979) KL loss: tensor(0.2385)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.8396) KL loss: tensor(0.2602)
+loss: NT_CE learning rate: 0.000946
+training loss: tensor(0.8072) KL loss: tensor(0.2521)
+         GM acc on global data: 0.1768 length of data: 10000
+save a model
+-------------Round number:  4  -------------
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.8950) KL loss: tensor(0.2828)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.9471) KL loss: tensor(0.2832)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.7388) KL loss: tensor(0.2527)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.8095) KL loss: tensor(0.2610)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.7762) KL loss: tensor(0.2397)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.8030) KL loss: tensor(0.2540)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.7835) KL loss: tensor(0.2599)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.8027) KL loss: tensor(0.2521)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.8584) KL loss: tensor(0.2740)
+loss: NT_CE learning rate: 0.0009280000000000001
+training loss: tensor(0.8858) KL loss: tensor(0.2736)
+         GM acc on global data: 0.206 length of data: 10000
+save a model
+-------------Round number:  5  -------------
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.8164) KL loss: tensor(0.2663)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(1.0626) KL loss: tensor(0.2829)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.8551) KL loss: tensor(0.2965)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.7304) KL loss: tensor(0.2637)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.8940) KL loss: tensor(0.2936)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.9932) KL loss: tensor(0.3323)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.8650) KL loss: tensor(0.2894)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.8137) KL loss: tensor(0.2788)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.8349) KL loss: tensor(0.2828)
+loss: NT_CE learning rate: 0.00091
+training loss: tensor(0.7986) KL loss: tensor(0.2644)
+         GM acc on global data: 0.22 length of data: 10000
+save a model
+-------------Round number:  6  -------------
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.6685) KL loss: tensor(0.2457)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.7654) KL loss: tensor(0.2405)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.8235) KL loss: tensor(0.2794)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.7057) KL loss: tensor(0.2473)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(1.0856) KL loss: tensor(0.2887)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.8123) KL loss: tensor(0.2818)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.7095) KL loss: tensor(0.2637)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.7612) KL loss: tensor(0.2706)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.8331) KL loss: tensor(0.2651)
+loss: NT_CE learning rate: 0.000892
+training loss: tensor(0.7458) KL loss: tensor(0.2500)
+         GM acc on global data: 0.2418 length of data: 10000
+save a model
+-------------Round number:  7  -------------
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(0.7638) KL loss: tensor(0.2542)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(0.9382) KL loss: tensor(0.2952)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(1.1389) KL loss: tensor(0.3709)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(0.9477) KL loss: tensor(0.2857)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(1.2140) KL loss: tensor(0.3010)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(0.7368) KL loss: tensor(0.2496)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(0.7435) KL loss: tensor(0.2645)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(0.7957) KL loss: tensor(0.2733)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(0.7311) KL loss: tensor(0.2653)
+loss: NT_CE learning rate: 0.000874
+training loss: tensor(0.7168) KL loss: tensor(0.2452)
+         GM acc on global data: 0.2394 length of data: 10000
+-------------Round number:  8  -------------
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.5319) KL loss: tensor(0.2232)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.8641) KL loss: tensor(0.3226)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.8307) KL loss: tensor(0.3039)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.7389) KL loss: tensor(0.2378)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.6340) KL loss: tensor(0.2136)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.7891) KL loss: tensor(0.2598)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.6062) KL loss: tensor(0.2551)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.6751) KL loss: tensor(0.2476)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.9268) KL loss: tensor(0.3247)
+loss: NT_CE learning rate: 0.000856
+training loss: tensor(0.6894) KL loss: tensor(0.2474)
+         GM acc on global data: 0.2574 length of data: 10000
+save a model
+-------------Round number:  9  -------------
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.6738) KL loss: tensor(0.2524)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.7402) KL loss: tensor(0.2844)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.6085) KL loss: tensor(0.2275)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.7455) KL loss: tensor(0.2299)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.7942) KL loss: tensor(0.3031)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.6921) KL loss: tensor(0.2547)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.8461) KL loss: tensor(0.3164)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.5988) KL loss: tensor(0.2362)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.7029) KL loss: tensor(0.2644)
+loss: NT_CE learning rate: 0.0008380000000000001
+training loss: tensor(0.6486) KL loss: tensor(0.2344)
+         GM acc on global data: 0.2872 length of data: 10000
+save a model
+-------------Round number:  10  -------------
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.5269) KL loss: tensor(0.2063)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.6587) KL loss: tensor(0.2471)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.6745) KL loss: tensor(0.2492)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.5680) KL loss: tensor(0.2240)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.5939) KL loss: tensor(0.2242)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.6691) KL loss: tensor(0.2894)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(1.0717) KL loss: tensor(0.3203)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.6863) KL loss: tensor(0.2627)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.7753) KL loss: tensor(0.2751)
+loss: NT_CE learning rate: 0.0008200000000000001
+training loss: tensor(0.6284) KL loss: tensor(0.2161)
+         GM acc on global data: 0.3173 length of data: 10000
+save a model
+-------------Round number:  11  -------------
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.4491) KL loss: tensor(0.2102)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.9781) KL loss: tensor(0.3647)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.5405) KL loss: tensor(0.2271)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.6408) KL loss: tensor(0.2368)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.5300) KL loss: tensor(0.2305)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.5940) KL loss: tensor(0.2423)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.6808) KL loss: tensor(0.2923)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.4831) KL loss: tensor(0.2111)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.5874) KL loss: tensor(0.2353)
+loss: NT_CE learning rate: 0.0008020000000000001
+training loss: tensor(0.4827) KL loss: tensor(0.1938)
+         GM acc on global data: 0.3471 length of data: 10000
+save a model
+-------------Round number:  12  -------------
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.4539) KL loss: tensor(0.2094)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.4902) KL loss: tensor(0.2374)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.5867) KL loss: tensor(0.2477)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.5316) KL loss: tensor(0.2278)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.5087) KL loss: tensor(0.2262)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.6797) KL loss: tensor(0.2852)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.7589) KL loss: tensor(0.2992)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.6071) KL loss: tensor(0.2413)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.6422) KL loss: tensor(0.2732)
+loss: NT_CE learning rate: 0.0007840000000000001
+training loss: tensor(0.8705) KL loss: tensor(0.3523)
+         GM acc on global data: 0.3648 length of data: 10000
+save a model
+-------------Round number:  13  -------------
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.4515) KL loss: tensor(0.2111)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.5404) KL loss: tensor(0.2630)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.6307) KL loss: tensor(0.2572)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.4358) KL loss: tensor(0.2226)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.5410) KL loss: tensor(0.2251)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.6305) KL loss: tensor(0.2826)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.7213) KL loss: tensor(0.2910)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.5940) KL loss: tensor(0.2616)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.5666) KL loss: tensor(0.2391)
+loss: NT_CE learning rate: 0.0007660000000000001
+training loss: tensor(0.6179) KL loss: tensor(0.2544)
+         GM acc on global data: 0.3781 length of data: 10000
+save a model
+-------------Round number:  14  -------------
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.6042) KL loss: tensor(0.2442)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.5306) KL loss: tensor(0.2396)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.5366) KL loss: tensor(0.2233)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.5340) KL loss: tensor(0.2308)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.4942) KL loss: tensor(0.2070)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.5564) KL loss: tensor(0.2493)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.6301) KL loss: tensor(0.2597)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.5521) KL loss: tensor(0.2408)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.6408) KL loss: tensor(0.2595)
+loss: NT_CE learning rate: 0.000748
+training loss: tensor(0.6756) KL loss: tensor(0.2532)
+         GM acc on global data: 0.3743 length of data: 10000
+-------------Round number:  15  -------------
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.5533) KL loss: tensor(0.2039)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.5639) KL loss: tensor(0.2244)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.4808) KL loss: tensor(0.2195)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.4727) KL loss: tensor(0.1960)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.4071) KL loss: tensor(0.1857)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.7601) KL loss: tensor(0.2567)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.5339) KL loss: tensor(0.2249)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.3504) KL loss: tensor(0.1778)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.6959) KL loss: tensor(0.2528)
+loss: NT_CE learning rate: 0.00073
+training loss: tensor(0.4801) KL loss: tensor(0.1901)
+         GM acc on global data: 0.3998 length of data: 10000
+save a model
+-------------Round number:  16  -------------
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.5578) KL loss: tensor(0.2474)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.6386) KL loss: tensor(0.2497)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.5955) KL loss: tensor(0.2421)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.6318) KL loss: tensor(0.2746)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.6114) KL loss: tensor(0.2253)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.4260) KL loss: tensor(0.1974)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.5925) KL loss: tensor(0.2430)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(1.1208) KL loss: tensor(0.3540)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.5761) KL loss: tensor(0.2279)
+loss: NT_CE learning rate: 0.000712
+training loss: tensor(0.5013) KL loss: tensor(0.2544)
+         GM acc on global data: 0.4259 length of data: 10000
+save a model
+-------------Round number:  17  -------------
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.4462) KL loss: tensor(0.2111)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.5088) KL loss: tensor(0.2215)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.3562) KL loss: tensor(0.2103)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.5689) KL loss: tensor(0.2503)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.5063) KL loss: tensor(0.2208)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.5939) KL loss: tensor(0.2443)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.6127) KL loss: tensor(0.2291)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.4656) KL loss: tensor(0.2162)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.5037) KL loss: tensor(0.2242)
+loss: NT_CE learning rate: 0.000694
+training loss: tensor(0.3844) KL loss: tensor(0.1832)
+         GM acc on global data: 0.4485 length of data: 10000
+save a model
+-------------Round number:  18  -------------
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.5079) KL loss: tensor(0.2027)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.3758) KL loss: tensor(0.1814)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.4615) KL loss: tensor(0.2060)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.5705) KL loss: tensor(0.2428)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.4997) KL loss: tensor(0.2077)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.4998) KL loss: tensor(0.2014)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.5304) KL loss: tensor(0.2209)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.5039) KL loss: tensor(0.2102)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.5232) KL loss: tensor(0.2370)
+loss: NT_CE learning rate: 0.0006760000000000001
+training loss: tensor(0.5512) KL loss: tensor(0.2459)
+         GM acc on global data: 0.4638 length of data: 10000
+save a model
+-------------Round number:  19  -------------
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.5160) KL loss: tensor(0.2186)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.4378) KL loss: tensor(0.1996)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.5397) KL loss: tensor(0.2374)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.4845) KL loss: tensor(0.1968)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.5532) KL loss: tensor(0.2265)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.5576) KL loss: tensor(0.2459)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.4625) KL loss: tensor(0.2013)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.4510) KL loss: tensor(0.1972)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.4841) KL loss: tensor(0.1966)
+loss: NT_CE learning rate: 0.0006580000000000001
+training loss: tensor(0.5853) KL loss: tensor(0.2238)
+         GM acc on global data: 0.4638 length of data: 10000
+-------------Round number:  20  -------------
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.4540) KL loss: tensor(0.1988)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.5492) KL loss: tensor(0.2413)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.3797) KL loss: tensor(0.1852)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.4437) KL loss: tensor(0.2360)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.4468) KL loss: tensor(0.2067)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.3111) KL loss: tensor(0.1566)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.3450) KL loss: tensor(0.1675)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.4501) KL loss: tensor(0.1966)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.3744) KL loss: tensor(0.1786)
+loss: NT_CE learning rate: 0.00064
+training loss: tensor(0.9684) KL loss: tensor(0.5219)
+         GM acc on global data: 0.4421 length of data: 10000
+-------------Round number:  21  -------------
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.6507) KL loss: tensor(0.2677)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.5323) KL loss: tensor(0.2350)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.3860) KL loss: tensor(0.1768)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.3997) KL loss: tensor(0.1723)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.4790) KL loss: tensor(0.2305)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.3145) KL loss: tensor(0.1609)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.4556) KL loss: tensor(0.2009)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.4665) KL loss: tensor(0.2076)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.4433) KL loss: tensor(0.1834)
+loss: NT_CE learning rate: 0.0006220000000000002
+training loss: tensor(0.4975) KL loss: tensor(0.1860)
+         GM acc on global data: 0.4458 length of data: 10000
+-------------Round number:  22  -------------
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.3051) KL loss: tensor(0.1566)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.8380) KL loss: tensor(0.4781)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.4540) KL loss: tensor(0.1897)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.3593) KL loss: tensor(0.1798)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.3199) KL loss: tensor(0.1608)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.2889) KL loss: tensor(0.1444)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.5044) KL loss: tensor(0.1888)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.3697) KL loss: tensor(0.1906)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.4761) KL loss: tensor(0.1746)
+loss: NT_CE learning rate: 0.0006040000000000002
+training loss: tensor(0.2929) KL loss: tensor(0.1559)
+         GM acc on global data: 0.4417 length of data: 10000
+-------------Round number:  23  -------------
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.5539) KL loss: tensor(0.2010)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.4443) KL loss: tensor(0.1779)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.3879) KL loss: tensor(0.1843)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.5076) KL loss: tensor(0.1916)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.4955) KL loss: tensor(0.1960)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.2166) KL loss: tensor(0.1265)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.5032) KL loss: tensor(0.2197)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.4303) KL loss: tensor(0.1630)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.4570) KL loss: tensor(0.1755)
+loss: NT_CE learning rate: 0.000586
+training loss: tensor(0.3643) KL loss: tensor(0.1569)
+         GM acc on global data: 0.4518 length of data: 10000
+-------------Round number:  24  -------------
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.3808) KL loss: tensor(0.1685)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.3518) KL loss: tensor(0.1823)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.1632) KL loss: tensor(0.1066)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.4233) KL loss: tensor(0.1812)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.3763) KL loss: tensor(0.1533)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.3712) KL loss: tensor(0.1719)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.8878) KL loss: tensor(0.3100)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.3084) KL loss: tensor(0.1443)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.3693) KL loss: tensor(0.1677)
+loss: NT_CE learning rate: 0.000568
+training loss: tensor(0.4356) KL loss: tensor(0.1814)
+         GM acc on global data: 0.4633 length of data: 10000
+-------------Round number:  25  -------------
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.4653) KL loss: tensor(0.1800)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.3064) KL loss: tensor(0.1420)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.3485) KL loss: tensor(0.1370)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.5089) KL loss: tensor(0.1847)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.4946) KL loss: tensor(0.2081)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.3983) KL loss: tensor(0.1475)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.3392) KL loss: tensor(0.1511)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.4923) KL loss: tensor(0.2020)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.3616) KL loss: tensor(0.1476)
+loss: NT_CE learning rate: 0.00055
+training loss: tensor(0.3528) KL loss: tensor(0.1489)
+         GM acc on global data: 0.4952 length of data: 10000
+save a model
+-------------Round number:  26  -------------
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.3629) KL loss: tensor(0.1497)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.3841) KL loss: tensor(0.1675)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.3957) KL loss: tensor(0.1548)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.3956) KL loss: tensor(0.1799)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.4530) KL loss: tensor(0.1743)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.4605) KL loss: tensor(0.1768)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.4266) KL loss: tensor(0.1757)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.4653) KL loss: tensor(0.1787)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.2604) KL loss: tensor(0.1273)
+loss: NT_CE learning rate: 0.000532
+training loss: tensor(0.3782) KL loss: tensor(0.1678)
+         GM acc on global data: 0.4973 length of data: 10000
+save a model
+-------------Round number:  27  -------------
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.4834) KL loss: tensor(0.2341)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.4319) KL loss: tensor(0.1771)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.3619) KL loss: tensor(0.1587)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.4578) KL loss: tensor(0.1834)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.4350) KL loss: tensor(0.2016)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.3138) KL loss: tensor(0.1481)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.3940) KL loss: tensor(0.1644)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.3039) KL loss: tensor(0.1552)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.4087) KL loss: tensor(0.1665)
+loss: NT_CE learning rate: 0.000514
+training loss: tensor(0.4164) KL loss: tensor(0.1981)
+         GM acc on global data: 0.4904 length of data: 10000
+-------------Round number:  28  -------------
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.3537) KL loss: tensor(0.1546)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.2638) KL loss: tensor(0.1287)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.3129) KL loss: tensor(0.1386)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.3366) KL loss: tensor(0.1564)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.3700) KL loss: tensor(0.1445)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.3339) KL loss: tensor(0.1310)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.3419) KL loss: tensor(0.1429)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.3275) KL loss: tensor(0.1369)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.4224) KL loss: tensor(0.1718)
+loss: NT_CE learning rate: 0.000496
+training loss: tensor(0.2509) KL loss: tensor(0.1251)
+         GM acc on global data: 0.5045 length of data: 10000
+save a model
+-------------Round number:  29  -------------
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.3644) KL loss: tensor(0.1362)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.2792) KL loss: tensor(0.1195)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.3948) KL loss: tensor(0.1614)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.3569) KL loss: tensor(0.1627)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.3609) KL loss: tensor(0.1480)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.2747) KL loss: tensor(0.1313)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.3386) KL loss: tensor(0.1504)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.3706) KL loss: tensor(0.1467)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.5118) KL loss: tensor(0.2025)
+loss: NT_CE learning rate: 0.0004780000000000001
+training loss: tensor(0.2509) KL loss: tensor(0.1216)
+         GM acc on global data: 0.5174 length of data: 10000
+save a model
+-------------Round number:  30  -------------
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.3218) KL loss: tensor(0.1359)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.3808) KL loss: tensor(0.1606)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.3195) KL loss: tensor(0.1396)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.3376) KL loss: tensor(0.1547)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.2247) KL loss: tensor(0.1097)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.3678) KL loss: tensor(0.1690)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.4060) KL loss: tensor(0.1693)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.6806) KL loss: tensor(0.2571)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.3539) KL loss: tensor(0.1508)
+loss: NT_CE learning rate: 0.00046000000000000007
+training loss: tensor(0.3998) KL loss: tensor(0.2153)
+         GM acc on global data: 0.5157 length of data: 10000
+-------------Round number:  31  -------------
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.2888) KL loss: tensor(0.1327)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.2073) KL loss: tensor(0.1025)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.2904) KL loss: tensor(0.1110)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.3977) KL loss: tensor(0.1825)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.3076) KL loss: tensor(0.1436)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.2491) KL loss: tensor(0.1234)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.1713) KL loss: tensor(0.1065)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.1573) KL loss: tensor(0.0881)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.5776) KL loss: tensor(0.2593)
+loss: NT_CE learning rate: 0.00044200000000000006
+training loss: tensor(0.2913) KL loss: tensor(0.1340)
+         GM acc on global data: 0.5182 length of data: 10000
+save a model
+-------------Round number:  32  -------------
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.3003) KL loss: tensor(0.1305)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.3964) KL loss: tensor(0.1423)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.2221) KL loss: tensor(0.1206)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.4450) KL loss: tensor(0.1493)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.3091) KL loss: tensor(0.1168)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.1663) KL loss: tensor(0.0872)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.2542) KL loss: tensor(0.1216)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.3680) KL loss: tensor(0.1346)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.2944) KL loss: tensor(0.1305)
+loss: NT_CE learning rate: 0.00042400000000000006
+training loss: tensor(0.4074) KL loss: tensor(0.1574)
+         GM acc on global data: 0.5199 length of data: 10000
+save a model
+-------------Round number:  33  -------------
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.2194) KL loss: tensor(0.1222)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.2956) KL loss: tensor(0.1138)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.2304) KL loss: tensor(0.1128)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.3048) KL loss: tensor(0.1362)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.5201) KL loss: tensor(0.2068)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.2166) KL loss: tensor(0.1164)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.3173) KL loss: tensor(0.1181)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.4222) KL loss: tensor(0.1849)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.2876) KL loss: tensor(0.1348)
+loss: NT_CE learning rate: 0.00040600000000000006
+training loss: tensor(0.3193) KL loss: tensor(0.1337)
+         GM acc on global data: 0.5096 length of data: 10000
+-------------Round number:  34  -------------
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.2241) KL loss: tensor(0.1039)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.2882) KL loss: tensor(0.1451)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.3821) KL loss: tensor(0.1333)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.4031) KL loss: tensor(0.1437)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.8871) KL loss: tensor(0.3421)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.3328) KL loss: tensor(0.1194)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.3247) KL loss: tensor(0.1367)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.3296) KL loss: tensor(0.1451)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.3455) KL loss: tensor(0.1445)
+loss: NT_CE learning rate: 0.000388
+training loss: tensor(0.3684) KL loss: tensor(0.1205)
+         GM acc on global data: 0.5273 length of data: 10000
+save a model
+-------------Round number:  35  -------------
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.3038) KL loss: tensor(0.1384)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.1911) KL loss: tensor(0.1036)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.2515) KL loss: tensor(0.1113)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.2122) KL loss: tensor(0.1068)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.2136) KL loss: tensor(0.1086)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.2672) KL loss: tensor(0.1323)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.2640) KL loss: tensor(0.1296)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.3926) KL loss: tensor(0.1503)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.3346) KL loss: tensor(0.1269)
+loss: NT_CE learning rate: 0.00037
+training loss: tensor(0.3603) KL loss: tensor(0.1322)
+         GM acc on global data: 0.5314 length of data: 10000
+save a model
+-------------Round number:  36  -------------
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.2329) KL loss: tensor(0.0987)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.3055) KL loss: tensor(0.1383)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.1882) KL loss: tensor(0.0962)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.1759) KL loss: tensor(0.1009)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.3472) KL loss: tensor(0.1287)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.3896) KL loss: tensor(0.1346)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.3735) KL loss: tensor(0.1290)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.3697) KL loss: tensor(0.1228)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.2789) KL loss: tensor(0.1221)
+loss: NT_CE learning rate: 0.0003520000000000001
+training loss: tensor(0.2175) KL loss: tensor(0.1219)
+         GM acc on global data: 0.5381 length of data: 10000
+save a model
+-------------Round number:  37  -------------
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.4031) KL loss: tensor(0.1255)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.6297) KL loss: tensor(0.2768)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.3313) KL loss: tensor(0.1492)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.7418) KL loss: tensor(0.2940)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.3155) KL loss: tensor(0.1300)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.2447) KL loss: tensor(0.1158)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.2921) KL loss: tensor(0.1388)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.2384) KL loss: tensor(0.1156)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.2760) KL loss: tensor(0.1369)
+loss: NT_CE learning rate: 0.0003340000000000001
+training loss: tensor(0.2548) KL loss: tensor(0.0973)
+         GM acc on global data: 0.5356 length of data: 10000
+-------------Round number:  38  -------------
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.2436) KL loss: tensor(0.1189)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.3004) KL loss: tensor(0.1092)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.6553) KL loss: tensor(0.2392)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.3644) KL loss: tensor(0.1321)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.3923) KL loss: tensor(0.1346)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.3667) KL loss: tensor(0.1329)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.2986) KL loss: tensor(0.1141)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.2188) KL loss: tensor(0.1026)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.2822) KL loss: tensor(0.1044)
+loss: NT_CE learning rate: 0.0003160000000000001
+training loss: tensor(0.3571) KL loss: tensor(0.1214)
+         GM acc on global data: 0.5612 length of data: 10000
+save a model
+-------------Round number:  39  -------------
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.2282) KL loss: tensor(0.1038)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.3148) KL loss: tensor(0.1154)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.2745) KL loss: tensor(0.1020)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.2351) KL loss: tensor(0.1009)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.2483) KL loss: tensor(0.1001)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.3114) KL loss: tensor(0.1169)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.2231) KL loss: tensor(0.0999)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.2759) KL loss: tensor(0.1201)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.1727) KL loss: tensor(0.0904)
+loss: NT_CE learning rate: 0.00029800000000000003
+training loss: tensor(0.9228) KL loss: tensor(0.3532)
+         GM acc on global data: 0.5598 length of data: 10000
+-------------Round number:  40  -------------
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.6489) KL loss: tensor(0.1722)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.2970) KL loss: tensor(0.1162)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.3412) KL loss: tensor(0.1284)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.3604) KL loss: tensor(0.1277)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.3934) KL loss: tensor(0.1520)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.3856) KL loss: tensor(0.1188)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.2634) KL loss: tensor(0.1460)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.3560) KL loss: tensor(0.1274)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.3025) KL loss: tensor(0.1161)
+loss: NT_CE learning rate: 0.00028000000000000003
+training loss: tensor(0.3100) KL loss: tensor(0.1327)
+         GM acc on global data: 0.556 length of data: 10000
+-------------Round number:  41  -------------
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.3158) KL loss: tensor(0.1507)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.4298) KL loss: tensor(0.1299)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.1473) KL loss: tensor(0.0800)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.2373) KL loss: tensor(0.0957)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.6870) KL loss: tensor(0.2703)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.8105) KL loss: tensor(0.3444)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.2935) KL loss: tensor(0.1234)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.1893) KL loss: tensor(0.0894)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.1561) KL loss: tensor(0.0753)
+loss: NT_CE learning rate: 0.000262
+training loss: tensor(0.3421) KL loss: tensor(0.1204)
+         GM acc on global data: 0.573 length of data: 10000
+save a model
+-------------Round number:  42  -------------
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.3820) KL loss: tensor(0.1217)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.2822) KL loss: tensor(0.1088)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.2703) KL loss: tensor(0.1122)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.2511) KL loss: tensor(0.0967)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.3244) KL loss: tensor(0.1445)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.2734) KL loss: tensor(0.1067)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.1961) KL loss: tensor(0.1014)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.2772) KL loss: tensor(0.1118)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.1889) KL loss: tensor(0.1020)
+loss: NT_CE learning rate: 0.0002440000000000001
+training loss: tensor(0.1491) KL loss: tensor(0.0839)
+         GM acc on global data: 0.5661 length of data: 10000
+-------------Round number:  43  -------------
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.3005) KL loss: tensor(0.1160)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.1549) KL loss: tensor(0.0857)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.2808) KL loss: tensor(0.1085)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.1430) KL loss: tensor(0.0854)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.2419) KL loss: tensor(0.0995)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.2793) KL loss: tensor(0.1337)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.2428) KL loss: tensor(0.0984)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.2684) KL loss: tensor(0.0856)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.3810) KL loss: tensor(0.1322)
+loss: NT_CE learning rate: 0.0002260000000000001
+training loss: tensor(0.5568) KL loss: tensor(0.2089)
+         GM acc on global data: 0.576 length of data: 10000
+save a model
+-------------Round number:  44  -------------
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.2168) KL loss: tensor(0.1142)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.3221) KL loss: tensor(0.1099)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.1329) KL loss: tensor(0.0793)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.2894) KL loss: tensor(0.1063)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.2003) KL loss: tensor(0.0900)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.4080) KL loss: tensor(0.1458)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.2547) KL loss: tensor(0.1083)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.3469) KL loss: tensor(0.1234)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.2451) KL loss: tensor(0.1160)
+loss: NT_CE learning rate: 0.00020800000000000007
+training loss: tensor(0.4584) KL loss: tensor(0.2081)
+         GM acc on global data: 0.57 length of data: 10000
+-------------Round number:  45  -------------
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.1141) KL loss: tensor(0.0687)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.3542) KL loss: tensor(0.1245)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.2166) KL loss: tensor(0.1164)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.2781) KL loss: tensor(0.0833)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.1094) KL loss: tensor(0.0662)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.4012) KL loss: tensor(0.1192)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.5759) KL loss: tensor(0.2235)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.3213) KL loss: tensor(0.1260)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.1514) KL loss: tensor(0.0915)
+loss: NT_CE learning rate: 0.00019000000000000006
+training loss: tensor(0.2351) KL loss: tensor(0.0852)
+         GM acc on global data: 0.5754 length of data: 10000
+-------------Round number:  46  -------------
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.1731) KL loss: tensor(0.0930)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.1559) KL loss: tensor(0.0703)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.0762) KL loss: tensor(0.0529)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.1414) KL loss: tensor(0.0819)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.3034) KL loss: tensor(0.1534)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.3201) KL loss: tensor(0.1273)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.2299) KL loss: tensor(0.1154)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.1902) KL loss: tensor(0.0862)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.2269) KL loss: tensor(0.0920)
+loss: NT_CE learning rate: 0.00017200000000000003
+training loss: tensor(0.1790) KL loss: tensor(0.0872)
+         GM acc on global data: 0.5732 length of data: 10000
+-------------Round number:  47  -------------
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.1765) KL loss: tensor(0.0845)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.3370) KL loss: tensor(0.1055)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.3752) KL loss: tensor(0.1031)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.2298) KL loss: tensor(0.1098)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.2663) KL loss: tensor(0.1040)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.4024) KL loss: tensor(0.1415)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.3406) KL loss: tensor(0.1440)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.2050) KL loss: tensor(0.0893)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.2216) KL loss: tensor(0.1199)
+loss: NT_CE learning rate: 0.00015400000000000003
+training loss: tensor(0.3442) KL loss: tensor(0.1104)
+         GM acc on global data: 0.5723 length of data: 10000
+-------------Round number:  48  -------------
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.2479) KL loss: tensor(0.0930)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.2450) KL loss: tensor(0.0943)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.1368) KL loss: tensor(0.0793)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.2606) KL loss: tensor(0.1018)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.3224) KL loss: tensor(0.1014)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.5330) KL loss: tensor(0.1831)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.1679) KL loss: tensor(0.0700)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.2745) KL loss: tensor(0.0982)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.2220) KL loss: tensor(0.0795)
+loss: NT_CE learning rate: 0.00013600000000000013
+training loss: tensor(0.2352) KL loss: tensor(0.1020)
+         GM acc on global data: 0.5765 length of data: 10000
+save a model
+-------------Round number:  49  -------------
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.2361) KL loss: tensor(0.0722)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.3486) KL loss: tensor(0.1083)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.2944) KL loss: tensor(0.1030)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.2330) KL loss: tensor(0.0922)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.2658) KL loss: tensor(0.1101)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.3364) KL loss: tensor(0.1080)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.3230) KL loss: tensor(0.1062)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.1167) KL loss: tensor(0.0666)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.1851) KL loss: tensor(0.0850)
+loss: NT_CE learning rate: 0.0001180000000000001
+training loss: tensor(0.3013) KL loss: tensor(0.1153)
+         GM acc on global data: 0.5816 length of data: 10000
+save a model
+-------------Round number:  50  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3161) KL loss: tensor(0.1038)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6778) KL loss: tensor(0.2245)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2779) KL loss: tensor(0.0966)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3105) KL loss: tensor(0.0993)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2240) KL loss: tensor(0.0893)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1555) KL loss: tensor(0.0875)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2796) KL loss: tensor(0.0937)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1548) KL loss: tensor(0.0757)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1860) KL loss: tensor(0.0741)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3452) KL loss: tensor(0.1165)
+         GM acc on global data: 0.5781 length of data: 10000
+-------------Round number:  51  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1113) KL loss: tensor(0.0714)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3685) KL loss: tensor(0.1197)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2595) KL loss: tensor(0.0937)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2910) KL loss: tensor(0.0942)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5406) KL loss: tensor(0.2274)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4762) KL loss: tensor(0.1372)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2135) KL loss: tensor(0.0884)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3374) KL loss: tensor(0.1149)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6127) KL loss: tensor(0.2567)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2163) KL loss: tensor(0.0956)
+         GM acc on global data: 0.5719 length of data: 10000
+-------------Round number:  52  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2123) KL loss: tensor(0.0963)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1984) KL loss: tensor(0.0733)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2365) KL loss: tensor(0.1282)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3517) KL loss: tensor(0.1164)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1213) KL loss: tensor(0.0741)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2018) KL loss: tensor(0.0758)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0801) KL loss: tensor(0.0555)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3368) KL loss: tensor(0.1491)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3460) KL loss: tensor(0.1211)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2439) KL loss: tensor(0.0831)
+         GM acc on global data: 0.5694 length of data: 10000
+-------------Round number:  53  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2349) KL loss: tensor(0.0952)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6296) KL loss: tensor(0.2110)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3731) KL loss: tensor(0.1206)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3696) KL loss: tensor(0.1328)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0843) KL loss: tensor(0.0582)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.8575) KL loss: tensor(0.3063)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6260) KL loss: tensor(0.1851)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1648) KL loss: tensor(0.0884)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2903) KL loss: tensor(0.0848)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4469) KL loss: tensor(0.1216)
+         GM acc on global data: 0.5653 length of data: 10000
+-------------Round number:  54  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3140) KL loss: tensor(0.1064)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2022) KL loss: tensor(0.0881)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3024) KL loss: tensor(0.0948)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3620) KL loss: tensor(0.1049)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2642) KL loss: tensor(0.1173)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3027) KL loss: tensor(0.1053)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3360) KL loss: tensor(0.1437)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1726) KL loss: tensor(0.0842)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2326) KL loss: tensor(0.0999)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1067) KL loss: tensor(0.0691)
+         GM acc on global data: 0.5682 length of data: 10000
+-------------Round number:  55  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3525) KL loss: tensor(0.1298)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3624) KL loss: tensor(0.1198)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2097) KL loss: tensor(0.1007)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1883) KL loss: tensor(0.0879)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2341) KL loss: tensor(0.0894)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1821) KL loss: tensor(0.0911)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3078) KL loss: tensor(0.1387)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2347) KL loss: tensor(0.0754)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1294) KL loss: tensor(0.0759)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6812) KL loss: tensor(0.2974)
+         GM acc on global data: 0.5827 length of data: 10000
+save a model
+-------------Round number:  56  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2951) KL loss: tensor(0.1116)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6657) KL loss: tensor(0.2731)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4862) KL loss: tensor(0.1610)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4714) KL loss: tensor(0.1412)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2712) KL loss: tensor(0.1161)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2697) KL loss: tensor(0.1288)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1865) KL loss: tensor(0.0785)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2190) KL loss: tensor(0.0994)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1856) KL loss: tensor(0.0815)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1383) KL loss: tensor(0.0858)
+         GM acc on global data: 0.5794 length of data: 10000
+-------------Round number:  57  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2113) KL loss: tensor(0.1048)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1300) KL loss: tensor(0.0751)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2987) KL loss: tensor(0.1141)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3291) KL loss: tensor(0.1321)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2237) KL loss: tensor(0.0879)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1644) KL loss: tensor(0.0910)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1897) KL loss: tensor(0.0810)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2207) KL loss: tensor(0.0891)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3766) KL loss: tensor(0.1453)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1978) KL loss: tensor(0.0901)
+         GM acc on global data: 0.5841 length of data: 10000
+save a model
+-------------Round number:  58  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3110) KL loss: tensor(0.1074)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2971) KL loss: tensor(0.0928)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1739) KL loss: tensor(0.0747)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2708) KL loss: tensor(0.1167)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1858) KL loss: tensor(0.0839)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2946) KL loss: tensor(0.0995)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1782) KL loss: tensor(0.0792)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1493) KL loss: tensor(0.0760)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2771) KL loss: tensor(0.1121)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2737) KL loss: tensor(0.1073)
+         GM acc on global data: 0.5804 length of data: 10000
+-------------Round number:  59  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2555) KL loss: tensor(0.1225)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2463) KL loss: tensor(0.0979)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1860) KL loss: tensor(0.0982)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2131) KL loss: tensor(0.0851)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3298) KL loss: tensor(0.1123)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1765) KL loss: tensor(0.0867)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2770) KL loss: tensor(0.1042)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3426) KL loss: tensor(0.1134)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1836) KL loss: tensor(0.0736)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3491) KL loss: tensor(0.0982)
+         GM acc on global data: 0.5858 length of data: 10000
+save a model
+-------------Round number:  60  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5726) KL loss: tensor(0.1860)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2622) KL loss: tensor(0.1148)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4478) KL loss: tensor(0.2254)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1739) KL loss: tensor(0.0893)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2667) KL loss: tensor(0.0859)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3122) KL loss: tensor(0.1366)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2706) KL loss: tensor(0.1190)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2624) KL loss: tensor(0.1058)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2882) KL loss: tensor(0.1038)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2421) KL loss: tensor(0.1009)
+         GM acc on global data: 0.5791 length of data: 10000
+-------------Round number:  61  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2572) KL loss: tensor(0.0973)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2703) KL loss: tensor(0.1213)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2186) KL loss: tensor(0.0763)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1567) KL loss: tensor(0.0876)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2147) KL loss: tensor(0.1018)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2191) KL loss: tensor(0.1007)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3537) KL loss: tensor(0.1381)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1633) KL loss: tensor(0.0910)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2451) KL loss: tensor(0.1169)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2004) KL loss: tensor(0.0940)
+         GM acc on global data: 0.5833 length of data: 10000
+-------------Round number:  62  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2067) KL loss: tensor(0.0707)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2252) KL loss: tensor(0.0854)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1816) KL loss: tensor(0.1039)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2243) KL loss: tensor(0.0982)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1332) KL loss: tensor(0.0821)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2974) KL loss: tensor(0.1006)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4248) KL loss: tensor(0.1994)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3206) KL loss: tensor(0.1697)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1928) KL loss: tensor(0.0860)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1538) KL loss: tensor(0.0770)
+         GM acc on global data: 0.583 length of data: 10000
+-------------Round number:  63  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2829) KL loss: tensor(0.1096)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1738) KL loss: tensor(0.0816)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1865) KL loss: tensor(0.0897)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1137) KL loss: tensor(0.0744)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1750) KL loss: tensor(0.0887)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2007) KL loss: tensor(0.0945)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1465) KL loss: tensor(0.0753)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1777) KL loss: tensor(0.0801)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2558) KL loss: tensor(0.0968)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3365) KL loss: tensor(0.1072)
+         GM acc on global data: 0.5768 length of data: 10000
+-------------Round number:  64  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1180) KL loss: tensor(0.0736)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1093) KL loss: tensor(0.0757)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4477) KL loss: tensor(0.2090)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2754) KL loss: tensor(0.1049)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4597) KL loss: tensor(0.1880)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2411) KL loss: tensor(0.1112)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1122) KL loss: tensor(0.0761)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2302) KL loss: tensor(0.0865)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1816) KL loss: tensor(0.0929)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5968) KL loss: tensor(0.2973)
+         GM acc on global data: 0.58 length of data: 10000
+-------------Round number:  65  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0912) KL loss: tensor(0.0621)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2296) KL loss: tensor(0.1070)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1671) KL loss: tensor(0.0797)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3563) KL loss: tensor(0.1163)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1844) KL loss: tensor(0.0662)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2466) KL loss: tensor(0.0864)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1178) KL loss: tensor(0.0759)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2175) KL loss: tensor(0.1106)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2214) KL loss: tensor(0.0991)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1532) KL loss: tensor(0.0719)
+         GM acc on global data: 0.5847 length of data: 10000
+-------------Round number:  66  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1634) KL loss: tensor(0.0774)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2334) KL loss: tensor(0.0917)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2322) KL loss: tensor(0.1037)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2627) KL loss: tensor(0.1152)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1968) KL loss: tensor(0.0990)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2880) KL loss: tensor(0.1078)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1289) KL loss: tensor(0.0732)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1667) KL loss: tensor(0.0782)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6042) KL loss: tensor(0.2685)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3950) KL loss: tensor(0.1254)
+         GM acc on global data: 0.5813 length of data: 10000
+-------------Round number:  67  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1187) KL loss: tensor(0.0730)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1727) KL loss: tensor(0.0942)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2393) KL loss: tensor(0.1050)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2070) KL loss: tensor(0.0920)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4345) KL loss: tensor(0.1361)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1216) KL loss: tensor(0.0733)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2896) KL loss: tensor(0.1325)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2110) KL loss: tensor(0.1025)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2000) KL loss: tensor(0.1019)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2744) KL loss: tensor(0.1001)
+         GM acc on global data: 0.575 length of data: 10000
+-------------Round number:  68  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1031) KL loss: tensor(0.0690)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2609) KL loss: tensor(0.0993)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2403) KL loss: tensor(0.1028)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2709) KL loss: tensor(0.1230)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2727) KL loss: tensor(0.1373)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0924) KL loss: tensor(0.0710)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1689) KL loss: tensor(0.0647)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2391) KL loss: tensor(0.0850)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2507) KL loss: tensor(0.0878)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1432) KL loss: tensor(0.0781)
+         GM acc on global data: 0.5825 length of data: 10000
+-------------Round number:  69  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2066) KL loss: tensor(0.0902)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2097) KL loss: tensor(0.1099)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3112) KL loss: tensor(0.1122)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2103) KL loss: tensor(0.0869)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1287) KL loss: tensor(0.0645)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1692) KL loss: tensor(0.0825)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3401) KL loss: tensor(0.1322)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2793) KL loss: tensor(0.1589)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2073) KL loss: tensor(0.0997)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3867) KL loss: tensor(0.1297)
+         GM acc on global data: 0.5854 length of data: 10000
+-------------Round number:  70  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2437) KL loss: tensor(0.1260)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3395) KL loss: tensor(0.1288)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5321) KL loss: tensor(0.1840)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.7492) KL loss: tensor(0.3039)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2904) KL loss: tensor(0.1248)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0933) KL loss: tensor(0.0715)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1691) KL loss: tensor(0.0866)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1955) KL loss: tensor(0.0735)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1911) KL loss: tensor(0.1138)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1131) KL loss: tensor(0.0746)
+         GM acc on global data: 0.5766 length of data: 10000
+-------------Round number:  71  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2480) KL loss: tensor(0.1023)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1896) KL loss: tensor(0.0773)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1312) KL loss: tensor(0.0763)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1600) KL loss: tensor(0.0985)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1920) KL loss: tensor(0.0902)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2283) KL loss: tensor(0.0923)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4253) KL loss: tensor(0.2154)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1949) KL loss: tensor(0.0940)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1649) KL loss: tensor(0.0906)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0947) KL loss: tensor(0.0662)
+         GM acc on global data: 0.581 length of data: 10000
+-------------Round number:  72  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1389) KL loss: tensor(0.0592)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1696) KL loss: tensor(0.0930)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2566) KL loss: tensor(0.0990)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1895) KL loss: tensor(0.0922)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1601) KL loss: tensor(0.0758)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1380) KL loss: tensor(0.0767)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4673) KL loss: tensor(0.2147)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2252) KL loss: tensor(0.1127)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2255) KL loss: tensor(0.0971)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0882) KL loss: tensor(0.0641)
+         GM acc on global data: 0.5822 length of data: 10000
+-------------Round number:  73  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6939) KL loss: tensor(0.3285)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1720) KL loss: tensor(0.0892)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1893) KL loss: tensor(0.0943)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1547) KL loss: tensor(0.0793)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2215) KL loss: tensor(0.0852)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3592) KL loss: tensor(0.1208)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3507) KL loss: tensor(0.1191)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1040) KL loss: tensor(0.0528)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1796) KL loss: tensor(0.0872)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1500) KL loss: tensor(0.0855)
+         GM acc on global data: 0.5753 length of data: 10000
+-------------Round number:  74  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1543) KL loss: tensor(0.0825)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1946) KL loss: tensor(0.0954)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1957) KL loss: tensor(0.0939)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1634) KL loss: tensor(0.0874)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2316) KL loss: tensor(0.0932)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2154) KL loss: tensor(0.0816)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2249) KL loss: tensor(0.0958)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1076) KL loss: tensor(0.0657)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2086) KL loss: tensor(0.0984)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1704) KL loss: tensor(0.0712)
+         GM acc on global data: 0.5812 length of data: 10000
+-------------Round number:  75  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2646) KL loss: tensor(0.1040)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1575) KL loss: tensor(0.0823)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1503) KL loss: tensor(0.0717)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2763) KL loss: tensor(0.0987)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1806) KL loss: tensor(0.0851)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2936) KL loss: tensor(0.0997)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0875) KL loss: tensor(0.0629)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0754) KL loss: tensor(0.0548)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2246) KL loss: tensor(0.0928)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3116) KL loss: tensor(0.1154)
+         GM acc on global data: 0.5762 length of data: 10000
+-------------Round number:  76  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2013) KL loss: tensor(0.1026)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0625) KL loss: tensor(0.0478)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6350) KL loss: tensor(0.2336)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2616) KL loss: tensor(0.1107)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1818) KL loss: tensor(0.0989)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2293) KL loss: tensor(0.0808)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2265) KL loss: tensor(0.0995)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2828) KL loss: tensor(0.1669)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2081) KL loss: tensor(0.1065)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4012) KL loss: tensor(0.1725)
+         GM acc on global data: 0.5791 length of data: 10000
+-------------Round number:  77  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2484) KL loss: tensor(0.1072)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1868) KL loss: tensor(0.0875)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2437) KL loss: tensor(0.0991)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3433) KL loss: tensor(0.1313)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1671) KL loss: tensor(0.0888)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1424) KL loss: tensor(0.0902)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2423) KL loss: tensor(0.1227)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2067) KL loss: tensor(0.1077)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1977) KL loss: tensor(0.0947)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2735) KL loss: tensor(0.0929)
+         GM acc on global data: 0.5797 length of data: 10000
+-------------Round number:  78  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1214) KL loss: tensor(0.0790)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2257) KL loss: tensor(0.0903)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1617) KL loss: tensor(0.0886)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1658) KL loss: tensor(0.0879)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2290) KL loss: tensor(0.0916)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0996) KL loss: tensor(0.0679)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1815) KL loss: tensor(0.0999)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2009) KL loss: tensor(0.1003)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1869) KL loss: tensor(0.0953)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2200) KL loss: tensor(0.0984)
+         GM acc on global data: 0.5815 length of data: 10000
+-------------Round number:  79  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2304) KL loss: tensor(0.0952)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1471) KL loss: tensor(0.0674)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1941) KL loss: tensor(0.1038)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3729) KL loss: tensor(0.1518)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1472) KL loss: tensor(0.0784)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6170) KL loss: tensor(0.2300)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2247) KL loss: tensor(0.0988)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1836) KL loss: tensor(0.1020)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2531) KL loss: tensor(0.0932)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2181) KL loss: tensor(0.0925)
+         GM acc on global data: 0.5791 length of data: 10000
+-------------Round number:  80  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0676) KL loss: tensor(0.0514)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3712) KL loss: tensor(0.1323)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1117) KL loss: tensor(0.0660)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1981) KL loss: tensor(0.0819)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3308) KL loss: tensor(0.1026)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1918) KL loss: tensor(0.0867)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1627) KL loss: tensor(0.0748)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1224) KL loss: tensor(0.0740)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2324) KL loss: tensor(0.0919)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1826) KL loss: tensor(0.0835)
+         GM acc on global data: 0.5791 length of data: 10000
+-------------Round number:  81  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1039) KL loss: tensor(0.0615)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2667) KL loss: tensor(0.1445)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2221) KL loss: tensor(0.0975)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.6704) KL loss: tensor(0.2003)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3139) KL loss: tensor(0.1057)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2609) KL loss: tensor(0.1154)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1676) KL loss: tensor(0.0812)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1433) KL loss: tensor(0.0750)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1664) KL loss: tensor(0.0738)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2439) KL loss: tensor(0.1196)
+         GM acc on global data: 0.579 length of data: 10000
+-------------Round number:  82  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2110) KL loss: tensor(0.0875)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1023) KL loss: tensor(0.0592)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2049) KL loss: tensor(0.0810)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0902) KL loss: tensor(0.0652)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2025) KL loss: tensor(0.0753)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1622) KL loss: tensor(0.0769)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2478) KL loss: tensor(0.0925)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1726) KL loss: tensor(0.0854)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2022) KL loss: tensor(0.0956)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1630) KL loss: tensor(0.0982)
+         GM acc on global data: 0.5809 length of data: 10000
+-------------Round number:  83  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1562) KL loss: tensor(0.0768)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3224) KL loss: tensor(0.1318)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0930) KL loss: tensor(0.0611)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1214) KL loss: tensor(0.0637)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2831) KL loss: tensor(0.1038)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1710) KL loss: tensor(0.0780)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1449) KL loss: tensor(0.0770)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1184) KL loss: tensor(0.0663)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3102) KL loss: tensor(0.1108)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2262) KL loss: tensor(0.1079)
+         GM acc on global data: 0.5877 length of data: 10000
+save a model
+-------------Round number:  84  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1854) KL loss: tensor(0.0806)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1913) KL loss: tensor(0.0740)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1793) KL loss: tensor(0.0869)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1900) KL loss: tensor(0.0954)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2080) KL loss: tensor(0.0841)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2444) KL loss: tensor(0.0974)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5207) KL loss: tensor(0.1997)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1298) KL loss: tensor(0.0685)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1117) KL loss: tensor(0.0686)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1807) KL loss: tensor(0.0978)
+         GM acc on global data: 0.5836 length of data: 10000
+-------------Round number:  85  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2451) KL loss: tensor(0.1287)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1810) KL loss: tensor(0.0825)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1343) KL loss: tensor(0.0887)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2035) KL loss: tensor(0.0831)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2009) KL loss: tensor(0.0878)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3401) KL loss: tensor(0.1629)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1657) KL loss: tensor(0.0947)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2330) KL loss: tensor(0.1226)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2289) KL loss: tensor(0.1039)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2058) KL loss: tensor(0.0899)
+         GM acc on global data: 0.5879 length of data: 10000
+save a model
+-------------Round number:  86  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1090) KL loss: tensor(0.0663)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1744) KL loss: tensor(0.1027)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2004) KL loss: tensor(0.1036)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2419) KL loss: tensor(0.1027)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1658) KL loss: tensor(0.1106)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1101) KL loss: tensor(0.0700)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5130) KL loss: tensor(0.2488)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5799) KL loss: tensor(0.2323)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1271) KL loss: tensor(0.0654)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2567) KL loss: tensor(0.1237)
+         GM acc on global data: 0.5813 length of data: 10000
+-------------Round number:  87  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1451) KL loss: tensor(0.0797)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1603) KL loss: tensor(0.1040)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1444) KL loss: tensor(0.0815)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3795) KL loss: tensor(0.1959)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1898) KL loss: tensor(0.0845)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1774) KL loss: tensor(0.0835)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2614) KL loss: tensor(0.1087)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0983) KL loss: tensor(0.0678)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2592) KL loss: tensor(0.1190)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1373) KL loss: tensor(0.0796)
+         GM acc on global data: 0.5833 length of data: 10000
+-------------Round number:  88  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1149) KL loss: tensor(0.0725)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2200) KL loss: tensor(0.0924)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2568) KL loss: tensor(0.1008)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1432) KL loss: tensor(0.0708)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0929) KL loss: tensor(0.0676)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1520) KL loss: tensor(0.0906)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2109) KL loss: tensor(0.0751)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1805) KL loss: tensor(0.0901)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1717) KL loss: tensor(0.0854)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3676) KL loss: tensor(0.1302)
+         GM acc on global data: 0.583 length of data: 10000
+-------------Round number:  89  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2211) KL loss: tensor(0.1083)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2150) KL loss: tensor(0.1032)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1715) KL loss: tensor(0.0806)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1309) KL loss: tensor(0.0739)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1702) KL loss: tensor(0.0820)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1455) KL loss: tensor(0.0856)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2363) KL loss: tensor(0.1362)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3172) KL loss: tensor(0.1629)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1855) KL loss: tensor(0.0877)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2019) KL loss: tensor(0.1041)
+         GM acc on global data: 0.584 length of data: 10000
+-------------Round number:  90  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1660) KL loss: tensor(0.0819)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1108) KL loss: tensor(0.0724)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2871) KL loss: tensor(0.1296)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2678) KL loss: tensor(0.1554)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1679) KL loss: tensor(0.0987)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1821) KL loss: tensor(0.0780)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1534) KL loss: tensor(0.0872)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2420) KL loss: tensor(0.0950)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1818) KL loss: tensor(0.0867)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2419) KL loss: tensor(0.1032)
+         GM acc on global data: 0.5845 length of data: 10000
+-------------Round number:  91  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1824) KL loss: tensor(0.0849)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1433) KL loss: tensor(0.0788)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2536) KL loss: tensor(0.1187)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1708) KL loss: tensor(0.0904)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5794) KL loss: tensor(0.1950)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1512) KL loss: tensor(0.0775)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1459) KL loss: tensor(0.0684)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2996) KL loss: tensor(0.1214)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1936) KL loss: tensor(0.1142)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2858) KL loss: tensor(0.1081)
+         GM acc on global data: 0.5837 length of data: 10000
+-------------Round number:  92  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1150) KL loss: tensor(0.0747)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2524) KL loss: tensor(0.0886)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1508) KL loss: tensor(0.0761)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2558) KL loss: tensor(0.1043)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3057) KL loss: tensor(0.1084)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1532) KL loss: tensor(0.0827)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3745) KL loss: tensor(0.1994)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2300) KL loss: tensor(0.0921)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3486) KL loss: tensor(0.1036)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1422) KL loss: tensor(0.0764)
+         GM acc on global data: 0.5886 length of data: 10000
+save a model
+-------------Round number:  93  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1534) KL loss: tensor(0.0878)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1519) KL loss: tensor(0.0922)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1501) KL loss: tensor(0.0841)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1276) KL loss: tensor(0.0840)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1853) KL loss: tensor(0.1033)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2374) KL loss: tensor(0.1034)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1758) KL loss: tensor(0.0989)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2528) KL loss: tensor(0.1021)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2011) KL loss: tensor(0.0876)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2106) KL loss: tensor(0.1037)
+         GM acc on global data: 0.5854 length of data: 10000
+-------------Round number:  94  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2834) KL loss: tensor(0.0979)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1230) KL loss: tensor(0.0671)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1664) KL loss: tensor(0.0949)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1447) KL loss: tensor(0.0692)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1958) KL loss: tensor(0.0808)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1849) KL loss: tensor(0.0799)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3247) KL loss: tensor(0.1655)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2274) KL loss: tensor(0.1078)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1727) KL loss: tensor(0.0859)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1019) KL loss: tensor(0.0682)
+         GM acc on global data: 0.5895 length of data: 10000
+save a model
+-------------Round number:  95  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.4597) KL loss: tensor(0.1644)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1284) KL loss: tensor(0.0822)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1585) KL loss: tensor(0.0875)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3569) KL loss: tensor(0.1688)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1023) KL loss: tensor(0.0706)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2153) KL loss: tensor(0.0989)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2453) KL loss: tensor(0.1006)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1050) KL loss: tensor(0.0754)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2346) KL loss: tensor(0.1451)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1669) KL loss: tensor(0.0938)
+         GM acc on global data: 0.5899 length of data: 10000
+save a model
+-------------Round number:  96  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1796) KL loss: tensor(0.0901)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2017) KL loss: tensor(0.0885)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1734) KL loss: tensor(0.0942)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1970) KL loss: tensor(0.0834)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1358) KL loss: tensor(0.0687)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0884) KL loss: tensor(0.0602)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1340) KL loss: tensor(0.0794)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1596) KL loss: tensor(0.0969)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2420) KL loss: tensor(0.1063)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5553) KL loss: tensor(0.2322)
+         GM acc on global data: 0.5862 length of data: 10000
+-------------Round number:  97  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1633) KL loss: tensor(0.0899)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2322) KL loss: tensor(0.0912)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1756) KL loss: tensor(0.0883)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1286) KL loss: tensor(0.0763)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1051) KL loss: tensor(0.0668)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0923) KL loss: tensor(0.0667)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1874) KL loss: tensor(0.0866)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1572) KL loss: tensor(0.0886)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1796) KL loss: tensor(0.0867)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1763) KL loss: tensor(0.0865)
+         GM acc on global data: 0.5788 length of data: 10000
+-------------Round number:  98  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.3030) KL loss: tensor(0.1095)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1767) KL loss: tensor(0.0762)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2372) KL loss: tensor(0.0980)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1601) KL loss: tensor(0.0845)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0927) KL loss: tensor(0.0653)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1499) KL loss: tensor(0.0803)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1628) KL loss: tensor(0.0738)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2906) KL loss: tensor(0.0977)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1303) KL loss: tensor(0.0672)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1846) KL loss: tensor(0.0992)
+         GM acc on global data: 0.5772 length of data: 10000
+-------------Round number:  99  -------------
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1047) KL loss: tensor(0.0673)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1219) KL loss: tensor(0.0736)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1400) KL loss: tensor(0.0775)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.5469) KL loss: tensor(0.2221)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1551) KL loss: tensor(0.0796)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2240) KL loss: tensor(0.0903)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1848) KL loss: tensor(0.1061)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.2533) KL loss: tensor(0.1160)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.1577) KL loss: tensor(0.0952)
+loss: NT_CE learning rate: 0.0001
+training loss: tensor(0.0780) KL loss: tensor(0.0571)
+         GM acc on global data: 0.5861 length of data: 10000

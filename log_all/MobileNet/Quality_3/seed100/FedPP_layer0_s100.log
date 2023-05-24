@@ -1,0 +1,2953 @@
+nohup: ignoring input
+================================================================================
+Summary of training process:
+Dataset                : Cifar10
+Batch size             : 64
+Learing rate           : 0.001
+Number of total clients: 100
+Split method           : quantity
+Split parameter        : 3.0
+Clients per round      : 10
+Number of global rounds: 100
+Number of local rounds : 10
+Feature from layer     : 0
+Feature percentage     : 0.1
+Local training loss    : CE_CE_KL
+Loss of beta           : 1.0
+Algorithm              : FedFea
+Modelname              : MOBNET
+Mode                   : training
+Seed                   : 100
+================================================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Class frequencies:
+client,class0,class1,class2,class3,class4,class5,class6,class7,class8,class9,Amount
+Client   0,0.298,0.00,0.00,0.00,0.00,0.375,0.00,0.00,0.327,0.00,496
+Client   1,0.00,0.321,0.00,0.00,0.00,0.358,0.00,0.00,0.00,0.321,520
+Client   2,0.307,0.346,0.346,0.00,0.00,0.00,0.00,0.00,0.00,0.00,482
+Client   3,0.00,0.00,0.00,0.337,0.00,0.00,0.377,0.286,0.00,0.00,531
+Client   4,0.00,0.00,0.340,0.00,0.320,0.00,0.00,0.00,0.00,0.340,491
+Client   5,0.00,0.00,0.327,0.00,0.308,0.365,0.00,0.00,0.00,0.00,510
+Client   6,0.00,0.00,0.319,0.00,0.300,0.00,0.382,0.00,0.00,0.00,524
+Client   7,0.00,0.00,0.00,0.00,0.330,0.00,0.00,0.319,0.00,0.351,476
+Client   8,0.00,0.347,0.00,0.00,0.00,0.00,0.00,0.316,0.337,0.00,481
+Client   9,0.286,0.00,0.00,0.00,0.00,0.00,0.389,0.00,0.00,0.325,514
+Client  10,0.315,0.00,0.00,0.00,0.00,0.00,0.00,0.326,0.00,0.358,466
+Client  11,0.00,0.313,0.00,0.00,0.00,0.00,0.375,0.00,0.00,0.313,534
+Client  12,0.306,0.347,0.347,0.00,0.00,0.00,0.00,0.00,0.00,0.00,481
+Client  13,0.00,0.329,0.00,0.352,0.00,0.00,0.00,0.00,0.319,0.00,508
+Client  14,0.00,0.00,0.00,0.359,0.315,0.00,0.00,0.00,0.325,0.00,498
+Client  15,0.00,0.00,0.00,0.00,0.00,0.361,0.00,0.00,0.315,0.324,515
+Client  16,0.00,0.00,0.00,0.337,0.00,0.00,0.377,0.286,0.00,0.00,531
+Client  17,0.00,0.00,0.00,0.00,0.00,0.346,0.372,0.283,0.00,0.00,538
+Client  18,0.00,0.337,0.00,0.00,0.00,0.00,0.00,0.00,0.327,0.337,496
+Client  19,0.00,0.00,0.00,0.356,0.312,0.00,0.00,0.00,0.00,0.332,503
+Client  20,0.309,0.351,0.00,0.00,0.00,0.00,0.00,0.00,0.340,0.00,476
+Client  21,0.312,0.355,0.00,0.00,0.333,0.00,0.00,0.00,0.00,0.00,471
+Client  22,0.00,0.00,0.326,0.349,0.00,0.00,0.00,0.00,0.00,0.326,513
+Client  23,0.298,0.00,0.339,0.363,0.00,0.00,0.00,0.00,0.00,0.00,493
+Client  24,0.00,0.00,0.340,0.00,0.320,0.00,0.00,0.00,0.00,0.340,491
+Client  25,0.00,0.00,0.00,0.00,0.00,0.367,0.00,0.302,0.00,0.331,504
+Client  26,0.00,0.00,0.00,0.00,0.00,0.00,0.378,0.00,0.306,0.316,529
+Client  27,0.00,0.00,0.00,0.368,0.320,0.00,0.00,0.312,0.00,0.00,487
+Client  28,0.00,0.00,0.00,0.00,0.00,0.360,0.00,0.00,0.315,0.325,514
+Client  29,0.00,0.00,0.00,0.328,0.00,0.00,0.366,0.00,0.00,0.306,546
+Client  30,0.309,0.00,0.352,0.00,0.00,0.00,0.00,0.00,0.339,0.00,475
+Client  31,0.00,0.344,0.00,0.00,0.00,0.00,0.00,0.313,0.00,0.344,486
+Client  32,0.00,0.00,0.335,0.359,0.00,0.00,0.00,0.305,0.00,0.00,498
+Client  33,0.302,0.00,0.00,0.368,0.00,0.00,0.00,0.00,0.331,0.00,487
+Client  34,0.00,0.352,0.00,0.00,0.328,0.00,0.00,0.320,0.00,0.00,475
+Client  35,0.00,0.315,0.00,0.337,0.00,0.348,0.00,0.00,0.00,0.00,531
+Client  36,0.289,0.00,0.00,0.00,0.00,0.00,0.394,0.00,0.317,0.00,508
+Client  37,0.00,0.00,0.00,0.00,0.307,0.00,0.394,0.299,0.00,0.00,508
+Client  38,0.00,0.00,0.00,0.00,0.00,0.339,0.366,0.00,0.295,0.00,546
+Client  39,0.00,0.00,0.322,0.00,0.00,0.356,0.00,0.00,0.00,0.322,519
+Client  40,0.320,0.00,0.00,0.00,0.00,0.00,0.00,0.330,0.350,0.00,460
+Client  41,0.00,0.352,0.00,0.00,0.328,0.00,0.00,0.320,0.00,0.00,475
+Client  42,0.00,0.00,0.352,0.00,0.328,0.00,0.00,0.320,0.00,0.00,475
+Client  43,0.298,0.00,0.00,0.363,0.00,0.00,0.00,0.00,0.00,0.339,493
+Client  44,0.313,0.00,0.355,0.00,0.332,0.00,0.00,0.00,0.00,0.00,470
+Client  45,0.00,0.331,0.00,0.00,0.00,0.367,0.00,0.302,0.00,0.00,504
+Client  46,0.00,0.00,0.00,0.00,0.00,0.00,0.385,0.293,0.00,0.322,519
+Client  47,0.00,0.00,0.00,0.00,0.333,0.00,0.00,0.323,0.344,0.00,468
+Client  48,0.309,0.352,0.00,0.00,0.00,0.00,0.00,0.00,0.339,0.00,475
+Client  49,0.00,0.00,0.337,0.00,0.00,0.00,0.00,0.00,0.325,0.337,495
+Client  50,0.298,0.339,0.00,0.363,0.00,0.00,0.00,0.00,0.00,0.00,493
+Client  51,0.00,0.344,0.344,0.00,0.00,0.00,0.00,0.311,0.00,0.00,485
+Client  52,0.286,0.00,0.325,0.00,0.00,0.00,0.389,0.00,0.00,0.00,514
+Client  53,0.00,0.00,0.326,0.350,0.00,0.00,0.00,0.00,0.00,0.324,512
+Client  54,0.00,0.00,0.319,0.00,0.298,0.00,0.382,0.00,0.00,0.00,523
+Client  55,0.304,0.00,0.00,0.00,0.00,0.383,0.00,0.313,0.00,0.00,483
+Client  56,0.00,0.303,0.00,0.00,0.00,0.335,0.362,0.00,0.00,0.00,552
+Client  57,0.00,0.00,0.00,0.00,0.308,0.00,0.394,0.298,0.00,0.00,507
+Client  58,0.289,0.00,0.00,0.00,0.00,0.00,0.394,0.00,0.317,0.00,508
+Client  59,0.00,0.322,0.00,0.00,0.00,0.357,0.00,0.00,0.00,0.320,518
+Client  60,0.306,0.347,0.347,0.00,0.00,0.00,0.00,0.00,0.00,0.00,481
+Client  61,0.00,0.327,0.00,0.00,0.308,0.365,0.00,0.00,0.00,0.00,507
+Client  62,0.316,0.00,0.359,0.00,0.00,0.00,0.00,0.325,0.00,0.00,465
+Client  63,0.00,0.00,0.00,0.354,0.00,0.00,0.00,0.00,0.318,0.328,506
+Client  64,0.00,0.00,0.00,0.00,0.317,0.376,0.00,0.307,0.00,0.00,492
+Client  65,0.295,0.00,0.00,0.00,0.00,0.371,0.00,0.00,0.00,0.333,498
+Client  66,0.00,0.00,0.00,0.327,0.00,0.00,0.368,0.00,0.00,0.305,544
+Client  67,0.00,0.351,0.00,0.00,0.330,0.00,0.00,0.319,0.00,0.00,473
+Client  68,0.00,0.00,0.00,0.00,0.302,0.00,0.387,0.00,0.311,0.00,517
+Client  69,0.00,0.00,0.337,0.00,0.00,0.00,0.00,0.00,0.327,0.337,493
+Client  70,0.304,0.00,0.00,0.00,0.00,0.383,0.00,0.313,0.00,0.00,483
+Client  71,0.00,0.327,0.00,0.00,0.308,0.365,0.00,0.00,0.00,0.00,507
+Client  72,0.00,0.00,0.324,0.00,0.00,0.361,0.00,0.00,0.314,0.00,512
+Client  73,0.00,0.00,0.00,0.340,0.00,0.353,0.00,0.00,0.307,0.00,524
+Client  74,0.00,0.344,0.00,0.00,0.323,0.00,0.00,0.00,0.333,0.00,483
+Client  75,0.304,0.00,0.00,0.00,0.00,0.383,0.00,0.313,0.00,0.00,483
+Client  76,0.00,0.00,0.00,0.333,0.292,0.00,0.375,0.00,0.00,0.00,534
+Client  77,0.317,0.00,0.358,0.00,0.00,0.00,0.00,0.325,0.00,0.00,464
+Client  78,0.00,0.00,0.00,0.340,0.00,0.353,0.00,0.00,0.307,0.00,524
+Client  79,0.00,0.333,0.333,0.00,0.00,0.00,0.00,0.00,0.00,0.333,498
+Client  80,0.306,0.00,0.00,0.370,0.324,0.00,0.00,0.00,0.00,0.00,481
+Client  81,0.287,0.324,0.00,0.00,0.00,0.00,0.390,0.00,0.00,0.00,513
+Client  82,0.317,0.00,0.358,0.00,0.00,0.00,0.00,0.325,0.00,0.00,464
+Client  83,0.00,0.00,0.329,0.352,0.00,0.00,0.00,0.00,0.319,0.00,505
+Client  84,0.306,0.00,0.00,0.370,0.324,0.00,0.00,0.00,0.00,0.00,481
+Client  85,0.00,0.00,0.00,0.00,0.311,0.369,0.00,0.00,0.321,0.00,502
+Client  86,0.00,0.00,0.312,0.00,0.00,0.00,0.376,0.00,0.00,0.312,532
+Client  87,0.309,0.00,0.00,0.374,0.00,0.00,0.00,0.317,0.00,0.00,476
+Client  88,0.00,0.344,0.00,0.00,0.323,0.00,0.00,0.00,0.333,0.00,483
+Client  89,0.00,0.00,0.00,0.327,0.00,0.00,0.368,0.00,0.00,0.305,544
+Client  90,0.309,0.00,0.00,0.374,0.00,0.00,0.00,0.317,0.00,0.00,476
+Client  91,0.00,0.314,0.00,0.336,0.00,0.350,0.00,0.00,0.00,0.00,529
+Client  92,0.313,0.00,0.354,0.00,0.333,0.00,0.00,0.00,0.00,0.00,469
+Client  93,0.00,0.00,0.00,0.340,0.00,0.353,0.00,0.00,0.307,0.00,524
+Client  94,0.00,0.00,0.00,0.00,0.308,0.00,0.394,0.298,0.00,0.00,507
+Client  95,0.00,0.331,0.00,0.00,0.00,0.369,0.00,0.301,0.00,0.00,502
+Client  96,0.287,0.00,0.324,0.00,0.00,0.00,0.390,0.00,0.00,0.00,513
+Client  97,0.00,0.00,0.347,0.00,0.00,0.00,0.00,0.316,0.337,0.00,478
+Client  98,0.00,0.344,0.00,0.00,0.323,0.00,0.00,0.00,0.333,0.00,483
+Client  99,0.313,0.00,0.00,0.00,0.333,0.00,0.00,0.00,0.00,0.354,469
+0 [0 5 8] [0 5 8] [1 2 3 4 6 7 9]
+0 training: Counter({5: 186, 8: 162, 0: 148}) testing iid: Counter({8: 1000, 0: 1000, 5: 1000})
+1 [1 5 9] [1 5 9] [0 2 3 4 6 7 8]
+1 training: Counter({5: 186, 1: 167, 9: 167}) testing iid: Counter({1: 1000, 9: 1000, 5: 1000})
+2 [0 1 2] [0 1 2] [3 4 5 6 7 8 9]
+2 training: Counter({1: 167, 2: 167, 0: 148}) testing iid: Counter({0: 1000, 1: 1000, 2: 1000})
+3 [3 6 7] [3 6 7] [0 1 2 4 5 8 9]
+3 training: Counter({6: 200, 3: 179, 7: 152}) testing iid: Counter({3: 1000, 6: 1000, 7: 1000})
+4 [2 4 9] [2 4 9] [0 1 3 5 6 7 8]
+4 training: Counter({2: 167, 9: 167, 4: 157}) testing iid: Counter({9: 1000, 4: 1000, 2: 1000})
+5 [2 4 5] [2 4 5] [0 1 3 6 7 8 9]
+5 training: Counter({5: 186, 2: 167, 4: 157}) testing iid: Counter({5: 1000, 4: 1000, 2: 1000})
+6 [2 4 6] [2 4 6] [0 1 3 5 7 8 9]
+6 training: Counter({6: 200, 2: 167, 4: 157}) testing iid: Counter({6: 1000, 4: 1000, 2: 1000})
+7 [4 7 9] [4 7 9] [0 1 2 3 5 6 8]
+7 training: Counter({9: 167, 4: 157, 7: 152}) testing iid: Counter({9: 1000, 7: 1000, 4: 1000})
+8 [1 7 8] [1 7 8] [0 2 3 4 5 6 9]
+8 training: Counter({1: 167, 8: 162, 7: 152}) testing iid: Counter({8: 1000, 1: 1000, 7: 1000})
+9 [0 6 9] [0 6 9] [1 2 3 4 5 7 8]
+9 training: Counter({6: 200, 9: 167, 0: 147}) testing iid: Counter({0: 1000, 6: 1000, 9: 1000})
+10 [0 7 9] [0 7 9] [1 2 3 4 5 6 8]
+10 training: Counter({9: 167, 7: 152, 0: 147}) testing iid: Counter({0: 1000, 9: 1000, 7: 1000})
+11 [1 6 9] [1 6 9] [0 2 3 4 5 7 8]
+11 training: Counter({6: 200, 1: 167, 9: 167}) testing iid: Counter({6: 1000, 1: 1000, 9: 1000})
+12 [0 1 2] [0 1 2] [3 4 5 6 7 8 9]
+12 training: Counter({1: 167, 2: 167, 0: 147}) testing iid: Counter({0: 1000, 1: 1000, 2: 1000})
+13 [1 3 8] [1 3 8] [0 2 4 5 6 7 9]
+13 training: Counter({3: 179, 1: 167, 8: 162}) testing iid: Counter({3: 1000, 8: 1000, 1: 1000})
+14 [3 4 8] [3 4 8] [0 1 2 5 6 7 9]
+14 training: Counter({3: 179, 8: 162, 4: 157}) testing iid: Counter({3: 1000, 8: 1000, 4: 1000})
+15 [5 8 9] [5 8 9] [0 1 2 3 4 6 7]
+15 training: Counter({5: 186, 9: 167, 8: 162}) testing iid: Counter({8: 1000, 9: 1000, 5: 1000})
+16 [3 6 7] [3 6 7] [0 1 2 4 5 8 9]
+16 training: Counter({6: 200, 3: 179, 7: 152}) testing iid: Counter({3: 1000, 6: 1000, 7: 1000})
+17 [5 6 7] [5 6 7] [0 1 2 3 4 8 9]
+17 training: Counter({6: 200, 5: 186, 7: 152}) testing iid: Counter({6: 1000, 5: 1000, 7: 1000})
+18 [1 8 9] [1 8 9] [0 2 3 4 5 6 7]
+18 training: Counter({1: 167, 9: 167, 8: 162}) testing iid: Counter({8: 1000, 1: 1000, 9: 1000})
+19 [3 4 9] [3 4 9] [0 1 2 5 6 7 8]
+19 training: Counter({3: 179, 9: 167, 4: 157}) testing iid: Counter({3: 1000, 9: 1000, 4: 1000})
+20 [0 1 8] [0 1 8] [2 3 4 5 6 7 9]
+20 training: Counter({1: 167, 8: 162, 0: 147}) testing iid: Counter({8: 1000, 0: 1000, 1: 1000})
+21 [0 1 4] [0 1 4] [2 3 5 6 7 8 9]
+21 training: Counter({1: 167, 4: 157, 0: 147}) testing iid: Counter({0: 1000, 1: 1000, 4: 1000})
+22 [2 3 9] [2 3 9] [0 1 4 5 6 7 8]
+22 training: Counter({3: 179, 2: 167, 9: 167}) testing iid: Counter({3: 1000, 9: 1000, 2: 1000})
+23 [0 2 3] [0 2 3] [1 4 5 6 7 8 9]
+23 training: Counter({3: 179, 2: 167, 0: 147}) testing iid: Counter({3: 1000, 0: 1000, 2: 1000})
+24 [2 4 9] [2 4 9] [0 1 3 5 6 7 8]
+24 training: Counter({2: 167, 9: 167, 4: 157}) testing iid: Counter({9: 1000, 4: 1000, 2: 1000})
+25 [5 7 9] [5 7 9] [0 1 2 3 4 6 8]
+25 training: Counter({5: 185, 9: 167, 7: 152}) testing iid: Counter({9: 1000, 5: 1000, 7: 1000})
+26 [6 8 9] [6 8 9] [0 1 2 3 4 5 7]
+26 training: Counter({6: 200, 9: 167, 8: 162}) testing iid: Counter({8: 1000, 6: 1000, 9: 1000})
+27 [3 4 7] [3 4 7] [0 1 2 5 6 8 9]
+27 training: Counter({3: 179, 4: 156, 7: 152}) testing iid: Counter({3: 1000, 7: 1000, 4: 1000})
+28 [5 8 9] [5 8 9] [0 1 2 3 4 6 7]
+28 training: Counter({5: 185, 9: 167, 8: 162}) testing iid: Counter({8: 1000, 9: 1000, 5: 1000})
+29 [3 6 9] [3 6 9] [0 1 2 4 5 7 8]
+29 training: Counter({6: 200, 3: 179, 9: 167}) testing iid: Counter({3: 1000, 6: 1000, 9: 1000})
+30 [0 2 8] [0 2 8] [1 3 4 5 6 7 9]
+30 training: Counter({2: 167, 8: 161, 0: 147}) testing iid: Counter({8: 1000, 0: 1000, 2: 1000})
+31 [1 7 9] [1 7 9] [0 2 3 4 5 6 8]
+31 training: Counter({1: 167, 9: 167, 7: 152}) testing iid: Counter({1: 1000, 9: 1000, 7: 1000})
+32 [2 3 7] [2 3 7] [0 1 4 5 6 8 9]
+32 training: Counter({3: 179, 2: 167, 7: 152}) testing iid: Counter({3: 1000, 7: 1000, 2: 1000})
+33 [0 3 8] [0 3 8] [1 2 4 5 6 7 9]
+33 training: Counter({3: 179, 8: 161, 0: 147}) testing iid: Counter({3: 1000, 8: 1000, 0: 1000})
+34 [1 4 7] [1 4 7] [0 2 3 5 6 8 9]
+34 training: Counter({1: 167, 4: 156, 7: 152}) testing iid: Counter({1: 1000, 7: 1000, 4: 1000})
+35 [1 3 5] [1 3 5] [0 2 4 6 7 8 9]
+35 training: Counter({5: 185, 3: 179, 1: 167}) testing iid: Counter({3: 1000, 1: 1000, 5: 1000})
+36 [0 6 8] [0 6 8] [1 2 3 4 5 7 9]
+36 training: Counter({6: 200, 8: 161, 0: 147}) testing iid: Counter({8: 1000, 0: 1000, 6: 1000})
+37 [4 6 7] [4 6 7] [0 1 2 3 5 8 9]
+37 training: Counter({6: 200, 4: 156, 7: 152}) testing iid: Counter({6: 1000, 7: 1000, 4: 1000})
+38 [5 6 8] [5 6 8] [0 1 2 3 4 7 9]
+38 training: Counter({6: 200, 5: 185, 8: 161}) testing iid: Counter({8: 1000, 6: 1000, 5: 1000})
+39 [2 5 9] [2 5 9] [0 1 3 4 6 7 8]
+39 training: Counter({5: 185, 2: 167, 9: 167}) testing iid: Counter({9: 1000, 5: 1000, 2: 1000})
+40 [0 7 8] [0 7 8] [1 2 3 4 5 6 9]
+40 training: Counter({8: 161, 7: 152, 0: 147}) testing iid: Counter({8: 1000, 0: 1000, 7: 1000})
+41 [1 4 7] [1 4 7] [0 2 3 5 6 8 9]
+41 training: Counter({1: 167, 4: 156, 7: 152}) testing iid: Counter({1: 1000, 7: 1000, 4: 1000})
+42 [2 4 7] [2 4 7] [0 1 3 5 6 8 9]
+42 training: Counter({2: 167, 4: 156, 7: 152}) testing iid: Counter({7: 1000, 4: 1000, 2: 1000})
+43 [0 3 9] [0 3 9] [1 2 4 5 6 7 8]
+43 training: Counter({3: 179, 9: 167, 0: 147}) testing iid: Counter({3: 1000, 0: 1000, 9: 1000})
+44 [0 2 4] [0 2 4] [1 3 5 6 7 8 9]
+44 training: Counter({2: 167, 4: 156, 0: 147}) testing iid: Counter({0: 1000, 4: 1000, 2: 1000})
+45 [1 5 7] [1 5 7] [0 2 3 4 6 8 9]
+45 training: Counter({5: 185, 1: 167, 7: 152}) testing iid: Counter({1: 1000, 5: 1000, 7: 1000})
+46 [6 7 9] [6 7 9] [0 1 2 3 4 5 8]
+46 training: Counter({6: 200, 9: 167, 7: 152}) testing iid: Counter({6: 1000, 9: 1000, 7: 1000})
+47 [4 7 8] [4 7 8] [0 1 2 3 5 6 9]
+47 training: Counter({8: 161, 4: 156, 7: 151}) testing iid: Counter({8: 1000, 7: 1000, 4: 1000})
+48 [0 1 8] [0 1 8] [2 3 4 5 6 7 9]
+48 training: Counter({1: 167, 8: 161, 0: 147}) testing iid: Counter({8: 1000, 0: 1000, 1: 1000})
+49 [2 8 9] [2 8 9] [0 1 3 4 5 6 7]
+49 training: Counter({2: 167, 9: 167, 8: 161}) testing iid: Counter({8: 1000, 9: 1000, 2: 1000})
+50 [0 1 3] [0 1 3] [2 4 5 6 7 8 9]
+50 training: Counter({3: 179, 1: 167, 0: 147}) testing iid: Counter({3: 1000, 0: 1000, 1: 1000})
+51 [1 2 7] [1 2 7] [0 3 4 5 6 8 9]
+51 training: Counter({1: 167, 2: 167, 7: 151}) testing iid: Counter({1: 1000, 7: 1000, 2: 1000})
+52 [0 2 6] [0 2 6] [1 3 4 5 7 8 9]
+52 training: Counter({6: 200, 2: 167, 0: 147}) testing iid: Counter({0: 1000, 6: 1000, 2: 1000})
+53 [2 3 9] [2 3 9] [0 1 4 5 6 7 8]
+53 training: Counter({3: 179, 2: 167, 9: 166}) testing iid: Counter({3: 1000, 9: 1000, 2: 1000})
+54 [2 4 6] [2 4 6] [0 1 3 5 7 8 9]
+54 training: Counter({6: 200, 2: 167, 4: 156}) testing iid: Counter({6: 1000, 4: 1000, 2: 1000})
+55 [0 5 7] [0 5 7] [1 2 3 4 6 8 9]
+55 training: Counter({5: 185, 7: 151, 0: 147}) testing iid: Counter({0: 1000, 5: 1000, 7: 1000})
+56 [1 5 6] [1 5 6] [0 2 3 4 7 8 9]
+56 training: Counter({6: 200, 5: 185, 1: 167}) testing iid: Counter({6: 1000, 1: 1000, 5: 1000})
+57 [4 6 7] [4 6 7] [0 1 2 3 5 8 9]
+57 training: Counter({6: 200, 4: 156, 7: 151}) testing iid: Counter({6: 1000, 7: 1000, 4: 1000})
+58 [0 6 8] [0 6 8] [1 2 3 4 5 7 9]
+58 training: Counter({6: 200, 8: 161, 0: 147}) testing iid: Counter({8: 1000, 0: 1000, 6: 1000})
+59 [1 5 9] [1 5 9] [0 2 3 4 6 7 8]
+59 training: Counter({5: 185, 1: 167, 9: 166}) testing iid: Counter({1: 1000, 9: 1000, 5: 1000})
+60 [0 1 2] [0 1 2] [3 4 5 6 7 8 9]
+60 training: Counter({1: 167, 2: 167, 0: 147}) testing iid: Counter({0: 1000, 1: 1000, 2: 1000})
+61 [1 4 5] [1 4 5] [0 2 3 6 7 8 9]
+61 training: Counter({5: 185, 1: 166, 4: 156}) testing iid: Counter({1: 1000, 5: 1000, 4: 1000})
+62 [0 2 7] [0 2 7] [1 3 4 5 6 8 9]
+62 training: Counter({2: 167, 7: 151, 0: 147}) testing iid: Counter({0: 1000, 7: 1000, 2: 1000})
+63 [3 8 9] [3 8 9] [0 1 2 4 5 6 7]
+63 training: Counter({3: 179, 9: 166, 8: 161}) testing iid: Counter({3: 1000, 8: 1000, 9: 1000})
+64 [4 5 7] [4 5 7] [0 1 2 3 6 8 9]
+64 training: Counter({5: 185, 4: 156, 7: 151}) testing iid: Counter({5: 1000, 7: 1000, 4: 1000})
+65 [0 5 9] [0 5 9] [1 2 3 4 6 7 8]
+65 training: Counter({5: 185, 9: 166, 0: 147}) testing iid: Counter({0: 1000, 9: 1000, 5: 1000})
+66 [3 6 9] [3 6 9] [0 1 2 4 5 7 8]
+66 training: Counter({6: 200, 3: 178, 9: 166}) testing iid: Counter({3: 1000, 6: 1000, 9: 1000})
+67 [1 4 7] [1 4 7] [0 2 3 5 6 8 9]
+67 training: Counter({1: 166, 4: 156, 7: 151}) testing iid: Counter({1: 1000, 7: 1000, 4: 1000})
+68 [4 6 8] [4 6 8] [0 1 2 3 5 7 9]
+68 training: Counter({6: 200, 8: 161, 4: 156}) testing iid: Counter({8: 1000, 6: 1000, 4: 1000})
+69 [2 8 9] [2 8 9] [0 1 3 4 5 6 7]
+69 training: Counter({2: 166, 9: 166, 8: 161}) testing iid: Counter({8: 1000, 9: 1000, 2: 1000})
+70 [0 5 7] [0 5 7] [1 2 3 4 6 8 9]
+70 training: Counter({5: 185, 7: 151, 0: 147}) testing iid: Counter({0: 1000, 5: 1000, 7: 1000})
+71 [1 4 5] [1 4 5] [0 2 3 6 7 8 9]
+71 training: Counter({5: 185, 1: 166, 4: 156}) testing iid: Counter({1: 1000, 5: 1000, 4: 1000})
+72 [2 5 8] [2 5 8] [0 1 3 4 6 7 9]
+72 training: Counter({5: 185, 2: 166, 8: 161}) testing iid: Counter({8: 1000, 5: 1000, 2: 1000})
+73 [3 5 8] [3 5 8] [0 1 2 4 6 7 9]
+73 training: Counter({5: 185, 3: 178, 8: 161}) testing iid: Counter({3: 1000, 8: 1000, 5: 1000})
+74 [1 4 8] [1 4 8] [0 2 3 5 6 7 9]
+74 training: Counter({1: 166, 8: 161, 4: 156}) testing iid: Counter({8: 1000, 1: 1000, 4: 1000})
+75 [0 5 7] [0 5 7] [1 2 3 4 6 8 9]
+75 training: Counter({5: 185, 7: 151, 0: 147}) testing iid: Counter({0: 1000, 5: 1000, 7: 1000})
+76 [3 4 6] [3 4 6] [0 1 2 5 7 8 9]
+76 training: Counter({6: 200, 3: 178, 4: 156}) testing iid: Counter({3: 1000, 6: 1000, 4: 1000})
+77 [0 2 7] [0 2 7] [1 3 4 5 6 8 9]
+77 training: Counter({2: 166, 7: 151, 0: 147}) testing iid: Counter({0: 1000, 7: 1000, 2: 1000})
+78 [3 5 8] [3 5 8] [0 1 2 4 6 7 9]
+78 training: Counter({5: 185, 3: 178, 8: 161}) testing iid: Counter({3: 1000, 8: 1000, 5: 1000})
+79 [1 2 9] [1 2 9] [0 3 4 5 6 7 8]
+79 training: Counter({1: 166, 2: 166, 9: 166}) testing iid: Counter({1: 1000, 9: 1000, 2: 1000})
+80 [0 3 4] [0 3 4] [1 2 5 6 7 8 9]
+80 training: Counter({3: 178, 4: 156, 0: 147}) testing iid: Counter({3: 1000, 0: 1000, 4: 1000})
+81 [0 1 6] [0 1 6] [2 3 4 5 7 8 9]
+81 training: Counter({6: 200, 1: 166, 0: 147}) testing iid: Counter({0: 1000, 6: 1000, 1: 1000})
+82 [0 2 7] [0 2 7] [1 3 4 5 6 8 9]
+82 training: Counter({2: 166, 7: 151, 0: 147}) testing iid: Counter({0: 1000, 7: 1000, 2: 1000})
+83 [2 3 8] [2 3 8] [0 1 4 5 6 7 9]
+83 training: Counter({3: 178, 2: 166, 8: 161}) testing iid: Counter({3: 1000, 8: 1000, 2: 1000})
+84 [0 3 4] [0 3 4] [1 2 5 6 7 8 9]
+84 training: Counter({3: 178, 4: 156, 0: 147}) testing iid: Counter({3: 1000, 0: 1000, 4: 1000})
+85 [4 5 8] [4 5 8] [0 1 2 3 6 7 9]
+85 training: Counter({5: 185, 8: 161, 4: 156}) testing iid: Counter({8: 1000, 5: 1000, 4: 1000})
+86 [2 6 9] [2 6 9] [0 1 3 4 5 7 8]
+86 training: Counter({6: 200, 2: 166, 9: 166}) testing iid: Counter({6: 1000, 9: 1000, 2: 1000})
+87 [0 3 7] [0 3 7] [1 2 4 5 6 8 9]
+87 training: Counter({3: 178, 7: 151, 0: 147}) testing iid: Counter({3: 1000, 0: 1000, 7: 1000})
+88 [1 4 8] [1 4 8] [0 2 3 5 6 7 9]
+88 training: Counter({1: 166, 8: 161, 4: 156}) testing iid: Counter({8: 1000, 1: 1000, 4: 1000})
+89 [3 6 9] [3 6 9] [0 1 2 4 5 7 8]
+89 training: Counter({6: 200, 3: 178, 9: 166}) testing iid: Counter({3: 1000, 6: 1000, 9: 1000})
+90 [0 3 7] [0 3 7] [1 2 4 5 6 8 9]
+90 training: Counter({3: 178, 7: 151, 0: 147}) testing iid: Counter({3: 1000, 0: 1000, 7: 1000})
+91 [1 3 5] [1 3 5] [0 2 4 6 7 8 9]
+91 training: Counter({5: 185, 3: 178, 1: 166}) testing iid: Counter({3: 1000, 1: 1000, 5: 1000})
+92 [0 2 4] [0 2 4] [1 3 5 6 7 8 9]
+92 training: Counter({2: 166, 4: 156, 0: 147}) testing iid: Counter({0: 1000, 4: 1000, 2: 1000})
+93 [3 5 8] [3 5 8] [0 1 2 4 6 7 9]
+93 training: Counter({5: 185, 3: 178, 8: 161}) testing iid: Counter({3: 1000, 8: 1000, 5: 1000})
+94 [4 6 7] [4 6 7] [0 1 2 3 5 8 9]
+94 training: Counter({6: 200, 4: 156, 7: 151}) testing iid: Counter({6: 1000, 7: 1000, 4: 1000})
+95 [1 5 7] [1 5 7] [0 2 3 4 6 8 9]
+95 training: Counter({5: 185, 1: 166, 7: 151}) testing iid: Counter({1: 1000, 5: 1000, 7: 1000})
+96 [0 2 6] [0 2 6] [1 3 4 5 7 8 9]
+96 training: Counter({6: 200, 2: 166, 0: 147}) testing iid: Counter({0: 1000, 6: 1000, 2: 1000})
+97 [2 7 8] [2 7 8] [0 1 3 4 5 6 9]
+97 training: Counter({2: 166, 8: 161, 7: 151}) testing iid: Counter({8: 1000, 7: 1000, 2: 1000})
+98 [1 4 8] [1 4 8] [0 2 3 5 6 7 9]
+98 training: Counter({1: 166, 8: 161, 4: 156}) testing iid: Counter({8: 1000, 1: 1000, 4: 1000})
+99 [0 4 9] [0 4 9] [1 2 3 5 6 7 8]
+99 training: Counter({9: 166, 4: 156, 0: 147}) testing iid: Counter({0: 1000, 9: 1000, 4: 1000})
+Num_samples of Training set per client: [496, 520, 482, 531, 491, 510, 524, 476, 481, 514, 466, 534, 481, 508, 498, 515, 531, 538, 496, 503, 476, 471, 513, 493, 491, 504, 529, 487, 514, 546, 475, 486, 498, 487, 475, 531, 508, 508, 546, 519, 460, 475, 475, 493, 470, 504, 519, 468, 475, 495, 493, 485, 514, 512, 523, 483, 552, 507, 508, 518, 481, 507, 465, 506, 492, 498, 544, 473, 517, 493, 483, 507, 512, 524, 483, 483, 534, 464, 524, 498, 481, 513, 464, 505, 481, 502, 532, 476, 483, 544, 476, 529, 469, 524, 507, 502, 513, 478, 483, 469]
+Total_training_samples: 50000
+Global test set: 10000
+Finish Generating Samples, distribution saved
+MobileNetV2(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layers): Sequential(
+    (0): Block(
+      (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Block(
+      (conv1): Conv2d(16, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=96, bias=False)
+      (bn2): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(96, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(16, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (3): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (4): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (5): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (6): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (7): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (8): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (9): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (10): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (11): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (12): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (13): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (14): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (15): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (16): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(160, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (conv2): Conv2d(320, 1280, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn2): BatchNorm2d(1280, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear): Linear(in_features=1280, out_features=10, bias=True)
+)
+number of parameters: 2296922
+clients initializting...
+output size: 10
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:04<06:42,  4.06s/it]  2%|▏         | 2/100 [00:04<04:58,  3.05s/it]  3%|▎         | 3/100 [00:05<03:47,  2.34s/it]  4%|▍         | 4/100 [00:06<02:57,  1.84s/it]  5%|▌         | 5/100 [00:06<02:20,  1.48s/it]  6%|▌         | 6/100 [00:07<01:56,  1.24s/it]  7%|▋         | 7/100 [00:08<01:39,  1.07s/it]  8%|▊         | 8/100 [00:08<01:27,  1.05it/s]  9%|▉         | 9/100 [00:09<01:19,  1.14it/s] 10%|█         | 10/100 [00:10<01:14,  1.21it/s] 11%|█         | 11/100 [00:10<01:09,  1.28it/s] 12%|█▏        | 12/100 [00:11<01:05,  1.33it/s] 13%|█▎        | 13/100 [00:12<01:02,  1.39it/s] 14%|█▍        | 14/100 [00:12<01:00,  1.42it/s] 15%|█▌        | 15/100 [00:13<00:58,  1.45it/s] 16%|█▌        | 16/100 [00:14<00:57,  1.47it/s] 17%|█▋        | 17/100 [00:14<00:56,  1.48it/s] 18%|█▊        | 18/100 [00:15<00:55,  1.47it/s] 19%|█▉        | 19/100 [00:16<00:55,  1.47it/s] 20%|██        | 20/100 [00:16<00:54,  1.47it/s] 21%|██        | 21/100 [00:17<00:54,  1.46it/s] 22%|██▏       | 22/100 [00:18<00:53,  1.46it/s] 23%|██▎       | 23/100 [00:18<00:52,  1.47it/s] 24%|██▍       | 24/100 [00:19<00:51,  1.47it/s] 25%|██▌       | 25/100 [00:20<00:50,  1.49it/s] 26%|██▌       | 26/100 [00:20<00:50,  1.47it/s] 27%|██▋       | 27/100 [00:21<00:49,  1.47it/s] 28%|██▊       | 28/100 [00:22<00:48,  1.47it/s] 29%|██▉       | 29/100 [00:23<00:48,  1.45it/s] 30%|███       | 30/100 [00:23<00:48,  1.44it/s] 31%|███       | 31/100 [00:24<00:48,  1.43it/s] 32%|███▏      | 32/100 [00:25<00:47,  1.42it/s] 33%|███▎      | 33/100 [00:25<00:46,  1.43it/s] 34%|███▍      | 34/100 [00:26<00:45,  1.45it/s] 35%|███▌      | 35/100 [00:27<00:44,  1.44it/s] 36%|███▌      | 36/100 [00:31<01:45,  1.65s/it] 37%|███▋      | 37/100 [00:31<01:25,  1.36s/it] 38%|███▊      | 38/100 [00:32<01:11,  1.16s/it] 39%|███▉      | 39/100 [00:33<01:02,  1.02s/it] 40%|████      | 40/100 [00:33<00:55,  1.08it/s] 41%|████      | 41/100 [00:34<00:49,  1.19it/s] 42%|████▏     | 42/100 [00:35<00:46,  1.26it/s] 43%|████▎     | 43/100 [00:35<00:43,  1.32it/s] 44%|████▍     | 44/100 [00:36<00:41,  1.36it/s] 45%|████▌     | 45/100 [00:37<00:39,  1.39it/s] 46%|████▌     | 46/100 [00:37<00:38,  1.42it/s] 47%|████▋     | 47/100 [00:38<00:37,  1.41it/s] 48%|████▊     | 48/100 [00:39<00:37,  1.39it/s] 49%|████▉     | 49/100 [00:40<00:36,  1.40it/s] 50%|█████     | 50/100 [00:40<00:35,  1.41it/s] 51%|█████     | 51/100 [00:41<00:35,  1.40it/s] 52%|█████▏    | 52/100 [00:42<00:34,  1.41it/s] 53%|█████▎    | 53/100 [00:42<00:32,  1.43it/s] 54%|█████▍    | 54/100 [00:43<00:31,  1.44it/s] 55%|█████▌    | 55/100 [00:44<00:31,  1.44it/s] 56%|█████▌    | 56/100 [00:44<00:30,  1.45it/s] 57%|█████▋    | 57/100 [00:45<00:29,  1.45it/s] 58%|█████▊    | 58/100 [00:46<00:28,  1.45it/s] 59%|█████▉    | 59/100 [00:47<00:28,  1.45it/s] 60%|██████    | 60/100 [00:47<00:27,  1.46it/s] 61%|██████    | 61/100 [00:48<00:26,  1.47it/s] 62%|██████▏   | 62/100 [00:49<00:25,  1.47it/s] 63%|██████▎   | 63/100 [00:49<00:25,  1.48it/s] 64%|██████▍   | 64/100 [00:50<00:24,  1.48it/s] 65%|██████▌   | 65/100 [00:51<00:23,  1.47it/s] 66%|██████▌   | 66/100 [00:51<00:22,  1.49it/s] 67%|██████▋   | 67/100 [00:52<00:22,  1.48it/s] 68%|██████▊   | 68/100 [00:53<00:21,  1.48it/s] 69%|██████▉   | 69/100 [00:53<00:20,  1.48it/s] 70%|███████   | 70/100 [00:54<00:19,  1.50it/s] 71%|███████   | 71/100 [00:55<00:19,  1.51it/s] 72%|███████▏  | 72/100 [00:55<00:18,  1.51it/s] 73%|███████▎  | 73/100 [00:59<00:45,  1.67s/it] 74%|███████▍  | 74/100 [01:00<00:35,  1.38s/it] 75%|███████▌  | 75/100 [01:01<00:29,  1.18s/it] 76%|███████▌  | 76/100 [01:01<00:24,  1.03s/it] 77%|███████▋  | 77/100 [01:02<00:21,  1.09it/s] 78%|███████▊  | 78/100 [01:03<00:18,  1.18it/s] 79%|███████▉  | 79/100 [01:03<00:16,  1.26it/s] 80%|████████  | 80/100 [01:04<00:15,  1.33it/s] 81%|████████  | 81/100 [01:05<00:13,  1.37it/s] 82%|████████▏ | 82/100 [01:05<00:12,  1.39it/s] 83%|████████▎ | 83/100 [01:06<00:12,  1.40it/s] 84%|████████▍ | 84/100 [01:07<00:11,  1.40it/s] 85%|████████▌ | 85/100 [01:07<00:10,  1.43it/s] 86%|████████▌ | 86/100 [01:08<00:09,  1.44it/s] 87%|████████▋ | 87/100 [01:09<00:09,  1.44it/s] 88%|████████▊ | 88/100 [01:10<00:08,  1.42it/s] 89%|████████▉ | 89/100 [01:10<00:07,  1.43it/s] 90%|█████████ | 90/100 [01:11<00:06,  1.45it/s] 91%|█████████ | 91/100 [01:12<00:06,  1.46it/s] 92%|█████████▏| 92/100 [01:12<00:05,  1.48it/s] 93%|█████████▎| 93/100 [01:13<00:04,  1.51it/s] 94%|█████████▍| 94/100 [01:14<00:03,  1.51it/s] 95%|█████████▌| 95/100 [01:14<00:03,  1.50it/s] 96%|█████████▌| 96/100 [01:15<00:02,  1.47it/s] 97%|█████████▋| 97/100 [01:16<00:02,  1.46it/s] 98%|█████████▊| 98/100 [01:16<00:01,  1.44it/s] 99%|█████████▉| 99/100 [01:17<00:00,  1.43it/s]100%|██████████| 100/100 [01:18<00:00,  1.44it/s]100%|██████████| 100/100 [01:18<00:00,  1.28it/s]
+Number of users per round / total users: 10  /  100
+Finished creating FL server.
+=== Training starts: algorithm FedFea ===
+-------------Round number:  0  -------------
+selected users: [37, 62, 26, 41, 35, 25, 36, 33, 77, 21]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 489
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Local adapation with distilling: 0.001
+Global Model Acc on global data: 0.1323 length of data: 10000
+save a model
+-------------Round number:  1  -------------
+selected users: [16, 1, 43, 67, 89, 21, 97, 51, 6, 41]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 496
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Local adapation with distilling: 0.000982
+Global Model Acc on global data: 0.1046 length of data: 10000
+-------------Round number:  2  -------------
+selected users: [98, 46, 97, 21, 44, 33, 75, 65, 83, 15]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 486
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Local adapation with distilling: 0.000964
+Global Model Acc on global data: 0.1473 length of data: 10000
+save a model
+-------------Round number:  3  -------------
+selected users: [79, 92, 25, 64, 97, 61, 50, 76, 99, 42]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 486
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Local adapation with distilling: 0.000946
+Global Model Acc on global data: 0.1844 length of data: 10000
+save a model
+-------------Round number:  4  -------------
+selected users: [23, 2, 22, 27, 53, 84, 56, 98, 72, 57]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 511
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Local adapation with distilling: 0.0009280000000000001
+Global Model Acc on global data: 0.1977 length of data: 10000
+save a model
+-------------Round number:  5  -------------
+selected users: [52, 26, 40, 89, 90, 85, 3, 87, 63, 92]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+all data: 496
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Local adapation with distilling: 0.00091
+Global Model Acc on global data: 0.2888 length of data: 10000
+save a model
+-------------Round number:  6  -------------
+selected users: [28, 4, 98, 49, 1, 50, 72, 38, 46, 79]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 509
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Local adapation with distilling: 0.000892
+Global Model Acc on global data: 0.3498 length of data: 10000
+save a model
+-------------Round number:  7  -------------
+selected users: [35, 46, 1, 32, 90, 77, 10, 87, 69, 84]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 488
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Local adapation with distilling: 0.000874
+Global Model Acc on global data: 0.4113 length of data: 10000
+save a model
+-------------Round number:  8  -------------
+selected users: [59, 12, 21, 16, 72, 29, 58, 73, 34, 13]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 509
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Local adapation with distilling: 0.000856
+Global Model Acc on global data: 0.4338 length of data: 10000
+save a model
+-------------Round number:  9  -------------
+selected users: [70, 61, 90, 68, 91, 87, 86, 20, 49, 67]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 491
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Local adapation with distilling: 0.0008380000000000001
+Global Model Acc on global data: 0.4503 length of data: 10000
+save a model
+-------------Round number:  10  -------------
+selected users: [14, 88, 71, 30, 75, 63, 24, 87, 98, 19]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 486
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Local adapation with distilling: 0.0008200000000000001
+Global Model Acc on global data: 0.3855 length of data: 10000
+-------------Round number:  11  -------------
+selected users: [15, 53, 44, 16, 90, 20, 89, 91, 92, 36]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 504
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Local adapation with distilling: 0.0008020000000000001
+Global Model Acc on global data: 0.4177 length of data: 10000
+-------------Round number:  12  -------------
+selected users: [0, 64, 55, 36, 33, 45, 73, 84, 56, 80]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 497
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Local adapation with distilling: 0.0007840000000000001
+Global Model Acc on global data: 0.4332 length of data: 10000
+-------------Round number:  13  -------------
+selected users: [76, 53, 98, 13, 52, 38, 94, 43, 20, 48]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 506
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Local adapation with distilling: 0.0007660000000000001
+Global Model Acc on global data: 0.4532 length of data: 10000
+save a model
+-------------Round number:  14  -------------
+selected users: [83, 65, 93, 90, 24, 8, 36, 16, 85, 25]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 498
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Local adapation with distilling: 0.000748
+Global Model Acc on global data: 0.4744 length of data: 10000
+save a model
+-------------Round number:  15  -------------
+selected users: [78, 96, 25, 26, 59, 71, 42, 15, 35, 73]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+all data: 509
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Local adapation with distilling: 0.00073
+Global Model Acc on global data: 0.4813 length of data: 10000
+save a model
+-------------Round number:  16  -------------
+selected users: [38, 69, 7, 33, 15, 78, 20, 34, 56, 32]
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 499
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Local adapation with distilling: 0.000712
+Global Model Acc on global data: 0.4856 length of data: 10000
+save a model
+-------------Round number:  17  -------------
+selected users: [64, 91, 65, 47, 60, 1, 5, 29, 74, 70]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 497
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Local adapation with distilling: 0.000694
+Global Model Acc on global data: 0.5076 length of data: 10000
+save a model
+-------------Round number:  18  -------------
+selected users: [4, 32, 41, 78, 82, 16, 13, 58, 66, 92]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+all data: 496
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Local adapation with distilling: 0.0006760000000000001
+Global Model Acc on global data: 0.5324 length of data: 10000
+save a model
+-------------Round number:  19  -------------
+selected users: [53, 20, 7, 13, 51, 31, 0, 79, 82, 75]
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 489
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Local adapation with distilling: 0.0006580000000000001
+Global Model Acc on global data: 0.5332 length of data: 10000
+save a model
+-------------Round number:  20  -------------
+selected users: [80, 38, 5, 61, 93, 66, 41, 65, 3, 72]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+all data: 515
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Local adapation with distilling: 0.00064
+Global Model Acc on global data: 0.5383 length of data: 10000
+save a model
+-------------Round number:  21  -------------
+selected users: [82, 38, 23, 98, 18, 22, 20, 15, 97, 29]
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+all data: 496
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Local adapation with distilling: 0.0006220000000000002
+Global Model Acc on global data: 0.5406 length of data: 10000
+save a model
+-------------Round number:  22  -------------
+selected users: [49, 96, 3, 34, 17, 85, 53, 27, 37, 90]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 505
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Local adapation with distilling: 0.0006040000000000002
+Global Model Acc on global data: 0.5492 length of data: 10000
+save a model
+-------------Round number:  23  -------------
+selected users: [8, 70, 82, 28, 63, 0, 5, 50, 81, 4]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 492
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Local adapation with distilling: 0.000586
+Global Model Acc on global data: 0.5545 length of data: 10000
+save a model
+-------------Round number:  24  -------------
+selected users: [35, 34, 27, 23, 61, 77, 13, 88, 10, 56]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+all data: 492
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Local adapation with distilling: 0.000568
+Global Model Acc on global data: 0.5579 length of data: 10000
+save a model
+-------------Round number:  25  -------------
+selected users: [65, 2, 49, 6, 83, 73, 33, 8, 54, 48]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 495
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Local adapation with distilling: 0.00055
+Global Model Acc on global data: 0.5584 length of data: 10000
+save a model
+-------------Round number:  26  -------------
+selected users: [13, 18, 88, 63, 37, 43, 20, 0, 47, 5]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 489
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Local adapation with distilling: 0.000532
+Global Model Acc on global data: 0.5504 length of data: 10000
+-------------Round number:  27  -------------
+selected users: [17, 10, 86, 24, 75, 48, 40, 41, 6, 85]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 491
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Local adapation with distilling: 0.000514
+Global Model Acc on global data: 0.5689 length of data: 10000
+save a model
+-------------Round number:  28  -------------
+selected users: [65, 67, 33, 18, 13, 31, 24, 38, 32, 41]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 490
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Local adapation with distilling: 0.000496
+Global Model Acc on global data: 0.5766 length of data: 10000
+save a model
+-------------Round number:  29  -------------
+selected users: [65, 68, 59, 9, 38, 67, 41, 97, 37, 18]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 496
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Local adapation with distilling: 0.0004780000000000001
+Global Model Acc on global data: 0.5759 length of data: 10000
+-------------Round number:  30  -------------
+selected users: [43, 93, 41, 3, 42, 6, 97, 53, 73, 49]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 505
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Local adapation with distilling: 0.00046000000000000007
+Global Model Acc on global data: 0.5788 length of data: 10000
+save a model
+-------------Round number:  31  -------------
+selected users: [58, 91, 28, 46, 13, 2, 34, 49, 81, 23]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 498
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Local adapation with distilling: 0.00044200000000000006
+Global Model Acc on global data: 0.5989 length of data: 10000
+save a model
+-------------Round number:  32  -------------
+selected users: [65, 2, 27, 95, 8, 16, 15, 92, 85, 79]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 492
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Local adapation with distilling: 0.00042400000000000006
+Global Model Acc on global data: 0.6056 length of data: 10000
+save a model
+-------------Round number:  33  -------------
+selected users: [96, 46, 15, 71, 80, 11, 0, 37, 67, 27]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 498
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Local adapation with distilling: 0.00040600000000000006
+Global Model Acc on global data: 0.6057 length of data: 10000
+save a model
+-------------Round number:  34  -------------
+selected users: [39, 45, 78, 25, 90, 98, 48, 47, 72, 66]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+all data: 502
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Local adapation with distilling: 0.000388
+Global Model Acc on global data: 0.5941 length of data: 10000
+-------------Round number:  35  -------------
+selected users: [24, 32, 82, 20, 94, 30, 54, 15, 46, 51]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 490
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Local adapation with distilling: 0.00037
+Global Model Acc on global data: 0.6026 length of data: 10000
+-------------Round number:  36  -------------
+selected users: [16, 55, 28, 84, 49, 99, 86, 67, 87, 53]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+all data: 499
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Local adapation with distilling: 0.0003520000000000001
+Global Model Acc on global data: 0.6077 length of data: 10000
+save a model
+-------------Round number:  37  -------------
+selected users: [88, 73, 90, 93, 87, 13, 0, 53, 18, 20]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 498
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Local adapation with distilling: 0.0003340000000000001
+Global Model Acc on global data: 0.5938 length of data: 10000
+-------------Round number:  38  -------------
+selected users: [74, 23, 41, 55, 8, 44, 12, 97, 88, 45]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 480
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Local adapation with distilling: 0.0003160000000000001
+Global Model Acc on global data: 0.5789 length of data: 10000
+-------------Round number:  39  -------------
+selected users: [52, 82, 14, 7, 40, 45, 23, 39, 74, 68]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 488
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Local adapation with distilling: 0.00029800000000000003
+Global Model Acc on global data: 0.6125 length of data: 10000
+save a model
+-------------Round number:  40  -------------
+selected users: [64, 9, 98, 29, 60, 39, 1, 43, 90, 42]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 496
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Local adapation with distilling: 0.00028000000000000003
+Global Model Acc on global data: 0.6266 length of data: 10000
+save a model
+-------------Round number:  41  -------------
+selected users: [46, 1, 51, 10, 96, 87, 15, 73, 20, 41]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 492
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Local adapation with distilling: 0.000262
+Global Model Acc on global data: 0.6253 length of data: 10000
+-------------Round number:  42  -------------
+selected users: [25, 61, 42, 33, 81, 68, 6, 7, 54, 94]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 498
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Local adapation with distilling: 0.0002440000000000001
+Global Model Acc on global data: 0.6307 length of data: 10000
+save a model
+-------------Round number:  43  -------------
+selected users: [48, 9, 67, 99, 79, 5, 66, 46, 42, 65]
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 492
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Local adapation with distilling: 0.0002260000000000001
+Global Model Acc on global data: 0.6192 length of data: 10000
+-------------Round number:  44  -------------
+selected users: [79, 90, 28, 32, 18, 35, 17, 59, 99, 64]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 497
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Local adapation with distilling: 0.00020800000000000007
+Global Model Acc on global data: 0.6259 length of data: 10000
+-------------Round number:  45  -------------
+selected users: [39, 24, 70, 43, 88, 74, 45, 54, 63, 0]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 494
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Local adapation with distilling: 0.00019000000000000006
+Global Model Acc on global data: 0.6251 length of data: 10000
+-------------Round number:  46  -------------
+selected users: [91, 54, 23, 10, 89, 34, 68, 83, 84, 67]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 496
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Local adapation with distilling: 0.00017200000000000003
+Global Model Acc on global data: 0.6347 length of data: 10000
+save a model
+-------------Round number:  47  -------------
+selected users: [9, 28, 51, 49, 13, 6, 26, 61, 15, 37]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 504
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Local adapation with distilling: 0.00015400000000000003
+Global Model Acc on global data: 0.6264 length of data: 10000
+-------------Round number:  48  -------------
+selected users: [77, 90, 30, 39, 54, 62, 59, 37, 76, 10]
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+all data: 489
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Local adapation with distilling: 0.00013600000000000013
+Global Model Acc on global data: 0.6336 length of data: 10000
+-------------Round number:  49  -------------
+selected users: [50, 72, 62, 53, 76, 94, 25, 13, 42, 51]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 507
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Local adapation with distilling: 0.0001180000000000001
+Global Model Acc on global data: 0.6338 length of data: 10000
+-------------Round number:  50  -------------
+selected users: [85, 57, 52, 32, 35, 20, 39, 72, 8, 89]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+all data: 510
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.632 length of data: 10000
+-------------Round number:  51  -------------
+selected users: [18, 12, 88, 60, 84, 40, 53, 15, 49, 1]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+all data: 496
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6254 length of data: 10000
+-------------Round number:  52  -------------
+selected users: [61, 37, 89, 76, 10, 46, 84, 32, 75, 38]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+all data: 503
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.635 length of data: 10000
+save a model
+-------------Round number:  53  -------------
+selected users: [32, 27, 80, 15, 25, 13, 91, 83, 51, 56]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+all data: 501
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6297 length of data: 10000
+-------------Round number:  54  -------------
+selected users: [93, 62, 98, 13, 5, 77, 2, 65, 96, 53]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+all data: 498
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6312 length of data: 10000
+-------------Round number:  55  -------------
+selected users: [78, 45, 76, 63, 38, 30, 1, 20, 80, 13]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 503
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6242 length of data: 10000
+-------------Round number:  56  -------------
+selected users: [0, 79, 98, 90, 80, 50, 82, 29, 93, 68]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 493
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6267 length of data: 10000
+-------------Round number:  57  -------------
+selected users: [93, 73, 99, 29, 37, 92, 90, 12, 7, 96]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 493
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6286 length of data: 10000
+-------------Round number:  58  -------------
+selected users: [27, 15, 55, 77, 19, 0, 75, 87, 65, 57]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 486
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6201 length of data: 10000
+-------------Round number:  59  -------------
+selected users: [50, 75, 45, 33, 21, 8, 52, 62, 82, 59]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 484
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6283 length of data: 10000
+-------------Round number:  60  -------------
+selected users: [9, 57, 22, 41, 28, 46, 83, 73, 85, 71]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 503
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6363 length of data: 10000
+save a model
+-------------Round number:  61  -------------
+selected users: [91, 7, 93, 55, 62, 9, 25, 20, 98, 30]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 488
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6378 length of data: 10000
+save a model
+-------------Round number:  62  -------------
+selected users: [31, 40, 67, 21, 0, 88, 90, 93, 41, 20]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 478
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6191 length of data: 10000
+-------------Round number:  63  -------------
+selected users: [54, 92, 21, 58, 49, 95, 24, 61, 52, 4]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 493
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6349 length of data: 10000
+-------------Round number:  64  -------------
+selected users: [32, 92, 71, 3, 65, 60, 25, 30, 39, 19]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 493
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6367 length of data: 10000
+-------------Round number:  65  -------------
+selected users: [62, 14, 59, 39, 40, 26, 54, 82, 6, 95]
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 495
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6418 length of data: 10000
+save a model
+-------------Round number:  66  -------------
+selected users: [53, 75, 92, 67, 43, 7, 46, 98, 77, 64]
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 488
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6343 length of data: 10000
+-------------Round number:  67  -------------
+selected users: [61, 35, 96, 93, 2, 95, 40, 5, 26, 11]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+all data: 506
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6433 length of data: 10000
+save a model
+-------------Round number:  68  -------------
+selected users: [33, 60, 31, 76, 79, 86, 16, 19, 47, 68]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 499
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6403 length of data: 10000
+-------------Round number:  69  -------------
+selected users: [13, 31, 85, 69, 87, 59, 2, 46, 67, 40]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+all data: 487
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6388 length of data: 10000
+-------------Round number:  70  -------------
+selected users: [83, 75, 84, 21, 0, 68, 30, 91, 96, 56]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+all data: 498
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.639 length of data: 10000
+-------------Round number:  71  -------------
+selected users: [72, 76, 52, 63, 4, 33, 59, 47, 2, 49]
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 502
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6413 length of data: 10000
+-------------Round number:  72  -------------
+selected users: [17, 56, 35, 15, 96, 30, 24, 75, 39, 0]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 507
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6314 length of data: 10000
+-------------Round number:  73  -------------
+selected users: [70, 1, 20, 90, 94, 82, 80, 73, 27, 8]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 486
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6382 length of data: 10000
+-------------Round number:  74  -------------
+selected users: [13, 96, 94, 55, 6, 21, 51, 10, 34, 50]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 488
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6413 length of data: 10000
+-------------Round number:  75  -------------
+selected users: [17, 80, 47, 42, 99, 76, 48, 94, 25, 24]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 489
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.646 length of data: 10000
+save a model
+-------------Round number:  76  -------------
+selected users: [7, 49, 74, 23, 33, 39, 28, 35, 2, 93]
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+all data: 496
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6387 length of data: 10000
+-------------Round number:  77  -------------
+selected users: [89, 97, 65, 1, 80, 27, 25, 93, 37, 54]
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+all data: 502
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6434 length of data: 10000
+-------------Round number:  78  -------------
+selected users: [1, 32, 94, 87, 33, 50, 91, 52, 77, 59]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 495
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6384 length of data: 10000
+-------------Round number:  79  -------------
+selected users: [93, 94, 18, 27, 50, 29, 80, 40, 20, 56]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+all data: 498
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6361 length of data: 10000
+-------------Round number:  80  -------------
+selected users: [67, 71, 64, 63, 96, 16, 30, 6, 9, 61]
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+all data: 500
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6463 length of data: 10000
+save a model
+-------------Round number:  81  -------------
+selected users: [67, 37, 22, 13, 40, 45, 60, 15, 29, 59]
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 498
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6477 length of data: 10000
+save a model
+-------------Round number:  82  -------------
+selected users: [76, 81, 58, 20, 97, 47, 59, 40, 93, 56]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+all data: 498
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6396 length of data: 10000
+-------------Round number:  83  -------------
+selected users: [58, 34, 18, 69, 26, 86, 72, 45, 29, 9]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 512
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6383 length of data: 10000
+-------------Round number:  84  -------------
+selected users: [87, 50, 18, 81, 51, 70, 34, 42, 15, 77]
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+all data: 483
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6468 length of data: 10000
+-------------Round number:  85  -------------
+selected users: [6, 9, 42, 60, 43, 50, 12, 26, 61, 77]
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+all data: 492
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6422 length of data: 10000
+-------------Round number:  86  -------------
+selected users: [42, 79, 89, 72, 49, 6, 16, 64, 96, 87]
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+all data: 508
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6448 length of data: 10000
+-------------Round number:  87  -------------
+selected users: [92, 29, 94, 81, 27, 4, 65, 32, 41, 12]
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 491
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6287 length of data: 10000
+-------------Round number:  88  -------------
+selected users: [96, 12, 73, 81, 4, 66, 87, 79, 32, 93]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+all data: 502
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6334 length of data: 10000
+-------------Round number:  89  -------------
+selected users: [27, 49, 43, 4, 14, 89, 52, 98, 41, 22]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+all data: 495
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6299 length of data: 10000
+-------------Round number:  90  -------------
+selected users: [62, 72, 26, 47, 41, 60, 28, 45, 91, 79]
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 498
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6464 length of data: 10000
+-------------Round number:  91  -------------
+selected users: [46, 33, 7, 54, 12, 87, 67, 25, 4, 73]
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+all data: 491
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6479 length of data: 10000
+save a model
+-------------Round number:  92  -------------
+selected users: [70, 11, 84, 47, 76, 15, 5, 4, 6, 65]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+all data: 500
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6525 length of data: 10000
+save a model
+-------------Round number:  93  -------------
+selected users: [45, 79, 29, 86, 90, 85, 4, 51, 33, 80]
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 496
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6494 length of data: 10000
+-------------Round number:  94  -------------
+selected users: [10, 62, 25, 13, 35, 90, 83, 6, 46, 75]
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 493
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6478 length of data: 10000
+-------------Round number:  95  -------------
+selected users: [50, 90, 24, 77, 39, 32, 76, 60, 2, 51]
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+all data: 488
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6255 length of data: 10000
+-------------Round number:  96  -------------
+selected users: [80, 87, 37, 77, 4, 97, 82, 73, 61, 29]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+all data: 489
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6368 length of data: 10000
+-------------Round number:  97  -------------
+selected users: [82, 16, 28, 0, 8, 70, 4, 13, 32, 11]
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+all data: 496
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6437 length of data: 10000
+-------------Round number:  98  -------------
+selected users: [11, 38, 53, 19, 87, 42, 40, 78, 60, 35]
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+random features: torch.Size([57, 16, 32, 32]) torch.Size([57])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([46, 16, 32, 32]) torch.Size([46])
+random features: torch.Size([52, 16, 32, 32]) torch.Size([52])
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([53, 16, 32, 32]) torch.Size([53])
+all data: 507
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6513 length of data: 10000
+-------------Round number:  99  -------------
+selected users: [51, 87, 30, 25, 49, 57, 37, 52, 56, 29]
+random features: torch.Size([48, 16, 32, 32]) torch.Size([48])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([47, 16, 32, 32]) torch.Size([47])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([49, 16, 32, 32]) torch.Size([49])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([50, 16, 32, 32]) torch.Size([50])
+random features: torch.Size([51, 16, 32, 32]) torch.Size([51])
+random features: torch.Size([55, 16, 32, 32]) torch.Size([55])
+random features: torch.Size([54, 16, 32, 32]) torch.Size([54])
+all data: 501
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Local adapation with distilling: 0.0001
+Global Model Acc on global data: 0.6477 length of data: 10000

@@ -1,0 +1,4372 @@
+nohup: ignoring input
+================================================================================
+Summary of training process:
+Dataset                : Cifar10
+Batch size             : 64
+Learing rate           : 0.001
+Number of total clients: 100
+Split method           : distribution
+Split parameter        : 0.1
+Clients per round      : 10
+Number of global rounds: 100
+Number of local rounds : 10
+Feature from layer     : 11
+Feature percentage     : 0.1
+Local training loss    : CE_Prox
+Loss of beta           : 0.001
+Algorithm              : FedProx
+Modelname              : MOBNET
+Mode                   : training
+Seed                   : 0
+================================================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Here
+Done
+Class frequencies:
+client,class0,class1,class2,class3,class4,class5,class6,class7,class8,class9,Amount
+Client   0,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.000,171
+Client   1,0.231,0.038,0.00,0.00,0.00,0.077,0.00,0.654,0.00,0.00,52
+Client   2,0.374,0.015,0.00,0.00,0.519,0.011,0.007,0.015,0.00,0.059,457
+Client   3,0.00,0.00,0.00,0.232,0.768,0.00,0.00,0.00,0.00,0.00,56
+Client   4,0.660,0.071,0.032,0.122,0.00,0.00,0.083,0.00,0.00,0.032,156
+Client   5,0.00,0.00,0.00,0.00,0.029,0.00,0.00,0.00,0.121,0.850,479
+Client   6,0.00,0.080,0.00,0.00,0.009,0.017,0.894,0.00,0.00,0.00,538
+Client   7,0.00,0.00,0.00,0.00,0.991,0.00,0.00,0.009,0.00,0.00,110
+Client   8,0.131,0.116,0.00,0.00,0.00,0.00,0.00,0.00,0.753,0.00,1059
+Client   9,0.00,0.00,0.175,0.00,0.467,0.017,0.192,0.150,0.00,0.00,120
+Client  10,0.00,0.331,0.540,0.00,0.00,0.00,0.129,0.00,0.00,0.00,513
+Client  11,0.00,0.00,0.250,0.00,0.004,0.358,0.254,0.008,0.121,0.004,240
+Client  12,0.00,0.00,0.00,0.00,0.00,0.562,0.00,0.00,0.396,0.042,48
+Client  13,0.00,0.00,0.00,0.371,0.185,0.00,0.444,0.00,0.00,0.00,453
+Client  14,0.068,0.00,0.003,0.011,0.00,0.042,0.641,0.234,0.00,0.00,354
+Client  15,0.00,0.005,0.00,0.00,0.995,0.00,0.00,0.00,0.00,0.00,213
+Client  16,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,830
+Client  17,0.335,0.00,0.004,0.00,0.007,0.00,0.00,0.654,0.00,0.00,543
+Client  18,0.00,0.743,0.00,0.127,0.053,0.076,0.00,0.00,0.00,0.00,526
+Client  19,0.008,0.00,0.057,0.676,0.185,0.074,0.00,0.00,0.00,0.00,524
+Client  20,0.00,0.00,0.243,0.108,0.00,0.00,0.00,0.216,0.432,0.00,37
+Client  21,0.00,0.00,0.00,0.141,0.848,0.00,0.004,0.007,0.00,0.00,277
+Client  22,0.00,0.192,0.00,0.00,0.00,0.010,0.00,0.028,0.063,0.708,718
+Client  23,0.00,0.100,0.529,0.00,0.00,0.214,0.129,0.00,0.00,0.029,70
+Client  24,0.014,0.00,0.002,0.002,0.00,0.00,0.00,0.982,0.00,0.00,1084
+Client  25,0.00,0.00,0.006,0.105,0.00,0.169,0.010,0.025,0.684,0.00,484
+Client  26,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.194,0.00,0.806,72
+Client  27,0.00,0.00,0.00,0.00,0.011,0.086,0.004,0.00,0.019,0.881,269
+Client  28,0.237,0.00,0.00,0.001,0.038,0.167,0.001,0.011,0.546,0.00,951
+Client  29,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,845
+Client  30,0.004,0.00,0.218,0.743,0.00,0.00,0.00,0.023,0.008,0.004,257
+Client  31,0.014,0.730,0.00,0.005,0.194,0.005,0.052,0.00,0.00,0.00,211
+Client  32,0.00,0.00,0.00,0.00,0.004,0.00,0.743,0.222,0.031,0.00,257
+Client  33,0.559,0.084,0.002,0.00,0.013,0.00,0.00,0.234,0.108,0.00,546
+Client  34,0.00,0.010,0.093,0.00,0.202,0.010,0.00,0.00,0.685,0.00,1363
+Client  35,0.913,0.008,0.00,0.011,0.00,0.065,0.00,0.00,0.00,0.004,263
+Client  36,0.029,0.00,0.001,0.00,0.139,0.006,0.001,0.003,0.821,0.00,979
+Client  37,0.00,0.00,0.259,0.194,0.237,0.245,0.029,0.00,0.00,0.036,139
+Client  38,0.075,0.00,0.00,0.00,0.00,0.925,0.00,0.00,0.00,0.00,239
+Client  39,0.00,0.334,0.00,0.00,0.00,0.00,0.00,0.666,0.00,0.00,1283
+Client  40,0.00,0.00,0.00,0.00,0.00,0.353,0.00,0.211,0.436,0.00,337
+Client  41,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,502
+Client  42,0.218,0.00,0.020,0.259,0.00,0.041,0.00,0.463,0.00,0.00,147
+Client  43,0.073,0.008,0.024,0.062,0.073,0.00,0.00,0.00,0.003,0.758,372
+Client  44,0.003,0.00,0.00,0.064,0.269,0.00,0.114,0.247,0.302,0.00,668
+Client  45,0.00,0.025,0.00,0.066,0.689,0.00,0.213,0.00,0.008,0.00,122
+Client  46,0.002,0.258,0.019,0.00,0.042,0.274,0.00,0.406,0.00,0.00,530
+Client  47,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,689
+Client  48,0.023,0.00,0.003,0.036,0.00,0.00,0.227,0.006,0.605,0.100,309
+Client  49,0.102,0.377,0.001,0.519,0.00,0.00,0.00,0.00,0.00,0.00,695
+Client  50,0.00,0.00,0.00,0.136,0.00,0.00,0.00,0.017,0.00,0.847,118
+Client  51,0.331,0.035,0.00,0.052,0.00,0.083,0.034,0.00,0.012,0.453,762
+Client  52,0.007,0.276,0.717,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1078
+Client  53,0.00,0.073,0.153,0.00,0.00,0.00,0.271,0.00,0.504,0.00,262
+Client  54,0.003,0.003,0.127,0.173,0.663,0.025,0.00,0.006,0.00,0.00,323
+Client  55,0.000,0.00,0.000,0.00,0.00,0.999,0.00,0.00,0.00,0.00,2015
+Client  56,0.00,0.00,0.014,0.986,0.00,0.00,0.00,0.00,0.00,0.00,876
+Client  57,0.424,0.299,0.002,0.275,0.00,0.00,0.00,0.00,0.00,0.00,655
+Client  58,0.003,0.997,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,787
+Client  59,0.00,0.00,0.908,0.00,0.00,0.00,0.031,0.00,0.061,0.00,131
+Client  60,0.067,0.00,0.00,0.00,0.067,0.200,0.00,0.200,0.333,0.133,15
+Client  61,0.00,0.027,0.001,0.00,0.00,0.00,0.430,0.177,0.364,0.00,711
+Client  62,0.00,0.00,0.00,0.00,0.006,0.983,0.00,0.00,0.011,0.00,359
+Client  63,0.00,0.00,0.519,0.002,0.005,0.229,0.246,0.00,0.00,0.00,582
+Client  64,0.00,0.00,0.00,0.00,0.00,0.064,0.207,0.729,0.00,0.00,299
+Client  65,0.295,0.003,0.00,0.00,0.00,0.00,0.00,0.011,0.691,0.00,356
+Client  66,0.375,0.267,0.003,0.00,0.182,0.020,0.00,0.003,0.131,0.020,352
+Client  67,0.053,0.00,0.037,0.00,0.910,0.00,0.00,0.00,0.00,0.00,543
+Client  68,0.00,0.001,0.999,0.00,0.00,0.00,0.00,0.00,0.00,0.00,993
+Client  69,0.00,0.185,0.00,0.00,0.228,0.587,0.00,0.00,0.00,0.00,584
+Client  70,0.00,0.00,0.011,0.00,0.122,0.00,0.867,0.00,0.00,0.00,90
+Client  71,0.00,0.931,0.00,0.00,0.038,0.013,0.00,0.00,0.019,0.00,159
+Client  72,0.00,0.00,0.034,0.00,0.00,0.00,0.00,0.966,0.00,0.00,206
+Client  73,0.00,0.103,0.00,0.068,0.017,0.222,0.00,0.00,0.111,0.479,117
+Client  74,0.00,0.00,0.003,0.861,0.00,0.00,0.00,0.136,0.00,0.00,309
+Client  75,0.00,0.00,0.00,0.001,0.009,0.00,0.991,0.00,0.00,0.00,2441
+Client  76,0.026,0.00,0.00,0.00,0.071,0.00,0.00,0.00,0.002,0.900,2848
+Client  77,0.00,0.00,0.026,0.00,0.00,0.974,0.00,0.00,0.00,0.00,693
+Client  78,0.440,0.004,0.00,0.00,0.444,0.00,0.00,0.00,0.112,0.00,277
+Client  79,0.828,0.007,0.00,0.131,0.004,0.029,0.00,0.00,0.00,0.00,274
+Client  80,0.00,0.201,0.003,0.661,0.00,0.013,0.003,0.119,0.00,0.00,319
+Client  81,0.00,0.00,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,1152
+Client  82,0.00,0.009,0.757,0.009,0.00,0.00,0.036,0.00,0.009,0.180,111
+Client  83,0.005,0.00,0.00,0.00,0.003,0.228,0.00,0.750,0.00,0.013,372
+Client  84,0.00,0.00,0.00,0.063,0.077,0.00,0.860,0.00,0.00,0.00,271
+Client  85,0.00,0.244,0.555,0.00,0.00,0.00,0.00,0.088,0.113,0.00,238
+Client  86,0.002,0.00,0.314,0.00,0.666,0.00,0.00,0.00,0.018,0.00,437
+Client  87,0.00,0.022,0.022,0.011,0.022,0.043,0.269,0.258,0.032,0.323,93
+Client  88,0.00,0.00,0.00,0.281,0.00,0.00,0.00,0.357,0.010,0.352,210
+Client  89,0.086,0.029,0.642,0.011,0.103,0.019,0.00,0.00,0.00,0.109,523
+Client  90,0.00,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,800
+Client  91,0.00,0.00,0.377,0.003,0.00,0.002,0.00,0.619,0.00,0.00,1199
+Client  92,0.065,0.00,0.015,0.915,0.00,0.005,0.00,0.00,0.00,0.00,400
+Client  93,0.00,0.496,0.00,0.00,0.331,0.132,0.00,0.041,0.00,0.00,516
+Client  94,0.00,0.00,0.00,0.00,0.008,0.032,0.944,0.00,0.016,0.00,125
+Client  95,0.00,0.00,0.375,0.00,0.00,0.00,0.00,0.00,0.625,0.00,32
+Client  96,0.00,0.073,0.011,0.00,0.915,0.00,0.00,0.00,0.00,0.00,1321
+Client  97,0.00,0.00,0.00,0.00,0.00,0.00,0.925,0.00,0.050,0.025,40
+Client  98,0.00,0.073,0.00,0.00,0.00,0.836,0.018,0.009,0.064,0.00,110
+Client  99,0.173,0.003,0.003,0.799,0.003,0.003,0.003,0.003,0.006,0.006,359
+Num_samples of Training set per client: [171, 52, 457, 56, 156, 479, 538, 110, 1059, 120, 513, 240, 48, 453, 354, 213, 830, 543, 526, 524, 37, 277, 718, 70, 1084, 484, 72, 269, 951, 845, 257, 211, 257, 546, 1363, 263, 979, 139, 239, 1283, 337, 502, 147, 372, 668, 122, 530, 689, 309, 695, 118, 762, 1078, 262, 323, 2015, 876, 655, 787, 131, 15, 711, 359, 582, 299, 356, 352, 543, 993, 584, 90, 159, 206, 117, 309, 2441, 2848, 693, 277, 274, 319, 1152, 111, 372, 271, 238, 437, 93, 210, 523, 800, 1199, 400, 516, 125, 32, 1321, 40, 110, 359]
+Total_training_samples: 50000
+Global test set: 10000
+Finish Generating Samples, distribution saved
+MobileNetV2(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layers): Sequential(
+    (0): Block(
+      (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Block(
+      (conv1): Conv2d(16, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=96, bias=False)
+      (bn2): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(96, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(16, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (3): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (4): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (5): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (6): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (7): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (8): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (9): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (10): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (11): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (12): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (13): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (14): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (15): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (16): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(160, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (conv2): Conv2d(320, 1280, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn2): BatchNorm2d(1280, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear): Linear(in_features=1280, out_features=10, bias=True)
+)
+number of parameters: 2296922
+clients initializting...
+output size: 10
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:04<06:59,  4.23s/it]  2%|▏         | 2/100 [00:04<05:11,  3.18s/it]  3%|▎         | 3/100 [00:05<04:01,  2.49s/it]  4%|▍         | 4/100 [00:06<03:06,  1.94s/it]  5%|▌         | 5/100 [00:07<02:31,  1.59s/it]  6%|▌         | 6/100 [00:07<02:03,  1.31s/it]  7%|▋         | 7/100 [00:08<01:45,  1.13s/it]  8%|▊         | 8/100 [00:09<01:29,  1.03it/s]  9%|▉         | 9/100 [00:09<01:20,  1.13it/s] 10%|█         | 10/100 [00:10<01:15,  1.20it/s] 11%|█         | 11/100 [00:11<01:09,  1.27it/s] 12%|█▏        | 12/100 [00:12<01:09,  1.27it/s] 13%|█▎        | 13/100 [00:12<01:04,  1.35it/s] 14%|█▍        | 14/100 [00:13<01:02,  1.38it/s] 15%|█▌        | 15/100 [00:14<01:03,  1.34it/s] 16%|█▌        | 16/100 [00:14<00:59,  1.42it/s] 17%|█▋        | 17/100 [00:15<00:54,  1.51it/s] 18%|█▊        | 18/100 [00:16<00:55,  1.48it/s] 19%|█▉        | 19/100 [00:16<00:55,  1.47it/s] 20%|██        | 20/100 [00:17<00:55,  1.44it/s] 21%|██        | 21/100 [00:18<00:54,  1.45it/s] 22%|██▏       | 22/100 [00:18<00:53,  1.47it/s] 23%|██▎       | 23/100 [00:19<00:54,  1.42it/s] 24%|██▍       | 24/100 [00:20<00:53,  1.41it/s] 25%|██▌       | 25/100 [00:21<00:53,  1.40it/s] 26%|██▌       | 26/100 [00:21<00:54,  1.35it/s] 27%|██▋       | 27/100 [00:22<00:50,  1.45it/s] 28%|██▊       | 28/100 [00:23<00:50,  1.43it/s] 29%|██▉       | 29/100 [00:23<00:52,  1.34it/s] 30%|███       | 30/100 [00:24<00:48,  1.44it/s] 31%|███       | 31/100 [00:25<00:49,  1.40it/s] 32%|███▏      | 32/100 [00:26<00:49,  1.38it/s] 33%|███▎      | 33/100 [00:30<01:54,  1.70s/it] 34%|███▍      | 34/100 [00:30<01:33,  1.42s/it] 35%|███▌      | 35/100 [00:31<01:19,  1.22s/it] 36%|███▌      | 36/100 [00:32<01:08,  1.07s/it] 37%|███▋      | 37/100 [00:33<01:02,  1.00it/s] 38%|███▊      | 38/100 [00:33<00:57,  1.08it/s] 39%|███▉      | 39/100 [00:34<00:50,  1.20it/s] 40%|████      | 40/100 [00:35<00:46,  1.30it/s] 41%|████      | 41/100 [00:35<00:43,  1.36it/s] 42%|████▏     | 42/100 [00:36<00:39,  1.47it/s] 43%|████▎     | 43/100 [00:37<00:39,  1.46it/s] 44%|████▍     | 44/100 [00:37<00:40,  1.38it/s] 45%|████▌     | 45/100 [00:38<00:41,  1.34it/s] 46%|████▌     | 46/100 [00:39<00:39,  1.36it/s] 47%|████▋     | 47/100 [00:40<00:39,  1.34it/s] 48%|████▊     | 48/100 [00:40<00:35,  1.46it/s] 49%|████▉     | 49/100 [00:41<00:37,  1.37it/s] 50%|█████     | 50/100 [00:42<00:35,  1.39it/s] 51%|█████     | 51/100 [00:42<00:34,  1.44it/s] 52%|█████▏    | 52/100 [00:43<00:35,  1.36it/s] 53%|█████▎    | 53/100 [00:44<00:33,  1.39it/s] 54%|█████▍    | 54/100 [00:45<00:32,  1.40it/s] 55%|█████▌    | 55/100 [00:45<00:33,  1.34it/s] 56%|█████▌    | 56/100 [00:46<00:32,  1.34it/s] 57%|█████▋    | 57/100 [00:47<00:30,  1.42it/s] 58%|█████▊    | 58/100 [00:47<00:29,  1.43it/s] 59%|█████▉    | 59/100 [00:48<00:27,  1.49it/s] 60%|██████    | 60/100 [00:49<00:26,  1.50it/s] 61%|██████    | 61/100 [00:49<00:27,  1.44it/s] 62%|██████▏   | 62/100 [00:50<00:26,  1.42it/s] 63%|██████▎   | 63/100 [00:51<00:25,  1.46it/s] 64%|██████▍   | 64/100 [00:52<00:24,  1.44it/s] 65%|██████▌   | 65/100 [00:52<00:23,  1.47it/s] 66%|██████▌   | 66/100 [00:53<00:23,  1.47it/s] 67%|██████▋   | 67/100 [00:57<00:57,  1.75s/it] 68%|██████▊   | 68/100 [00:58<00:45,  1.42s/it] 69%|██████▉   | 69/100 [00:58<00:36,  1.17s/it] 70%|███████   | 70/100 [00:59<00:30,  1.02s/it] 71%|███████   | 71/100 [01:00<00:26,  1.11it/s] 72%|███████▏  | 72/100 [01:00<00:23,  1.19it/s] 73%|███████▎  | 73/100 [01:01<00:20,  1.30it/s] 74%|███████▍  | 74/100 [01:02<00:19,  1.31it/s] 75%|███████▌  | 75/100 [01:02<00:18,  1.38it/s] 76%|███████▌  | 76/100 [01:03<00:17,  1.37it/s] 77%|███████▋  | 77/100 [01:04<00:17,  1.32it/s] 78%|███████▊  | 78/100 [01:04<00:15,  1.41it/s] 79%|███████▉  | 79/100 [01:05<00:14,  1.43it/s] 80%|████████  | 80/100 [01:06<00:13,  1.43it/s] 81%|████████  | 81/100 [01:07<00:13,  1.38it/s] 82%|████████▏ | 82/100 [01:07<00:12,  1.48it/s] 83%|████████▎ | 83/100 [01:08<00:11,  1.43it/s] 84%|████████▍ | 84/100 [01:09<00:11,  1.43it/s] 85%|████████▌ | 85/100 [01:09<00:10,  1.47it/s] 86%|████████▌ | 86/100 [01:10<00:09,  1.49it/s] 87%|████████▋ | 87/100 [01:11<00:08,  1.48it/s] 88%|████████▊ | 88/100 [01:12<00:08,  1.35it/s] 89%|████████▉ | 89/100 [01:12<00:07,  1.39it/s] 90%|█████████ | 90/100 [01:13<00:07,  1.33it/s] 91%|█████████ | 91/100 [01:14<00:06,  1.44it/s] 92%|█████████▏| 92/100 [01:14<00:05,  1.42it/s] 93%|█████████▎| 93/100 [01:15<00:04,  1.44it/s] 94%|█████████▍| 94/100 [01:16<00:04,  1.44it/s] 95%|█████████▌| 95/100 [01:16<00:03,  1.45it/s] 96%|█████████▌| 96/100 [01:17<00:02,  1.53it/s] 97%|█████████▋| 97/100 [01:18<00:01,  1.53it/s] 98%|█████████▊| 98/100 [01:18<00:01,  1.56it/s] 99%|█████████▉| 99/100 [01:19<00:00,  1.51it/s]100%|██████████| 100/100 [01:20<00:00,  1.34it/s]100%|██████████| 100/100 [01:20<00:00,  1.24it/s]
+Number of users per round / total users: 10  /  100
+Finished creating FL server.
+=== Training starts: algorithm FedProx ===
+-------------Round number:  0  -------------
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.5463)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.5501)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.7335)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.0316)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.1195)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.5944)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.0433)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.7317)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.8198)
+loss: CE_Prox learning rate: 0.001
+training loss: tensor(0.5020)
+Global Model Acc on global data: 0.1 length of data: 10000
+save a model
+-------------Round number:  1  -------------
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.7440)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.3893)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.7543)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.0877)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.6308)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.4336)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.4196)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.8617)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.5268)
+loss: CE_Prox learning rate: 0.000982
+training loss: tensor(0.6355)
+Global Model Acc on global data: 0.1 length of data: 10000
+-------------Round number:  2  -------------
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.4225)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.4895)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.1353)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.1409)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.0175)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(1.6401)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.4565)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.7495)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.4939)
+loss: CE_Prox learning rate: 0.000964
+training loss: tensor(0.7239)
+Global Model Acc on global data: 0.1462 length of data: 10000
+save a model
+-------------Round number:  3  -------------
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.4430)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.2495)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.3519)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.3722)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.1972)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.3279)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.6107)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.3857)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.4022)
+loss: CE_Prox learning rate: 0.000946
+training loss: tensor(0.2383)
+Global Model Acc on global data: 0.1 length of data: 10000
+-------------Round number:  4  -------------
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(1.0908)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(0.5543)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(0.1323)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(0.1449)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(0.6410)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(0.1221)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(0.5611)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(1.4041)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(0.2291)
+loss: CE_Prox learning rate: 0.0009280000000000001
+training loss: tensor(0.1728)
+Global Model Acc on global data: 0.1333 length of data: 10000
+-------------Round number:  5  -------------
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.4461)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.2903)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.3976)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.3921)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.3929)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.9157)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.4094)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.8269)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.1615)
+loss: CE_Prox learning rate: 0.00091
+training loss: tensor(0.1801)
+Global Model Acc on global data: 0.2221 length of data: 10000
+save a model
+-------------Round number:  6  -------------
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.1605)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.2968)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.7263)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.7472)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.5864)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.4377)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.6044)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.0172)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.4663)
+loss: CE_Prox learning rate: 0.000892
+training loss: tensor(0.0937)
+Global Model Acc on global data: 0.1865 length of data: 10000
+-------------Round number:  7  -------------
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.7410)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(1.1373)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.2685)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.2859)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.2747)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.2365)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.3914)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.7810)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.3048)
+loss: CE_Prox learning rate: 0.000874
+training loss: tensor(0.4367)
+Global Model Acc on global data: 0.168 length of data: 10000
+-------------Round number:  8  -------------
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.1441)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.6306)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.3353)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.3662)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.0758)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.2971)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.2107)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.0315)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.3510)
+loss: CE_Prox learning rate: 0.000856
+training loss: tensor(0.3367)
+Global Model Acc on global data: 0.2536 length of data: 10000
+save a model
+-------------Round number:  9  -------------
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.1207)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.3371)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.2633)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.1145)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.7728)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.1450)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.8023)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.5614)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.7011)
+loss: CE_Prox learning rate: 0.0008380000000000001
+training loss: tensor(0.5749)
+Global Model Acc on global data: 0.1748 length of data: 10000
+-------------Round number:  10  -------------
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.4559)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.2124)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.4591)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.7358)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.4658)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(1.2709)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.5066)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.2829)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.3237)
+loss: CE_Prox learning rate: 0.0008200000000000001
+training loss: tensor(0.1193)
+Global Model Acc on global data: 0.2271 length of data: 10000
+-------------Round number:  11  -------------
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.2626)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.1746)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.2559)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.1118)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.0517)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.3395)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.1368)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.0903)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.4117)
+loss: CE_Prox learning rate: 0.0008020000000000001
+training loss: tensor(0.3205)
+Global Model Acc on global data: 0.2801 length of data: 10000
+save a model
+-------------Round number:  12  -------------
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.1692)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.1180)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.1802)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.3616)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.1643)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.1758)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.4606)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.6109)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.5412)
+loss: CE_Prox learning rate: 0.0007840000000000001
+training loss: tensor(0.6910)
+Global Model Acc on global data: 0.2574 length of data: 10000
+-------------Round number:  13  -------------
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.5823)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.2736)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.2911)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.1942)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.1986)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.4055)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.2890)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.2850)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.3378)
+loss: CE_Prox learning rate: 0.0007660000000000001
+training loss: tensor(0.2357)
+Global Model Acc on global data: 0.2748 length of data: 10000
+-------------Round number:  14  -------------
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.0678)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.1387)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.2797)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.2025)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.0361)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.4343)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.7979)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.2299)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.1926)
+loss: CE_Prox learning rate: 0.000748
+training loss: tensor(0.3178)
+Global Model Acc on global data: 0.232 length of data: 10000
+-------------Round number:  15  -------------
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.4470)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.2265)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.2833)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.3439)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.1871)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.4221)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.3476)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.2275)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.4299)
+loss: CE_Prox learning rate: 0.00073
+training loss: tensor(0.8589)
+Global Model Acc on global data: 0.2821 length of data: 10000
+save a model
+-------------Round number:  16  -------------
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.8208)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.2056)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.2785)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.3110)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.0748)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.0648)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.3889)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.3590)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.5231)
+loss: CE_Prox learning rate: 0.000712
+training loss: tensor(0.5698)
+Global Model Acc on global data: 0.3278 length of data: 10000
+save a model
+-------------Round number:  17  -------------
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.1223)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.2134)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.5004)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.2458)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.4049)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.1856)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.4705)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.2069)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.0577)
+loss: CE_Prox learning rate: 0.000694
+training loss: tensor(0.6095)
+Global Model Acc on global data: 0.2173 length of data: 10000
+-------------Round number:  18  -------------
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.3624)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.0798)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.4133)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.7429)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.2484)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.2391)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.8527)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.6331)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.2247)
+loss: CE_Prox learning rate: 0.0006760000000000001
+training loss: tensor(0.2579)
+Global Model Acc on global data: 0.2698 length of data: 10000
+-------------Round number:  19  -------------
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.3668)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.1268)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.0523)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.3078)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.2759)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.6250)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.1417)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.6218)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.2082)
+loss: CE_Prox learning rate: 0.0006580000000000001
+training loss: tensor(0.2026)
+Global Model Acc on global data: 0.3179 length of data: 10000
+-------------Round number:  20  -------------
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.5579)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.2825)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.1917)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.1482)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.1254)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.2191)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.6065)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.1073)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.4854)
+loss: CE_Prox learning rate: 0.00064
+training loss: tensor(0.1551)
+Global Model Acc on global data: 0.2568 length of data: 10000
+-------------Round number:  21  -------------
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(1.1542)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.0271)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.3950)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.1196)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.4215)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.2773)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.3480)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.3395)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.2688)
+loss: CE_Prox learning rate: 0.0006220000000000002
+training loss: tensor(0.4570)
+Global Model Acc on global data: 0.2639 length of data: 10000
+-------------Round number:  22  -------------
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.2454)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.1069)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.8842)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.2932)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.4542)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.4868)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.7540)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.3809)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.1717)
+loss: CE_Prox learning rate: 0.0006040000000000002
+training loss: tensor(0.3333)
+Global Model Acc on global data: 0.2853 length of data: 10000
+-------------Round number:  23  -------------
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(1.0846)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.1652)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.7757)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.1691)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.2438)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.5301)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.9669)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.0915)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.6786)
+loss: CE_Prox learning rate: 0.000586
+training loss: tensor(0.1815)
+Global Model Acc on global data: 0.2183 length of data: 10000
+-------------Round number:  24  -------------
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(1.4822)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(0.5273)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(0.4158)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(0.5426)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(0.1552)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(0.4117)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(0.4931)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(0.5167)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(1.1651)
+loss: CE_Prox learning rate: 0.000568
+training loss: tensor(0.5213)
+Global Model Acc on global data: 0.2087 length of data: 10000
+-------------Round number:  25  -------------
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.6297)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.2568)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.4552)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.6629)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.5639)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.4115)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.3382)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.4414)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.4769)
+loss: CE_Prox learning rate: 0.00055
+training loss: tensor(0.9680)
+Global Model Acc on global data: 0.312 length of data: 10000
+-------------Round number:  26  -------------
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.1987)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.2820)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.3422)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.1142)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.2535)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.1930)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.3226)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(1.0115)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.1341)
+loss: CE_Prox learning rate: 0.000532
+training loss: tensor(0.6892)
+Global Model Acc on global data: 0.2491 length of data: 10000
+-------------Round number:  27  -------------
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.2429)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.1245)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.2163)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.5983)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.1776)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.4508)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.2848)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.2589)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.2274)
+loss: CE_Prox learning rate: 0.000514
+training loss: tensor(0.1586)
+Global Model Acc on global data: 0.301 length of data: 10000
+-------------Round number:  28  -------------
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.3187)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.2709)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.2014)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.3063)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.5009)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.2206)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.6884)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.1040)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.0845)
+loss: CE_Prox learning rate: 0.000496
+training loss: tensor(0.3215)
+Global Model Acc on global data: 0.2936 length of data: 10000
+-------------Round number:  29  -------------
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.3962)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.1142)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.2718)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.5423)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.2928)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.3282)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.2238)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.1456)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.4621)
+loss: CE_Prox learning rate: 0.0004780000000000001
+training loss: tensor(0.5686)
+Global Model Acc on global data: 0.2493 length of data: 10000
+-------------Round number:  30  -------------
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.2933)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.1645)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.0700)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.1032)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.0588)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.1932)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.4161)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.4281)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.1622)
+loss: CE_Prox learning rate: 0.00046000000000000007
+training loss: tensor(0.2206)
+Global Model Acc on global data: 0.2618 length of data: 10000
+-------------Round number:  31  -------------
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.1720)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.1924)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.0755)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(1.0779)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.1271)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.7628)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.4418)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.0392)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.5249)
+loss: CE_Prox learning rate: 0.00044200000000000006
+training loss: tensor(0.2654)
+Global Model Acc on global data: 0.2686 length of data: 10000
+-------------Round number:  32  -------------
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.1226)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.1484)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.3635)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(2.4375)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.1203)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.1925)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.2536)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.5206)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.0689)
+loss: CE_Prox learning rate: 0.00042400000000000006
+training loss: tensor(0.1552)
+Global Model Acc on global data: 0.3272 length of data: 10000
+-------------Round number:  33  -------------
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.1278)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.2134)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(1.0177)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.7102)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.2490)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.5465)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.2367)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.0802)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.1960)
+loss: CE_Prox learning rate: 0.00040600000000000006
+training loss: tensor(0.8786)
+Global Model Acc on global data: 0.2072 length of data: 10000
+-------------Round number:  34  -------------
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.2878)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.0569)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.6764)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.6847)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.5808)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.6509)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.1244)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.4226)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.6817)
+loss: CE_Prox learning rate: 0.000388
+training loss: tensor(0.5062)
+Global Model Acc on global data: 0.2871 length of data: 10000
+-------------Round number:  35  -------------
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.2570)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.8237)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.9572)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.4830)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.5872)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.3821)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.2974)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.0606)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.2611)
+loss: CE_Prox learning rate: 0.00037
+training loss: tensor(0.6805)
+Global Model Acc on global data: 0.321 length of data: 10000
+-------------Round number:  36  -------------
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.6882)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.1572)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.1759)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.2210)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.1586)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.1158)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.1523)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.1335)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.0922)
+loss: CE_Prox learning rate: 0.0003520000000000001
+training loss: tensor(0.3348)
+Global Model Acc on global data: 0.3274 length of data: 10000
+-------------Round number:  37  -------------
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.1262)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.0966)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.2700)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.3077)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.2552)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.0395)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.1126)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.2331)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.1270)
+loss: CE_Prox learning rate: 0.0003340000000000001
+training loss: tensor(0.1833)
+Global Model Acc on global data: 0.3466 length of data: 10000
+save a model
+-------------Round number:  38  -------------
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.1763)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.3950)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.0477)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.5823)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.2627)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.2067)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.2071)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.1102)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.3302)
+loss: CE_Prox learning rate: 0.0003160000000000001
+training loss: tensor(0.2904)
+Global Model Acc on global data: 0.327 length of data: 10000
+-------------Round number:  39  -------------
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.2128)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.3340)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.5270)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.0839)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.5384)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.1680)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.1515)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.4530)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.2647)
+loss: CE_Prox learning rate: 0.00029800000000000003
+training loss: tensor(0.1456)
+Global Model Acc on global data: 0.3058 length of data: 10000
+-------------Round number:  40  -------------
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.4175)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.1201)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.3620)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.9183)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.8665)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.5297)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.2369)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.8921)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.0875)
+loss: CE_Prox learning rate: 0.00028000000000000003
+training loss: tensor(0.6844)
+Global Model Acc on global data: 0.2696 length of data: 10000
+-------------Round number:  41  -------------
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.3858)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.0740)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.5980)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.0374)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.5222)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.3187)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.1512)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(1.3460)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.1590)
+loss: CE_Prox learning rate: 0.000262
+training loss: tensor(0.2632)
+Global Model Acc on global data: 0.3105 length of data: 10000
+-------------Round number:  42  -------------
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.1547)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.5298)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.3667)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.6044)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.1078)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.0524)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.1930)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.3211)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.2952)
+loss: CE_Prox learning rate: 0.0002440000000000001
+training loss: tensor(0.9918)
+Global Model Acc on global data: 0.293 length of data: 10000
+-------------Round number:  43  -------------
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.4328)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.2138)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.7822)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.0960)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.1238)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.0224)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.2591)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.1283)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.4734)
+loss: CE_Prox learning rate: 0.0002260000000000001
+training loss: tensor(0.5590)
+Global Model Acc on global data: 0.3029 length of data: 10000
+-------------Round number:  44  -------------
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.2856)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.6920)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.3973)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.1316)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.0726)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.4727)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(1.5045)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.8901)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.0991)
+loss: CE_Prox learning rate: 0.00020800000000000007
+training loss: tensor(0.3315)
+Global Model Acc on global data: 0.2462 length of data: 10000
+-------------Round number:  45  -------------
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(1.2009)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(0.1125)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(0.5552)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(0.0782)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(0.7178)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(0.6455)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(0.4971)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(0.7669)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(0.2574)
+loss: CE_Prox learning rate: 0.00019000000000000006
+training loss: tensor(1.0689)
+Global Model Acc on global data: 0.1977 length of data: 10000
+-------------Round number:  46  -------------
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(1.8254)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(0.2444)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(0.8539)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(0.5983)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(0.1815)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(0.1872)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(0.2116)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(1.4910)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(0.4118)
+loss: CE_Prox learning rate: 0.00017200000000000003
+training loss: tensor(2.7387)
+Global Model Acc on global data: 0.3029 length of data: 10000
+-------------Round number:  47  -------------
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.0754)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.2483)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(1.5025)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.2967)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.3061)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.2185)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.7355)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.2837)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.0996)
+loss: CE_Prox learning rate: 0.00015400000000000003
+training loss: tensor(0.3385)
+Global Model Acc on global data: 0.2961 length of data: 10000
+-------------Round number:  48  -------------
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.2412)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.2363)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(1.1141)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.5540)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.2516)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.2692)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.1854)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.0843)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.2502)
+loss: CE_Prox learning rate: 0.00013600000000000013
+training loss: tensor(0.1034)
+Global Model Acc on global data: 0.3287 length of data: 10000
+-------------Round number:  49  -------------
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.0496)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.1268)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.0823)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.1086)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.2295)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.2435)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.3284)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.1238)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.1918)
+loss: CE_Prox learning rate: 0.0001180000000000001
+training loss: tensor(0.6513)
+Global Model Acc on global data: 0.3043 length of data: 10000
+-------------Round number:  50  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3714)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4162)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1976)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.3423)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1912)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2006)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2627)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2146)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1004)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2093)
+Global Model Acc on global data: 0.328 length of data: 10000
+-------------Round number:  51  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4492)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3142)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4594)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2332)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3821)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3937)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2089)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4541)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2665)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1063)
+Global Model Acc on global data: 0.1869 length of data: 10000
+-------------Round number:  52  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.6900)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1759)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1127)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4255)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2806)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.9765)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7512)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5183)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6414)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3625)
+Global Model Acc on global data: 0.3112 length of data: 10000
+-------------Round number:  53  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1750)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1792)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5220)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5501)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6746)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4511)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2349)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4046)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1604)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7802)
+Global Model Acc on global data: 0.1828 length of data: 10000
+-------------Round number:  54  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2598)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.5601)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6434)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.6757)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2315)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2838)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0319)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5277)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1119)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3457)
+Global Model Acc on global data: 0.277 length of data: 10000
+-------------Round number:  55  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0764)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2312)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5240)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2849)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6852)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0095)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3915)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0545)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2239)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3458)
+Global Model Acc on global data: 0.2665 length of data: 10000
+-------------Round number:  56  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4622)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5289)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.5744)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3583)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2021)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7610)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2715)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.0877)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.6111)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0850)
+Global Model Acc on global data: 0.1861 length of data: 10000
+-------------Round number:  57  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0106)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2613)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5994)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.8807)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1140)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.3531)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1262)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5148)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5497)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(2.4549)
+Global Model Acc on global data: 0.2265 length of data: 10000
+-------------Round number:  58  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4020)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1858)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0246)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4046)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.8374)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.9597)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2441)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2393)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.2535)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4773)
+Global Model Acc on global data: 0.2807 length of data: 10000
+-------------Round number:  59  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5938)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2158)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2285)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.9549)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7906)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2070)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1807)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1430)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0767)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4151)
+Global Model Acc on global data: 0.2805 length of data: 10000
+-------------Round number:  60  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4225)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3709)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1982)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3294)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1032)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4672)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2137)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0865)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.5182)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1878)
+Global Model Acc on global data: 0.2128 length of data: 10000
+-------------Round number:  61  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3754)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7392)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0155)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.0923)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7001)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0524)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2001)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3675)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4797)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2939)
+Global Model Acc on global data: 0.2151 length of data: 10000
+-------------Round number:  62  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1179)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5612)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0232)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5019)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2375)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5723)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4382)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3381)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1298)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0291)
+Global Model Acc on global data: 0.2587 length of data: 10000
+-------------Round number:  63  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3966)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.2779)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2665)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1660)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3025)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5991)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1107)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3923)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5633)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1220)
+Global Model Acc on global data: 0.332 length of data: 10000
+-------------Round number:  64  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0804)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0467)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2798)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3246)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.0539)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2170)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2923)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.8900)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1237)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0614)
+Global Model Acc on global data: 0.3167 length of data: 10000
+-------------Round number:  65  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4712)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0448)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0478)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1683)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0184)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2594)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2016)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3283)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0596)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1169)
+Global Model Acc on global data: 0.3051 length of data: 10000
+-------------Round number:  66  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0635)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1845)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6213)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0387)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0891)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4819)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0838)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1949)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2111)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1985)
+Global Model Acc on global data: 0.2748 length of data: 10000
+-------------Round number:  67  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1108)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1527)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4232)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3018)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(2.1987)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1158)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.2248)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.4873)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1566)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3046)
+Global Model Acc on global data: 0.261 length of data: 10000
+-------------Round number:  68  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0595)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.9395)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2418)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2927)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7333)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2023)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0526)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.5972)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4761)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.9444)
+Global Model Acc on global data: 0.1782 length of data: 10000
+-------------Round number:  69  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6224)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3311)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6753)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4007)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1392)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1233)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1735)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3268)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4189)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(2.9353)
+Global Model Acc on global data: 0.3308 length of data: 10000
+-------------Round number:  70  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1389)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1135)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2372)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5022)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2949)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3025)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2882)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1197)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2083)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1355)
+Global Model Acc on global data: 0.2017 length of data: 10000
+-------------Round number:  71  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4882)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.8915)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0758)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3295)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1566)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1577)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3707)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1172)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1343)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2283)
+Global Model Acc on global data: 0.221 length of data: 10000
+-------------Round number:  72  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0506)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6414)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2905)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2096)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0706)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7631)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3549)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0842)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4744)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1547)
+Global Model Acc on global data: 0.1854 length of data: 10000
+-------------Round number:  73  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1461)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2585)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0956)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.9592)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2666)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5148)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2210)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0017)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3668)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.8588)
+Global Model Acc on global data: 0.2112 length of data: 10000
+-------------Round number:  74  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2022)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3532)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1323)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2589)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3553)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.1227)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0409)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1247)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.3276)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0632)
+Global Model Acc on global data: 0.3306 length of data: 10000
+-------------Round number:  75  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0449)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.1392)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1301)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5896)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1626)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5921)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0469)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4069)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1478)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0878)
+Global Model Acc on global data: 0.2833 length of data: 10000
+-------------Round number:  76  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6096)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3817)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5199)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4316)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2161)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6342)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0831)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0548)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1696)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6142)
+Global Model Acc on global data: 0.2764 length of data: 10000
+-------------Round number:  77  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2359)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1643)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4061)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0637)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2566)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3518)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0593)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0425)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7199)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1933)
+Global Model Acc on global data: 0.2715 length of data: 10000
+-------------Round number:  78  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3121)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1647)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3313)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1309)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1917)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0676)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1398)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1483)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1646)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0851)
+Global Model Acc on global data: 0.2895 length of data: 10000
+-------------Round number:  79  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1078)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1113)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0783)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2735)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1137)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4828)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4747)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0948)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2731)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2072)
+Global Model Acc on global data: 0.2385 length of data: 10000
+-------------Round number:  80  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3308)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3084)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5327)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2981)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3485)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3662)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5767)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1119)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4888)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0826)
+Global Model Acc on global data: 0.2311 length of data: 10000
+-------------Round number:  81  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6193)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1742)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3427)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2486)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1699)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4496)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6887)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2001)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0049)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2724)
+Global Model Acc on global data: 0.292 length of data: 10000
+-------------Round number:  82  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6136)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0607)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1579)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0583)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0967)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6705)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3813)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1234)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0233)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0973)
+Global Model Acc on global data: 0.3103 length of data: 10000
+-------------Round number:  83  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0659)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1565)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5545)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1386)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0979)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2261)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6086)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0450)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3134)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6806)
+Global Model Acc on global data: 0.3117 length of data: 10000
+-------------Round number:  84  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0999)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0517)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2598)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7099)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3275)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1877)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5177)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0293)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0268)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.0539)
+Global Model Acc on global data: 0.2383 length of data: 10000
+-------------Round number:  85  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1892)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0985)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0742)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6629)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4393)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7699)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2807)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2253)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.2441)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.8500)
+Global Model Acc on global data: 0.2839 length of data: 10000
+-------------Round number:  86  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0436)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0785)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0280)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0760)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2349)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.8106)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4278)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2949)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0362)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7367)
+Global Model Acc on global data: 0.2546 length of data: 10000
+-------------Round number:  87  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1604)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0637)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1158)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5727)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1516)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0292)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.9314)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1606)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0813)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.9485)
+Global Model Acc on global data: 0.3193 length of data: 10000
+-------------Round number:  88  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3876)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2743)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2263)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4322)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0924)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0917)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0841)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1334)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3945)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.3862)
+Global Model Acc on global data: 0.1703 length of data: 10000
+-------------Round number:  89  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2830)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5623)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7708)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4212)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1457)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3286)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0891)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4110)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7980)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3930)
+Global Model Acc on global data: 0.3176 length of data: 10000
+-------------Round number:  90  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0574)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2718)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0711)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1719)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1328)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5123)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1413)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3554)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0468)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1649)
+Global Model Acc on global data: 0.2422 length of data: 10000
+-------------Round number:  91  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0948)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0399)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3052)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0671)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1343)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2738)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6477)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7155)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2948)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.3756)
+Global Model Acc on global data: 0.1825 length of data: 10000
+-------------Round number:  92  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0981)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3310)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6738)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0659)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2892)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0668)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7026)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4642)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2896)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0086)
+Global Model Acc on global data: 0.2681 length of data: 10000
+-------------Round number:  93  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0249)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6878)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1541)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4272)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3272)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4192)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7472)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2641)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2042)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0425)
+Global Model Acc on global data: 0.22 length of data: 10000
+-------------Round number:  94  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3260)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7759)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3527)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2689)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2581)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2201)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(1.3460)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6514)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7148)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2114)
+Global Model Acc on global data: 0.2818 length of data: 10000
+-------------Round number:  95  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2566)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5274)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5683)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3797)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.7905)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5493)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3579)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4019)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0320)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2970)
+Global Model Acc on global data: 0.307 length of data: 10000
+-------------Round number:  96  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2651)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0589)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1296)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2725)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.3675)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0686)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0318)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2215)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1684)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0635)
+Global Model Acc on global data: 0.2772 length of data: 10000
+-------------Round number:  97  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2326)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2237)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2350)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1258)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2451)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0997)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1036)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2736)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0399)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6500)
+Global Model Acc on global data: 0.3049 length of data: 10000
+-------------Round number:  98  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2743)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1060)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.6029)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1363)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0922)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0185)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0691)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1481)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0783)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0295)
+Global Model Acc on global data: 0.298 length of data: 10000
+-------------Round number:  99  -------------
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1317)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0153)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.4799)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.1621)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0802)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5110)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.0599)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.5632)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2412)
+loss: CE_Prox learning rate: 0.0001
+training loss: tensor(0.2185)
+Global Model Acc on global data: 0.2792 length of data: 10000
+================================================================================
+Summary of training process:
+Dataset                : Cifar10
+Batch size             : 64
+Learing rate           : 0.001
+Number of total clients: 100
+Split method           : distribution
+Split parameter        : 0.1
+Clients per round      : 10
+Number of global rounds: 100
+Number of local rounds : 10
+Feature from layer     : 11
+Feature percentage     : 0.1
+Local training loss    : CE_LC
+Loss of beta           : 1.0
+Algorithm              : FedLC
+Modelname              : MOBNET
+Mode                   : training
+Seed                   : 0
+================================================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Here
+Done
+Class frequencies:
+client,class0,class1,class2,class3,class4,class5,class6,class7,class8,class9,Amount
+Client   0,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.000,171
+Client   1,0.231,0.038,0.00,0.00,0.00,0.077,0.00,0.654,0.00,0.00,52
+Client   2,0.374,0.015,0.00,0.00,0.519,0.011,0.007,0.015,0.00,0.059,457
+Client   3,0.00,0.00,0.00,0.232,0.768,0.00,0.00,0.00,0.00,0.00,56
+Client   4,0.660,0.071,0.032,0.122,0.00,0.00,0.083,0.00,0.00,0.032,156
+Client   5,0.00,0.00,0.00,0.00,0.029,0.00,0.00,0.00,0.121,0.850,479
+Client   6,0.00,0.080,0.00,0.00,0.009,0.017,0.894,0.00,0.00,0.00,538
+Client   7,0.00,0.00,0.00,0.00,0.991,0.00,0.00,0.009,0.00,0.00,110
+Client   8,0.131,0.116,0.00,0.00,0.00,0.00,0.00,0.00,0.753,0.00,1059
+Client   9,0.00,0.00,0.175,0.00,0.467,0.017,0.192,0.150,0.00,0.00,120
+Client  10,0.00,0.331,0.540,0.00,0.00,0.00,0.129,0.00,0.00,0.00,513
+Client  11,0.00,0.00,0.250,0.00,0.004,0.358,0.254,0.008,0.121,0.004,240
+Client  12,0.00,0.00,0.00,0.00,0.00,0.562,0.00,0.00,0.396,0.042,48
+Client  13,0.00,0.00,0.00,0.371,0.185,0.00,0.444,0.00,0.00,0.00,453
+Client  14,0.068,0.00,0.003,0.011,0.00,0.042,0.641,0.234,0.00,0.00,354
+Client  15,0.00,0.005,0.00,0.00,0.995,0.00,0.00,0.00,0.00,0.00,213
+Client  16,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,830
+Client  17,0.335,0.00,0.004,0.00,0.007,0.00,0.00,0.654,0.00,0.00,543
+Client  18,0.00,0.743,0.00,0.127,0.053,0.076,0.00,0.00,0.00,0.00,526
+Client  19,0.008,0.00,0.057,0.676,0.185,0.074,0.00,0.00,0.00,0.00,524
+Client  20,0.00,0.00,0.243,0.108,0.00,0.00,0.00,0.216,0.432,0.00,37
+Client  21,0.00,0.00,0.00,0.141,0.848,0.00,0.004,0.007,0.00,0.00,277
+Client  22,0.00,0.192,0.00,0.00,0.00,0.010,0.00,0.028,0.063,0.708,718
+Client  23,0.00,0.100,0.529,0.00,0.00,0.214,0.129,0.00,0.00,0.029,70
+Client  24,0.014,0.00,0.002,0.002,0.00,0.00,0.00,0.982,0.00,0.00,1084
+Client  25,0.00,0.00,0.006,0.105,0.00,0.169,0.010,0.025,0.684,0.00,484
+Client  26,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.194,0.00,0.806,72
+Client  27,0.00,0.00,0.00,0.00,0.011,0.086,0.004,0.00,0.019,0.881,269
+Client  28,0.237,0.00,0.00,0.001,0.038,0.167,0.001,0.011,0.546,0.00,951
+Client  29,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,845
+Client  30,0.004,0.00,0.218,0.743,0.00,0.00,0.00,0.023,0.008,0.004,257
+Client  31,0.014,0.730,0.00,0.005,0.194,0.005,0.052,0.00,0.00,0.00,211
+Client  32,0.00,0.00,0.00,0.00,0.004,0.00,0.743,0.222,0.031,0.00,257
+Client  33,0.559,0.084,0.002,0.00,0.013,0.00,0.00,0.234,0.108,0.00,546
+Client  34,0.00,0.010,0.093,0.00,0.202,0.010,0.00,0.00,0.685,0.00,1363
+Client  35,0.913,0.008,0.00,0.011,0.00,0.065,0.00,0.00,0.00,0.004,263
+Client  36,0.029,0.00,0.001,0.00,0.139,0.006,0.001,0.003,0.821,0.00,979
+Client  37,0.00,0.00,0.259,0.194,0.237,0.245,0.029,0.00,0.00,0.036,139
+Client  38,0.075,0.00,0.00,0.00,0.00,0.925,0.00,0.00,0.00,0.00,239
+Client  39,0.00,0.334,0.00,0.00,0.00,0.00,0.00,0.666,0.00,0.00,1283
+Client  40,0.00,0.00,0.00,0.00,0.00,0.353,0.00,0.211,0.436,0.00,337
+Client  41,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,502
+Client  42,0.218,0.00,0.020,0.259,0.00,0.041,0.00,0.463,0.00,0.00,147
+Client  43,0.073,0.008,0.024,0.062,0.073,0.00,0.00,0.00,0.003,0.758,372
+Client  44,0.003,0.00,0.00,0.064,0.269,0.00,0.114,0.247,0.302,0.00,668
+Client  45,0.00,0.025,0.00,0.066,0.689,0.00,0.213,0.00,0.008,0.00,122
+Client  46,0.002,0.258,0.019,0.00,0.042,0.274,0.00,0.406,0.00,0.00,530
+Client  47,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,689
+Client  48,0.023,0.00,0.003,0.036,0.00,0.00,0.227,0.006,0.605,0.100,309
+Client  49,0.102,0.377,0.001,0.519,0.00,0.00,0.00,0.00,0.00,0.00,695
+Client  50,0.00,0.00,0.00,0.136,0.00,0.00,0.00,0.017,0.00,0.847,118
+Client  51,0.331,0.035,0.00,0.052,0.00,0.083,0.034,0.00,0.012,0.453,762
+Client  52,0.007,0.276,0.717,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1078
+Client  53,0.00,0.073,0.153,0.00,0.00,0.00,0.271,0.00,0.504,0.00,262
+Client  54,0.003,0.003,0.127,0.173,0.663,0.025,0.00,0.006,0.00,0.00,323
+Client  55,0.000,0.00,0.000,0.00,0.00,0.999,0.00,0.00,0.00,0.00,2015
+Client  56,0.00,0.00,0.014,0.986,0.00,0.00,0.00,0.00,0.00,0.00,876
+Client  57,0.424,0.299,0.002,0.275,0.00,0.00,0.00,0.00,0.00,0.00,655
+Client  58,0.003,0.997,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,787
+Client  59,0.00,0.00,0.908,0.00,0.00,0.00,0.031,0.00,0.061,0.00,131
+Client  60,0.067,0.00,0.00,0.00,0.067,0.200,0.00,0.200,0.333,0.133,15
+Client  61,0.00,0.027,0.001,0.00,0.00,0.00,0.430,0.177,0.364,0.00,711
+Client  62,0.00,0.00,0.00,0.00,0.006,0.983,0.00,0.00,0.011,0.00,359
+Client  63,0.00,0.00,0.519,0.002,0.005,0.229,0.246,0.00,0.00,0.00,582
+Client  64,0.00,0.00,0.00,0.00,0.00,0.064,0.207,0.729,0.00,0.00,299
+Client  65,0.295,0.003,0.00,0.00,0.00,0.00,0.00,0.011,0.691,0.00,356
+Client  66,0.375,0.267,0.003,0.00,0.182,0.020,0.00,0.003,0.131,0.020,352
+Client  67,0.053,0.00,0.037,0.00,0.910,0.00,0.00,0.00,0.00,0.00,543
+Client  68,0.00,0.001,0.999,0.00,0.00,0.00,0.00,0.00,0.00,0.00,993
+Client  69,0.00,0.185,0.00,0.00,0.228,0.587,0.00,0.00,0.00,0.00,584
+Client  70,0.00,0.00,0.011,0.00,0.122,0.00,0.867,0.00,0.00,0.00,90
+Client  71,0.00,0.931,0.00,0.00,0.038,0.013,0.00,0.00,0.019,0.00,159
+Client  72,0.00,0.00,0.034,0.00,0.00,0.00,0.00,0.966,0.00,0.00,206
+Client  73,0.00,0.103,0.00,0.068,0.017,0.222,0.00,0.00,0.111,0.479,117
+Client  74,0.00,0.00,0.003,0.861,0.00,0.00,0.00,0.136,0.00,0.00,309
+Client  75,0.00,0.00,0.00,0.001,0.009,0.00,0.991,0.00,0.00,0.00,2441
+Client  76,0.026,0.00,0.00,0.00,0.071,0.00,0.00,0.00,0.002,0.900,2848
+Client  77,0.00,0.00,0.026,0.00,0.00,0.974,0.00,0.00,0.00,0.00,693
+Client  78,0.440,0.004,0.00,0.00,0.444,0.00,0.00,0.00,0.112,0.00,277
+Client  79,0.828,0.007,0.00,0.131,0.004,0.029,0.00,0.00,0.00,0.00,274
+Client  80,0.00,0.201,0.003,0.661,0.00,0.013,0.003,0.119,0.00,0.00,319
+Client  81,0.00,0.00,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,1152
+Client  82,0.00,0.009,0.757,0.009,0.00,0.00,0.036,0.00,0.009,0.180,111
+Client  83,0.005,0.00,0.00,0.00,0.003,0.228,0.00,0.750,0.00,0.013,372
+Client  84,0.00,0.00,0.00,0.063,0.077,0.00,0.860,0.00,0.00,0.00,271
+Client  85,0.00,0.244,0.555,0.00,0.00,0.00,0.00,0.088,0.113,0.00,238
+Client  86,0.002,0.00,0.314,0.00,0.666,0.00,0.00,0.00,0.018,0.00,437
+Client  87,0.00,0.022,0.022,0.011,0.022,0.043,0.269,0.258,0.032,0.323,93
+Client  88,0.00,0.00,0.00,0.281,0.00,0.00,0.00,0.357,0.010,0.352,210
+Client  89,0.086,0.029,0.642,0.011,0.103,0.019,0.00,0.00,0.00,0.109,523
+Client  90,0.00,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,800
+Client  91,0.00,0.00,0.377,0.003,0.00,0.002,0.00,0.619,0.00,0.00,1199
+Client  92,0.065,0.00,0.015,0.915,0.00,0.005,0.00,0.00,0.00,0.00,400
+Client  93,0.00,0.496,0.00,0.00,0.331,0.132,0.00,0.041,0.00,0.00,516
+Client  94,0.00,0.00,0.00,0.00,0.008,0.032,0.944,0.00,0.016,0.00,125
+Client  95,0.00,0.00,0.375,0.00,0.00,0.00,0.00,0.00,0.625,0.00,32
+Client  96,0.00,0.073,0.011,0.00,0.915,0.00,0.00,0.00,0.00,0.00,1321
+Client  97,0.00,0.00,0.00,0.00,0.00,0.00,0.925,0.00,0.050,0.025,40
+Client  98,0.00,0.073,0.00,0.00,0.00,0.836,0.018,0.009,0.064,0.00,110
+Client  99,0.173,0.003,0.003,0.799,0.003,0.003,0.003,0.003,0.006,0.006,359
+Num_samples of Training set per client: [171, 52, 457, 56, 156, 479, 538, 110, 1059, 120, 513, 240, 48, 453, 354, 213, 830, 543, 526, 524, 37, 277, 718, 70, 1084, 484, 72, 269, 951, 845, 257, 211, 257, 546, 1363, 263, 979, 139, 239, 1283, 337, 502, 147, 372, 668, 122, 530, 689, 309, 695, 118, 762, 1078, 262, 323, 2015, 876, 655, 787, 131, 15, 711, 359, 582, 299, 356, 352, 543, 993, 584, 90, 159, 206, 117, 309, 2441, 2848, 693, 277, 274, 319, 1152, 111, 372, 271, 238, 437, 93, 210, 523, 800, 1199, 400, 516, 125, 32, 1321, 40, 110, 359]
+Total_training_samples: 50000
+Global test set: 10000
+Finish Generating Samples, distribution saved
+MobileNetV2(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layers): Sequential(
+    (0): Block(
+      (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Block(
+      (conv1): Conv2d(16, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=96, bias=False)
+      (bn2): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(96, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(16, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (3): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (4): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (5): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (6): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (7): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (8): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (9): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (10): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (11): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (12): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (13): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (14): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (15): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (16): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(160, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (conv2): Conv2d(320, 1280, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn2): BatchNorm2d(1280, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear): Linear(in_features=1280, out_features=10, bias=True)
+)
+number of parameters: 2296922
+clients initializting...
+output size: 10
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:04<06:55,  4.20s/it]  2%|▏         | 2/100 [00:04<05:08,  3.15s/it]  3%|▎         | 3/100 [00:05<03:58,  2.46s/it]  4%|▍         | 4/100 [00:06<03:04,  1.93s/it]  5%|▌         | 5/100 [00:07<02:30,  1.59s/it]  6%|▌         | 6/100 [00:07<02:04,  1.32s/it]  7%|▋         | 7/100 [00:08<01:46,  1.14s/it]  8%|▊         | 8/100 [00:09<01:31,  1.00it/s]  9%|▉         | 9/100 [00:10<01:24,  1.08it/s] 10%|█         | 10/100 [00:10<01:18,  1.15it/s] 11%|█         | 11/100 [00:11<01:11,  1.25it/s] 12%|█▏        | 12/100 [00:12<01:10,  1.26it/s] 13%|█▎        | 13/100 [00:12<01:05,  1.34it/s] 14%|█▍        | 14/100 [00:13<01:01,  1.40it/s] 15%|█▌        | 15/100 [00:14<01:02,  1.37it/s] 16%|█▌        | 16/100 [00:14<00:57,  1.46it/s] 17%|█▋        | 17/100 [00:15<00:53,  1.55it/s] 18%|█▊        | 18/100 [00:16<00:53,  1.53it/s] 19%|█▉        | 19/100 [00:16<00:53,  1.51it/s] 20%|██        | 20/100 [00:17<00:54,  1.47it/s] 21%|██        | 21/100 [00:18<00:53,  1.48it/s] 22%|██▏       | 22/100 [00:18<00:53,  1.46it/s] 23%|██▎       | 23/100 [00:19<00:53,  1.43it/s] 24%|██▍       | 24/100 [00:20<00:53,  1.42it/s] 25%|██▌       | 25/100 [00:21<00:52,  1.42it/s] 26%|██▌       | 26/100 [00:21<00:53,  1.38it/s] 27%|██▋       | 27/100 [00:22<00:49,  1.49it/s] 28%|██▊       | 28/100 [00:23<00:48,  1.48it/s] 29%|██▉       | 29/100 [00:23<00:50,  1.40it/s] 30%|███       | 30/100 [00:24<00:47,  1.48it/s] 31%|███       | 31/100 [00:25<00:48,  1.43it/s] 32%|███▏      | 32/100 [00:25<00:48,  1.40it/s] 33%|███▎      | 33/100 [00:29<01:53,  1.69s/it] 34%|███▍      | 34/100 [00:30<01:33,  1.41s/it] 35%|███▌      | 35/100 [00:31<01:18,  1.21s/it] 36%|███▌      | 36/100 [00:32<01:07,  1.06s/it] 37%|███▋      | 37/100 [00:32<01:02,  1.01it/s] 38%|███▊      | 38/100 [00:33<00:56,  1.09it/s] 39%|███▉      | 39/100 [00:34<00:49,  1.23it/s] 40%|████      | 40/100 [00:34<00:45,  1.32it/s] 41%|████      | 41/100 [00:35<00:42,  1.39it/s] 42%|████▏     | 42/100 [00:36<00:38,  1.50it/s] 43%|████▎     | 43/100 [00:36<00:38,  1.47it/s] 44%|████▍     | 44/100 [00:37<00:40,  1.40it/s] 45%|████▌     | 45/100 [00:38<00:39,  1.38it/s] 46%|████▌     | 46/100 [00:38<00:38,  1.40it/s] 47%|████▋     | 47/100 [00:39<00:38,  1.38it/s] 48%|████▊     | 48/100 [00:40<00:34,  1.50it/s] 49%|████▉     | 49/100 [00:41<00:35,  1.42it/s] 50%|█████     | 50/100 [00:41<00:34,  1.43it/s] 51%|█████     | 51/100 [00:42<00:33,  1.47it/s] 52%|█████▏    | 52/100 [00:43<00:34,  1.40it/s] 53%|█████▎    | 53/100 [00:43<00:33,  1.42it/s] 54%|█████▍    | 54/100 [00:44<00:32,  1.44it/s] 55%|█████▌    | 55/100 [00:45<00:32,  1.38it/s] 56%|█████▌    | 56/100 [00:46<00:31,  1.40it/s] 57%|█████▋    | 57/100 [00:46<00:28,  1.48it/s] 58%|█████▊    | 58/100 [00:47<00:28,  1.48it/s] 59%|█████▉    | 59/100 [00:47<00:26,  1.53it/s] 60%|██████    | 60/100 [00:48<00:25,  1.57it/s] 61%|██████    | 61/100 [00:49<00:25,  1.52it/s] 62%|██████▏   | 62/100 [00:49<00:25,  1.48it/s] 63%|██████▎   | 63/100 [00:50<00:24,  1.51it/s] 64%|██████▍   | 64/100 [00:51<00:24,  1.47it/s] 65%|██████▌   | 65/100 [00:51<00:22,  1.53it/s] 66%|██████▌   | 66/100 [00:52<00:22,  1.53it/s] 67%|██████▋   | 67/100 [00:56<00:56,  1.71s/it] 68%|██████▊   | 68/100 [00:57<00:44,  1.39s/it] 69%|██████▉   | 69/100 [00:57<00:35,  1.16s/it] 70%|███████   | 70/100 [00:58<00:30,  1.00s/it] 71%|███████   | 71/100 [00:59<00:25,  1.12it/s] 72%|███████▏  | 72/100 [00:59<00:23,  1.19it/s] 73%|███████▎  | 73/100 [01:00<00:20,  1.30it/s] 74%|███████▍  | 74/100 [01:01<00:19,  1.30it/s] 75%|███████▌  | 75/100 [01:01<00:17,  1.40it/s] 76%|███████▌  | 76/100 [01:02<00:17,  1.40it/s] 77%|███████▋  | 77/100 [01:03<00:17,  1.35it/s] 78%|███████▊  | 78/100 [01:03<00:15,  1.45it/s] 79%|███████▉  | 79/100 [01:04<00:14,  1.47it/s] 80%|████████  | 80/100 [01:05<00:13,  1.46it/s] 81%|████████  | 81/100 [01:06<00:13,  1.42it/s] 82%|████████▏ | 82/100 [01:06<00:12,  1.49it/s] 83%|████████▎ | 83/100 [01:07<00:11,  1.46it/s] 84%|████████▍ | 84/100 [01:08<00:10,  1.46it/s] 85%|████████▌ | 85/100 [01:08<00:09,  1.51it/s] 86%|████████▌ | 86/100 [01:09<00:09,  1.50it/s] 87%|████████▋ | 87/100 [01:09<00:08,  1.51it/s] 88%|████████▊ | 88/100 [01:10<00:08,  1.40it/s] 89%|████████▉ | 89/100 [01:11<00:07,  1.44it/s] 90%|█████████ | 90/100 [01:12<00:07,  1.39it/s] 91%|█████████ | 91/100 [01:12<00:06,  1.50it/s] 92%|█████████▏| 92/100 [01:13<00:05,  1.46it/s] 93%|█████████▎| 93/100 [01:14<00:04,  1.46it/s] 94%|█████████▍| 94/100 [01:14<00:04,  1.48it/s] 95%|█████████▌| 95/100 [01:15<00:03,  1.49it/s] 96%|█████████▌| 96/100 [01:16<00:02,  1.57it/s] 97%|█████████▋| 97/100 [01:16<00:01,  1.56it/s] 98%|█████████▊| 98/100 [01:17<00:01,  1.58it/s] 99%|█████████▉| 99/100 [01:18<00:00,  1.55it/s]100%|██████████| 100/100 [01:18<00:00,  1.37it/s]100%|██████████| 100/100 [01:18<00:00,  1.27it/s]
+Number of users per round / total users: 10  /  100
+Finished creating FL server.
+=== Training starts: algorithm FedLC ===
+-------------Round number:  0  -------------
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.3925)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.4652)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.6206)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.0123)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.0760)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.5315)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.6088)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.7905)
+loss: CE_LC learning rate: 0.001
+training loss: tensor(0.1605)
+Global Model Acc on global data: 0.1 length of data: 10000
+save a model
+-------------Round number:  1  -------------
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(2.2063)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(0.4613)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(0.6493)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(0.0020)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(0.6453)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(0.2325)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(0.4076)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(1.6230)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(0.4672)
+loss: CE_LC learning rate: 0.000982
+training loss: tensor(0.3403)
+Global Model Acc on global data: 0.1003 length of data: 10000
+save a model
+-------------Round number:  2  -------------
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(0.9730)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(1.8162)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(0.0294)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(0.1205)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(5.7312e-11)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(3.2524)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(0.6806)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(0.2184)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(0.4838)
+loss: CE_LC learning rate: 0.000964
+training loss: tensor(0.5201)
+Global Model Acc on global data: 0.0986 length of data: 10000
+-------------Round number:  3  -------------
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.4155)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.1680)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.6460)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.3271)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.2676)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.7352)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.8297)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.8219)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.4448)
+loss: CE_LC learning rate: 0.000946
+training loss: tensor(0.6874)
+Global Model Acc on global data: 0.1619 length of data: 10000
+save a model
+-------------Round number:  4  -------------
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(1.2543)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(1.0807)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(0.1263)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(5.7597e-09)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(0.9494)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(0.0584)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(0.6851)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(1.8908)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(3.7485e-09)
+loss: CE_LC learning rate: 0.0009280000000000001
+training loss: tensor(1.1736e-09)
+Global Model Acc on global data: 0.1475 length of data: 10000
+-------------Round number:  5  -------------
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(0.5747)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(0.8063)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(0.3914)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(0.3200)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(1.0710)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(2.4910)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(1.4709)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(1.2091)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(0.1533)
+loss: CE_LC learning rate: 0.00091
+training loss: tensor(0.4532)
+Global Model Acc on global data: 0.189 length of data: 10000
+save a model
+-------------Round number:  6  -------------
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(0.1155)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(0.3314)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(0.)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(1.7820)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(0.5294)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(1.2204)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(0.8872)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(0.0002)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(0.5539)
+loss: CE_LC learning rate: 0.000892
+training loss: tensor(0.0145)
+Global Model Acc on global data: 0.1615 length of data: 10000
+-------------Round number:  7  -------------
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(2.5870)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.1189)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.3935)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.3460)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.2080)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.1227)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.2700)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.6594)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.7001)
+loss: CE_LC learning rate: 0.000874
+training loss: tensor(0.3015)
+Global Model Acc on global data: 0.1702 length of data: 10000
+-------------Round number:  8  -------------
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(0.1056)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(1.8859)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(0.2615)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(0.3834)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(0.1339)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(1.3671)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(0.3217)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(3.7253e-10)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(1.5167)
+loss: CE_LC learning rate: 0.000856
+training loss: tensor(0.3079)
+Global Model Acc on global data: 0.1259 length of data: 10000
+-------------Round number:  9  -------------
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.0329)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.6559)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.3128)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.1592)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.3825)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.1256)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(3.2432)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.8017)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.1296)
+loss: CE_LC learning rate: 0.0008380000000000001
+training loss: tensor(0.5058)
+Global Model Acc on global data: 0.1157 length of data: 10000
+-------------Round number:  10  -------------
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(0.5276)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(0.3439)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(0.4661)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(3.0708)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(1.0096)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(0.2127)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(0.7524)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(0.0029)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(0.0415)
+loss: CE_LC learning rate: 0.0008200000000000001
+training loss: tensor(0.1647)
+Global Model Acc on global data: 0.1245 length of data: 10000
+-------------Round number:  11  -------------
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(0.2832)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(0.1736)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(0.2751)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(0.0057)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(5.4265e-07)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(0.7021)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(0.2763)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(1.0577e-08)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(2.9190)
+loss: CE_LC learning rate: 0.0008020000000000001
+training loss: tensor(0.4868)
+Global Model Acc on global data: 0.1598 length of data: 10000
+-------------Round number:  12  -------------
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.1193)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(2.8971e-07)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.1861)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.1799)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.0302)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.3470)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.6138)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.0780)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.4102)
+loss: CE_LC learning rate: 0.0007840000000000001
+training loss: tensor(0.6512)
+Global Model Acc on global data: 0.1476 length of data: 10000
+-------------Round number:  13  -------------
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(1.0278)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.2331)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.1784)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.1668)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.1777)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.4205)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.3048)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.4763)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.2564)
+loss: CE_LC learning rate: 0.0007660000000000001
+training loss: tensor(0.2320)
+Global Model Acc on global data: 0.2074 length of data: 10000
+save a model
+-------------Round number:  14  -------------
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.0283)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.1603)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.9092)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.2200)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.0059)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.0995)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.8340)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.1786)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.1987)
+loss: CE_LC learning rate: 0.000748
+training loss: tensor(0.3000)
+Global Model Acc on global data: 0.2204 length of data: 10000
+save a model
+-------------Round number:  15  -------------
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.1222)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.1595)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.1879)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.3664)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.2118)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.3514)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.3223)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.1277)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(0.4943)
+loss: CE_LC learning rate: 0.00073
+training loss: tensor(1.6351)
+Global Model Acc on global data: 0.1902 length of data: 10000
+-------------Round number:  16  -------------
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.1837)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.1874)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.3430)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.3969)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.0022)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.0013)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.4376)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.4485)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.1296)
+loss: CE_LC learning rate: 0.000712
+training loss: tensor(0.5195)
+Global Model Acc on global data: 0.2007 length of data: 10000
+-------------Round number:  17  -------------
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(0.1740)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(0.2173)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(0.3407)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(0.6433)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(0.2787)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(0.1797)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(0.4052)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(0.2292)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(9.0787e-07)
+loss: CE_LC learning rate: 0.000694
+training loss: tensor(1.4824)
+Global Model Acc on global data: 0.1805 length of data: 10000
+-------------Round number:  18  -------------
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.2878)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(2.7151e-07)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.1412)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.8288)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.2811)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.2445)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.6023)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.2047)
+loss: CE_LC learning rate: 0.0006760000000000001
+training loss: tensor(0.1424)
+Global Model Acc on global data: 0.1622 length of data: 10000
+-------------Round number:  19  -------------
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.4501)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.0430)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.0003)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.1592)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.5342)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.3663)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.0039)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(5.5459)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.4961)
+loss: CE_LC learning rate: 0.0006580000000000001
+training loss: tensor(0.1917)
+Global Model Acc on global data: 0.2241 length of data: 10000
+save a model
+-------------Round number:  20  -------------
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.0852)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.4219)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.2074)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.1466)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.0509)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.1696)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.5523)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.0869)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.)
+loss: CE_LC learning rate: 0.00064
+training loss: tensor(0.1316)
+Global Model Acc on global data: 0.2007 length of data: 10000
+-------------Round number:  21  -------------
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(4.3194)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.0108)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.5435)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.1161)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.9206)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.2560)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.3259)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.1343)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.2894)
+loss: CE_LC learning rate: 0.0006220000000000002
+training loss: tensor(0.8755)
+Global Model Acc on global data: 0.2167 length of data: 10000
+-------------Round number:  22  -------------
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(0.3554)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(0.0818)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(1.1175)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(0.1775)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(1.1144)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(0.5151)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(0.5499)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(0.2260)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(0.4596)
+loss: CE_LC learning rate: 0.0006040000000000002
+training loss: tensor(0.4185)
+Global Model Acc on global data: 0.2712 length of data: 10000
+save a model
+-------------Round number:  23  -------------
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(0.1049)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(0.1463)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(1.0730)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(0.1174)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(0.1341)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(1.1088)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(0.2201)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(0.0499)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(0.3770)
+loss: CE_LC learning rate: 0.000586
+training loss: tensor(0.1110)
+Global Model Acc on global data: 0.1384 length of data: 10000
+-------------Round number:  24  -------------
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(0.1824)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(0.3716)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(1.1205)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(0.3810)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(0.1021)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(0.2347)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(0.2697)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(0.2615)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(1.0018)
+loss: CE_LC learning rate: 0.000568
+training loss: tensor(0.0754)
+Global Model Acc on global data: 0.1537 length of data: 10000
+-------------Round number:  25  -------------
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(0.2141)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(0.0010)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(0.7312)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(1.1448)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(0.3945)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(0.0839)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(0.3010)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(1.3561)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(0.9433)
+loss: CE_LC learning rate: 0.00055
+training loss: tensor(1.4790)
+Global Model Acc on global data: 0.1627 length of data: 10000
+-------------Round number:  26  -------------
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.1820)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.2112)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.1022)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.0236)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.2648)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.0834)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.4967)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.2145)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.2082)
+loss: CE_LC learning rate: 0.000532
+training loss: tensor(0.0779)
+Global Model Acc on global data: 0.1829 length of data: 10000
+-------------Round number:  27  -------------
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.5814)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.0784)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.1553)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.0763)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.1621)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.1997)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.0617)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.3786)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.2052)
+loss: CE_LC learning rate: 0.000514
+training loss: tensor(0.1872)
+Global Model Acc on global data: 0.2005 length of data: 10000
+-------------Round number:  28  -------------
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.0736)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.1350)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.2653)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.3949)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.1745)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(1.8410)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.1203)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.0940)
+loss: CE_LC learning rate: 0.000496
+training loss: tensor(0.0726)
+Global Model Acc on global data: 0.1849 length of data: 10000
+-------------Round number:  29  -------------
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.4084)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.0992)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(1.0194)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.3755)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.2656)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.4859)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.0567)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.1233)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.0806)
+loss: CE_LC learning rate: 0.0004780000000000001
+training loss: tensor(0.6820)
+Global Model Acc on global data: 0.2072 length of data: 10000
+-------------Round number:  30  -------------
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.3722)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.1470)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.0918)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.0601)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.0543)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.1147)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.3671)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.2723)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.1612)
+loss: CE_LC learning rate: 0.00046000000000000007
+training loss: tensor(0.3743)
+Global Model Acc on global data: 0.2348 length of data: 10000
+-------------Round number:  31  -------------
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.1407)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.3942)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.0271)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.2042)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.0255)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(1.3243)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.0474)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.5787)
+loss: CE_LC learning rate: 0.00044200000000000006
+training loss: tensor(0.0662)
+Global Model Acc on global data: 0.1536 length of data: 10000
+-------------Round number:  32  -------------
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.1895)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.0853)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.8275)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(1.7940)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.0538)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.5757)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.3951)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.4818)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.1470)
+loss: CE_LC learning rate: 0.00042400000000000006
+training loss: tensor(0.1376)
+Global Model Acc on global data: 0.1556 length of data: 10000
+-------------Round number:  33  -------------
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(0.0163)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(0.0364)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(0.4226)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(2.0301)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(1.2102)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(0.3579)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(0.0442)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(1.4860e-07)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(0.7266)
+loss: CE_LC learning rate: 0.00040600000000000006
+training loss: tensor(0.1357)
+Global Model Acc on global data: 0.2087 length of data: 10000
+-------------Round number:  34  -------------
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(0.1484)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(0.1031)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(0.1311)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(1.4974)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(0.2909)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(3.7564)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(0.1679)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(1.5944)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(0.0883)
+loss: CE_LC learning rate: 0.000388
+training loss: tensor(0.4556)
+Global Model Acc on global data: 0.2652 length of data: 10000
+-------------Round number:  35  -------------
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(0.2469)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(0.5229)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(1.2731)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(0.0738)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(0.0786)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(0.4207)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(0.8484)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(0.0331)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(0.2917)
+loss: CE_LC learning rate: 0.00037
+training loss: tensor(1.3284)
+Global Model Acc on global data: 0.2604 length of data: 10000
+-------------Round number:  36  -------------
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(2.0626)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.3855)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.3473)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.0443)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.2191)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.0099)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.0089)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.1154)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.0502)
+loss: CE_LC learning rate: 0.0003520000000000001
+training loss: tensor(0.3917)
+Global Model Acc on global data: 0.1696 length of data: 10000
+-------------Round number:  37  -------------
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.1191)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.0770)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.3216)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.4086)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.0501)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.0466)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.0011)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(1.0427)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.4118)
+loss: CE_LC learning rate: 0.0003340000000000001
+training loss: tensor(0.1375)
+Global Model Acc on global data: 0.2717 length of data: 10000
+save a model
+-------------Round number:  38  -------------
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.1898)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.4502)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.0600)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.8831)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.2101)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.0209)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.2406)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.1021)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.0458)
+loss: CE_LC learning rate: 0.0003160000000000001
+training loss: tensor(0.6802)
+Global Model Acc on global data: 0.3454 length of data: 10000
+save a model
+-------------Round number:  39  -------------
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.1311)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.2368)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.1544)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.1479)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.4145)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.0219)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.0009)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.5331)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.4042)
+loss: CE_LC learning rate: 0.00029800000000000003
+training loss: tensor(0.5329)
+Global Model Acc on global data: 0.2999 length of data: 10000
+-------------Round number:  40  -------------
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.4472)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.0016)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.7017)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.3912)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.3464)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.8560)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.1493)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.9754)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.0364)
+loss: CE_LC learning rate: 0.00028000000000000003
+training loss: tensor(0.9193)
+Global Model Acc on global data: 0.2632 length of data: 10000
+-------------Round number:  41  -------------
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.3497)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.0967)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(1.9133)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.0277)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.4717)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.3873)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.0082)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.2643)
+loss: CE_LC learning rate: 0.000262
+training loss: tensor(0.4003)
+Global Model Acc on global data: 0.2736 length of data: 10000
+-------------Round number:  42  -------------
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(0.5310)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(0.4686)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(0.1541)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(1.3186)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(0.2058)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(0.0690)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(0.0691)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(0.6421)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(1.6699)
+loss: CE_LC learning rate: 0.0002440000000000001
+training loss: tensor(0.)
+Global Model Acc on global data: 0.3605 length of data: 10000
+save a model
+-------------Round number:  43  -------------
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.8724)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.4244)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.6726)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.0482)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.1349)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.0233)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.2526)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.0928)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.7415)
+loss: CE_LC learning rate: 0.0002260000000000001
+training loss: tensor(0.7728)
+Global Model Acc on global data: 0.2789 length of data: 10000
+-------------Round number:  44  -------------
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(0.4612)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(1.1178)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(0.0458)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(0.2108)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(0.0838)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(0.5060)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(1.3898)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(0.0282)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(0.0008)
+loss: CE_LC learning rate: 0.00020800000000000007
+training loss: tensor(0.6171)
+Global Model Acc on global data: 0.3197 length of data: 10000
+-------------Round number:  45  -------------
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(1.2721e-09)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(0.1917)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(0.6622)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(0.0052)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(2.2106)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(1.1316)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(0.4963)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(0.0769)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(0.4071)
+loss: CE_LC learning rate: 0.00019000000000000006
+training loss: tensor(0.1622)
+Global Model Acc on global data: 0.2656 length of data: 10000
+-------------Round number:  46  -------------
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(0.2165)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(0.3661)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(2.6899)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(1.5598)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(0.1783)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(0.1065)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(0.0007)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(1.2413)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(0.8510)
+loss: CE_LC learning rate: 0.00017200000000000003
+training loss: tensor(0.4123)
+Global Model Acc on global data: 0.2778 length of data: 10000
+-------------Round number:  47  -------------
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.0499)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.0836)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.2206)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.6302)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.7042)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.0434)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.1555)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.1237)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.1147)
+loss: CE_LC learning rate: 0.00015400000000000003
+training loss: tensor(0.0704)
+Global Model Acc on global data: 0.2914 length of data: 10000
+-------------Round number:  48  -------------
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.2582)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.0215)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.8781)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.8006)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.5394)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.3067)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.1442)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.0234)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(4.2720)
+loss: CE_LC learning rate: 0.00013600000000000013
+training loss: tensor(0.3683)
+Global Model Acc on global data: 0.325 length of data: 10000
+-------------Round number:  49  -------------
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.0008)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.1780)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.1687)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.0017)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.0002)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.0189)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.0230)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.0450)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.0014)
+loss: CE_LC learning rate: 0.0001180000000000001
+training loss: tensor(0.1080)
+Global Model Acc on global data: 0.2083 length of data: 10000
+-------------Round number:  50  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.0022)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.6745)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2580)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7726)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1856)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1257)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4014)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0662)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1057)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3202)
+Global Model Acc on global data: 0.3237 length of data: 10000
+-------------Round number:  51  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.0340)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1912)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7559)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.0006)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4060)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5375)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4836)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9805)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3187)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0011)
+Global Model Acc on global data: 0.2265 length of data: 10000
+-------------Round number:  52  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(2.8943)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0106)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1717)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2776)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9329)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.8498)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(3.4743)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9398)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1306)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1052)
+Global Model Acc on global data: 0.3197 length of data: 10000
+-------------Round number:  53  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1904)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3625)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3162)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3471)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.0956)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5459)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1204)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3611)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0430)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.6212)
+Global Model Acc on global data: 0.1477 length of data: 10000
+-------------Round number:  54  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1556)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2827)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4845)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0662)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(6.6563e-06)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3505)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0311)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(5.1138e-08)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0534)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0593)
+Global Model Acc on global data: 0.1962 length of data: 10000
+-------------Round number:  55  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2887)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0579)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(2.1435)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.0607)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2244)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0152)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0230)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0006)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0933)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.1330)
+Global Model Acc on global data: 0.2144 length of data: 10000
+-------------Round number:  56  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0599)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9571)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(6.1100)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3285)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1200)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0785)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9615)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(2.2567)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(6.7181)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1117)
+Global Model Acc on global data: 0.2397 length of data: 10000
+-------------Round number:  57  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0033)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0756)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0051)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1707)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0087)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3695)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(2.2618)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3649)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0315)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5205)
+Global Model Acc on global data: 0.2723 length of data: 10000
+-------------Round number:  58  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1710)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0137)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(5.9062e-05)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.0739)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0990)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7555)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1179)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1730)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1357)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.5100)
+Global Model Acc on global data: 0.2452 length of data: 10000
+-------------Round number:  59  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0202)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2411)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0010)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7365)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(2.9552)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7248)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0450)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0289)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1020)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9271)
+Global Model Acc on global data: 0.2294 length of data: 10000
+-------------Round number:  60  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4218)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.5541)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5339)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1127)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0026)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2100)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1472)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1629)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0657)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1271)
+Global Model Acc on global data: 0.1823 length of data: 10000
+-------------Round number:  61  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3771)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3772)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(2.5305e-05)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.8322)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5162)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1279)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0331)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.1252e-07)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.6312)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7271)
+Global Model Acc on global data: 0.2117 length of data: 10000
+-------------Round number:  62  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0009)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2584)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2427)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5484)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(8.7790e-09)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9957)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.6547)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7783)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0525)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1207)
+Global Model Acc on global data: 0.2484 length of data: 10000
+-------------Round number:  63  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1492)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(4.8937)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9041)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7225)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4442)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.2187)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0511)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5862)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0707)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5320)
+Global Model Acc on global data: 0.3173 length of data: 10000
+-------------Round number:  64  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0310)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0264)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5374)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1447)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(3.2333)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1946)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5058)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3048)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0491)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0314)
+Global Model Acc on global data: 0.287 length of data: 10000
+-------------Round number:  65  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.8224)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0009)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0755)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1347)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0001)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0399)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0474)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.3337)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0873)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2182)
+Global Model Acc on global data: 0.2389 length of data: 10000
+-------------Round number:  66  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0027)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4371)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(1.8365)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0409)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0635)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1134)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5373)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4511)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2697)
+Global Model Acc on global data: 0.2544 length of data: 10000
+-------------Round number:  67  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0344)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0008)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1015)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.6910)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7213)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(3.8551e-06)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1955)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.1234)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.7980)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5045)
+Global Model Acc on global data: 0.1896 length of data: 10000
+-------------Round number:  68  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(3.8932e-08)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(2.6854)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0775)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0243)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0096)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2702)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(3.6004e-05)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0650)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.9124)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5906)
+Global Model Acc on global data: 0.2025 length of data: 10000
+-------------Round number:  69  -------------
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.0257)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.2729)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.5605)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4634)
+loss: CE_LC learning rate: 0.0001
+training loss: tensor(0.4205)
+loss: CE_LC learning rate: 0.0001

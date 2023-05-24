@@ -1,0 +1,3811 @@
+nohup: ignoring input
+================================================================================
+Summary of training process:
+Dataset:                 Cifar10
+Batch size:              64
+Learing rate :           0.001
+personal learning rate : 0.001
+Number of total clients: 100
+Split parameter        : 0.1
+Clients per round      : 10
+Number of global rounds: 100
+Number of local rounds : 10
+Feature from layer     : 0
+Feature reduction      : 64
+Local training loss    : CE_KL2
+Loss of beta           : 1.0
+Algorithm              : FedPP
+Modelname              : MOBNET
+Mode                   : training
+================================================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Here
+Done
+Class frequencies:
+client,class0,class1,class2,class3,class4,class5,class6,class7,class8,class9,Amount
+Client   0,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.000,171
+Client   1,0.231,0.038,0.00,0.00,0.00,0.077,0.00,0.654,0.00,0.00,52
+Client   2,0.374,0.015,0.00,0.00,0.519,0.011,0.007,0.015,0.00,0.059,457
+Client   3,0.00,0.00,0.00,0.232,0.768,0.00,0.00,0.00,0.00,0.00,56
+Client   4,0.660,0.071,0.032,0.122,0.00,0.00,0.083,0.00,0.00,0.032,156
+Client   5,0.00,0.00,0.00,0.00,0.029,0.00,0.00,0.00,0.121,0.850,479
+Client   6,0.00,0.080,0.00,0.00,0.009,0.017,0.894,0.00,0.00,0.00,538
+Client   7,0.00,0.00,0.00,0.00,0.991,0.00,0.00,0.009,0.00,0.00,110
+Client   8,0.131,0.116,0.00,0.00,0.00,0.00,0.00,0.00,0.753,0.00,1059
+Client   9,0.00,0.00,0.175,0.00,0.467,0.017,0.192,0.150,0.00,0.00,120
+Client  10,0.00,0.331,0.540,0.00,0.00,0.00,0.129,0.00,0.00,0.00,513
+Client  11,0.00,0.00,0.250,0.00,0.004,0.358,0.254,0.008,0.121,0.004,240
+Client  12,0.00,0.00,0.00,0.00,0.00,0.562,0.00,0.00,0.396,0.042,48
+Client  13,0.00,0.00,0.00,0.371,0.185,0.00,0.444,0.00,0.00,0.00,453
+Client  14,0.068,0.00,0.003,0.011,0.00,0.042,0.641,0.234,0.00,0.00,354
+Client  15,0.00,0.005,0.00,0.00,0.995,0.00,0.00,0.00,0.00,0.00,213
+Client  16,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,830
+Client  17,0.335,0.00,0.004,0.00,0.007,0.00,0.00,0.654,0.00,0.00,543
+Client  18,0.00,0.743,0.00,0.127,0.053,0.076,0.00,0.00,0.00,0.00,526
+Client  19,0.008,0.00,0.057,0.676,0.185,0.074,0.00,0.00,0.00,0.00,524
+Client  20,0.00,0.00,0.243,0.108,0.00,0.00,0.00,0.216,0.432,0.00,37
+Client  21,0.00,0.00,0.00,0.141,0.848,0.00,0.004,0.007,0.00,0.00,277
+Client  22,0.00,0.192,0.00,0.00,0.00,0.010,0.00,0.028,0.063,0.708,718
+Client  23,0.00,0.100,0.529,0.00,0.00,0.214,0.129,0.00,0.00,0.029,70
+Client  24,0.014,0.00,0.002,0.002,0.00,0.00,0.00,0.982,0.00,0.00,1084
+Client  25,0.00,0.00,0.006,0.105,0.00,0.169,0.010,0.025,0.684,0.00,484
+Client  26,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.194,0.00,0.806,72
+Client  27,0.00,0.00,0.00,0.00,0.011,0.086,0.004,0.00,0.019,0.881,269
+Client  28,0.237,0.00,0.00,0.001,0.038,0.167,0.001,0.011,0.546,0.00,951
+Client  29,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,845
+Client  30,0.004,0.00,0.218,0.743,0.00,0.00,0.00,0.023,0.008,0.004,257
+Client  31,0.014,0.730,0.00,0.005,0.194,0.005,0.052,0.00,0.00,0.00,211
+Client  32,0.00,0.00,0.00,0.00,0.004,0.00,0.743,0.222,0.031,0.00,257
+Client  33,0.559,0.084,0.002,0.00,0.013,0.00,0.00,0.234,0.108,0.00,546
+Client  34,0.00,0.010,0.093,0.00,0.202,0.010,0.00,0.00,0.685,0.00,1363
+Client  35,0.913,0.008,0.00,0.011,0.00,0.065,0.00,0.00,0.00,0.004,263
+Client  36,0.029,0.00,0.001,0.00,0.139,0.006,0.001,0.003,0.821,0.00,979
+Client  37,0.00,0.00,0.259,0.194,0.237,0.245,0.029,0.00,0.00,0.036,139
+Client  38,0.075,0.00,0.00,0.00,0.00,0.925,0.00,0.00,0.00,0.00,239
+Client  39,0.00,0.334,0.00,0.00,0.00,0.00,0.00,0.666,0.00,0.00,1283
+Client  40,0.00,0.00,0.00,0.00,0.00,0.353,0.00,0.211,0.436,0.00,337
+Client  41,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,502
+Client  42,0.218,0.00,0.020,0.259,0.00,0.041,0.00,0.463,0.00,0.00,147
+Client  43,0.073,0.008,0.024,0.062,0.073,0.00,0.00,0.00,0.003,0.758,372
+Client  44,0.003,0.00,0.00,0.064,0.269,0.00,0.114,0.247,0.302,0.00,668
+Client  45,0.00,0.025,0.00,0.066,0.689,0.00,0.213,0.00,0.008,0.00,122
+Client  46,0.002,0.258,0.019,0.00,0.042,0.274,0.00,0.406,0.00,0.00,530
+Client  47,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,689
+Client  48,0.023,0.00,0.003,0.036,0.00,0.00,0.227,0.006,0.605,0.100,309
+Client  49,0.102,0.377,0.001,0.519,0.00,0.00,0.00,0.00,0.00,0.00,695
+Client  50,0.00,0.00,0.00,0.136,0.00,0.00,0.00,0.017,0.00,0.847,118
+Client  51,0.331,0.035,0.00,0.052,0.00,0.083,0.034,0.00,0.012,0.453,762
+Client  52,0.007,0.276,0.717,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1078
+Client  53,0.00,0.073,0.153,0.00,0.00,0.00,0.271,0.00,0.504,0.00,262
+Client  54,0.003,0.003,0.127,0.173,0.663,0.025,0.00,0.006,0.00,0.00,323
+Client  55,0.000,0.00,0.000,0.00,0.00,0.999,0.00,0.00,0.00,0.00,2015
+Client  56,0.00,0.00,0.014,0.986,0.00,0.00,0.00,0.00,0.00,0.00,876
+Client  57,0.424,0.299,0.002,0.275,0.00,0.00,0.00,0.00,0.00,0.00,655
+Client  58,0.003,0.997,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,787
+Client  59,0.00,0.00,0.908,0.00,0.00,0.00,0.031,0.00,0.061,0.00,131
+Client  60,0.067,0.00,0.00,0.00,0.067,0.200,0.00,0.200,0.333,0.133,15
+Client  61,0.00,0.027,0.001,0.00,0.00,0.00,0.430,0.177,0.364,0.00,711
+Client  62,0.00,0.00,0.00,0.00,0.006,0.983,0.00,0.00,0.011,0.00,359
+Client  63,0.00,0.00,0.519,0.002,0.005,0.229,0.246,0.00,0.00,0.00,582
+Client  64,0.00,0.00,0.00,0.00,0.00,0.064,0.207,0.729,0.00,0.00,299
+Client  65,0.295,0.003,0.00,0.00,0.00,0.00,0.00,0.011,0.691,0.00,356
+Client  66,0.375,0.267,0.003,0.00,0.182,0.020,0.00,0.003,0.131,0.020,352
+Client  67,0.053,0.00,0.037,0.00,0.910,0.00,0.00,0.00,0.00,0.00,543
+Client  68,0.00,0.001,0.999,0.00,0.00,0.00,0.00,0.00,0.00,0.00,993
+Client  69,0.00,0.185,0.00,0.00,0.228,0.587,0.00,0.00,0.00,0.00,584
+Client  70,0.00,0.00,0.011,0.00,0.122,0.00,0.867,0.00,0.00,0.00,90
+Client  71,0.00,0.931,0.00,0.00,0.038,0.013,0.00,0.00,0.019,0.00,159
+Client  72,0.00,0.00,0.034,0.00,0.00,0.00,0.00,0.966,0.00,0.00,206
+Client  73,0.00,0.103,0.00,0.068,0.017,0.222,0.00,0.00,0.111,0.479,117
+Client  74,0.00,0.00,0.003,0.861,0.00,0.00,0.00,0.136,0.00,0.00,309
+Client  75,0.00,0.00,0.00,0.001,0.009,0.00,0.991,0.00,0.00,0.00,2441
+Client  76,0.026,0.00,0.00,0.00,0.071,0.00,0.00,0.00,0.002,0.900,2848
+Client  77,0.00,0.00,0.026,0.00,0.00,0.974,0.00,0.00,0.00,0.00,693
+Client  78,0.440,0.004,0.00,0.00,0.444,0.00,0.00,0.00,0.112,0.00,277
+Client  79,0.828,0.007,0.00,0.131,0.004,0.029,0.00,0.00,0.00,0.00,274
+Client  80,0.00,0.201,0.003,0.661,0.00,0.013,0.003,0.119,0.00,0.00,319
+Client  81,0.00,0.00,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,1152
+Client  82,0.00,0.009,0.757,0.009,0.00,0.00,0.036,0.00,0.009,0.180,111
+Client  83,0.005,0.00,0.00,0.00,0.003,0.228,0.00,0.750,0.00,0.013,372
+Client  84,0.00,0.00,0.00,0.063,0.077,0.00,0.860,0.00,0.00,0.00,271
+Client  85,0.00,0.244,0.555,0.00,0.00,0.00,0.00,0.088,0.113,0.00,238
+Client  86,0.002,0.00,0.314,0.00,0.666,0.00,0.00,0.00,0.018,0.00,437
+Client  87,0.00,0.022,0.022,0.011,0.022,0.043,0.269,0.258,0.032,0.323,93
+Client  88,0.00,0.00,0.00,0.281,0.00,0.00,0.00,0.357,0.010,0.352,210
+Client  89,0.086,0.029,0.642,0.011,0.103,0.019,0.00,0.00,0.00,0.109,523
+Client  90,0.00,0.00,1.000,0.00,0.00,0.00,0.00,0.00,0.00,0.00,800
+Client  91,0.00,0.00,0.377,0.003,0.00,0.002,0.00,0.619,0.00,0.00,1199
+Client  92,0.065,0.00,0.015,0.915,0.00,0.005,0.00,0.00,0.00,0.00,400
+Client  93,0.00,0.496,0.00,0.00,0.331,0.132,0.00,0.041,0.00,0.00,516
+Client  94,0.00,0.00,0.00,0.00,0.008,0.032,0.944,0.00,0.016,0.00,125
+Client  95,0.00,0.00,0.375,0.00,0.00,0.00,0.00,0.00,0.625,0.00,32
+Client  96,0.00,0.073,0.011,0.00,0.915,0.00,0.00,0.00,0.00,0.00,1321
+Client  97,0.00,0.00,0.00,0.00,0.00,0.00,0.925,0.00,0.050,0.025,40
+Client  98,0.00,0.073,0.00,0.00,0.00,0.836,0.018,0.009,0.064,0.00,110
+Client  99,0.173,0.003,0.003,0.799,0.003,0.003,0.003,0.003,0.006,0.006,359
+Num_samples of Training set per client: [171, 52, 457, 56, 156, 479, 538, 110, 1059, 120, 513, 240, 48, 453, 354, 213, 830, 543, 526, 524, 37, 277, 718, 70, 1084, 484, 72, 269, 951, 845, 257, 211, 257, 546, 1363, 263, 979, 139, 239, 1283, 337, 502, 147, 372, 668, 122, 530, 689, 309, 695, 118, 762, 1078, 262, 323, 2015, 876, 655, 787, 131, 15, 711, 359, 582, 299, 356, 352, 543, 993, 584, 90, 159, 206, 117, 309, 2441, 2848, 693, 277, 274, 319, 1152, 111, 372, 271, 238, 437, 93, 210, 523, 800, 1199, 400, 516, 125, 32, 1321, 40, 110, 359]
+Total_training_samples: 50000
+Global test set: 10000
+Finish Generating Samples, distribution saved
+MobileNetV2(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layers): Sequential(
+    (0): Block(
+      (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Block(
+      (conv1): Conv2d(16, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=96, bias=False)
+      (bn2): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(96, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(16, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (3): Block(
+      (conv1): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(144, 144, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=144, bias=False)
+      (bn2): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(144, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (4): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (5): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (6): Block(
+      (conv1): Conv2d(32, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(192, 192, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=192, bias=False)
+      (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (7): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (8): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (9): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (10): Block(
+      (conv1): Conv2d(64, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(384, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=384, bias=False)
+      (bn2): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(384, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (11): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (12): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (13): Block(
+      (conv1): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(576, 576, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=576, bias=False)
+      (bn2): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(576, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (14): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (15): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (16): Block(
+      (conv1): Conv2d(160, 960, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(960, 960, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=960, bias=False)
+      (bn2): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(960, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(160, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (conv2): Conv2d(320, 1280, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (bn2): BatchNorm2d(1280, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear): Linear(in_features=1280, out_features=10, bias=True)
+)
+number of parameters: 2296922
+clients initializting...
+output size: 10
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:51,  1.94it/s]  2%|▏         | 2/100 [00:01<00:55,  1.78it/s]  3%|▎         | 3/100 [00:02<01:01,  1.57it/s]  4%|▍         | 4/100 [00:05<02:32,  1.59s/it]  5%|▌         | 5/100 [00:06<02:06,  1.34s/it]  6%|▌         | 6/100 [00:07<01:45,  1.12s/it]  7%|▋         | 7/100 [00:07<01:31,  1.01it/s]  8%|▊         | 8/100 [00:08<01:19,  1.16it/s]  9%|▉         | 9/100 [00:09<01:12,  1.25it/s] 10%|█         | 10/100 [00:09<01:09,  1.29it/s] 11%|█         | 11/100 [00:10<01:05,  1.37it/s] 12%|█▏        | 12/100 [00:11<01:06,  1.33it/s] 13%|█▎        | 13/100 [00:11<01:01,  1.40it/s] 14%|█▍        | 14/100 [00:12<00:59,  1.45it/s] 15%|█▌        | 15/100 [00:13<01:00,  1.41it/s] 16%|█▌        | 16/100 [00:13<00:55,  1.50it/s] 17%|█▋        | 17/100 [00:14<00:52,  1.58it/s] 18%|█▊        | 18/100 [00:15<00:53,  1.54it/s] 19%|█▉        | 19/100 [00:15<00:53,  1.52it/s] 20%|██        | 20/100 [00:16<00:54,  1.48it/s] 21%|██        | 21/100 [00:17<00:52,  1.49it/s] 22%|██▏       | 22/100 [00:17<00:51,  1.50it/s] 23%|██▎       | 23/100 [00:18<00:52,  1.46it/s] 24%|██▍       | 24/100 [00:19<00:52,  1.45it/s] 25%|██▌       | 25/100 [00:19<00:52,  1.44it/s] 26%|██▌       | 26/100 [00:20<00:53,  1.40it/s] 27%|██▋       | 27/100 [00:21<00:49,  1.48it/s] 28%|██▊       | 28/100 [00:21<00:49,  1.46it/s] 29%|██▉       | 29/100 [00:22<00:51,  1.38it/s] 30%|███       | 30/100 [00:23<00:47,  1.49it/s] 31%|███       | 31/100 [00:24<00:47,  1.44it/s] 32%|███▏      | 32/100 [00:24<00:48,  1.41it/s] 33%|███▎      | 33/100 [00:25<00:46,  1.43it/s] 34%|███▍      | 34/100 [00:26<00:47,  1.39it/s] 35%|███▌      | 35/100 [00:26<00:47,  1.37it/s] 36%|███▌      | 36/100 [00:30<01:47,  1.68s/it] 37%|███▋      | 37/100 [00:31<01:30,  1.43s/it] 38%|███▊      | 38/100 [00:32<01:15,  1.22s/it] 39%|███▉      | 39/100 [00:33<01:02,  1.03s/it] 40%|████      | 40/100 [00:33<00:54,  1.10it/s] 41%|████      | 41/100 [00:34<00:48,  1.22it/s] 42%|████▏     | 42/100 [00:34<00:42,  1.36it/s] 43%|████▎     | 43/100 [00:35<00:41,  1.37it/s] 44%|████▍     | 44/100 [00:36<00:42,  1.33it/s] 45%|████▌     | 45/100 [00:37<00:41,  1.32it/s] 46%|████▌     | 46/100 [00:37<00:40,  1.35it/s] 47%|████▋     | 47/100 [00:38<00:39,  1.34it/s] 48%|████▊     | 48/100 [00:39<00:35,  1.46it/s] 49%|████▉     | 49/100 [00:39<00:36,  1.39it/s] 50%|█████     | 50/100 [00:40<00:35,  1.41it/s] 51%|█████     | 51/100 [00:41<00:33,  1.46it/s] 52%|█████▏    | 52/100 [00:42<00:34,  1.38it/s] 53%|█████▎    | 53/100 [00:42<00:33,  1.42it/s] 54%|█████▍    | 54/100 [00:43<00:31,  1.44it/s] 55%|█████▌    | 55/100 [00:44<00:32,  1.38it/s] 56%|█████▌    | 56/100 [00:44<00:31,  1.39it/s] 57%|█████▋    | 57/100 [00:45<00:29,  1.47it/s] 58%|█████▊    | 58/100 [00:46<00:28,  1.47it/s] 59%|█████▉    | 59/100 [00:46<00:26,  1.52it/s] 60%|██████    | 60/100 [00:47<00:25,  1.55it/s] 61%|██████    | 61/100 [00:48<00:26,  1.49it/s] 62%|██████▏   | 62/100 [00:48<00:26,  1.46it/s] 63%|██████▎   | 63/100 [00:49<00:24,  1.50it/s] 64%|██████▍   | 64/100 [00:50<00:24,  1.48it/s] 65%|██████▌   | 65/100 [00:50<00:23,  1.51it/s] 66%|██████▌   | 66/100 [00:51<00:22,  1.51it/s] 67%|██████▋   | 67/100 [00:52<00:23,  1.40it/s] 68%|██████▊   | 68/100 [00:56<00:52,  1.63s/it] 69%|██████▉   | 69/100 [00:56<00:41,  1.32s/it] 70%|███████   | 70/100 [00:57<00:33,  1.12s/it] 71%|███████   | 71/100 [00:57<00:28,  1.02it/s] 72%|███████▏  | 72/100 [00:58<00:24,  1.13it/s] 73%|███████▎  | 73/100 [00:59<00:21,  1.27it/s] 74%|███████▍  | 74/100 [00:59<00:20,  1.28it/s] 75%|███████▌  | 75/100 [01:00<00:18,  1.35it/s] 76%|███████▌  | 76/100 [01:01<00:18,  1.32it/s] 77%|███████▋  | 77/100 [01:02<00:17,  1.30it/s] 78%|███████▊  | 78/100 [01:02<00:15,  1.40it/s] 79%|███████▉  | 79/100 [01:03<00:14,  1.44it/s] 80%|████████  | 80/100 [01:04<00:13,  1.44it/s] 81%|████████  | 81/100 [01:04<00:13,  1.41it/s] 82%|████████▏ | 82/100 [01:05<00:11,  1.50it/s] 83%|████████▎ | 83/100 [01:06<00:11,  1.46it/s] 84%|████████▍ | 84/100 [01:06<00:11,  1.44it/s] 85%|████████▌ | 85/100 [01:07<00:10,  1.49it/s] 86%|████████▌ | 86/100 [01:08<00:09,  1.50it/s] 87%|████████▋ | 87/100 [01:08<00:08,  1.50it/s] 88%|████████▊ | 88/100 [01:09<00:08,  1.38it/s] 89%|████████▉ | 89/100 [01:10<00:07,  1.42it/s] 90%|█████████ | 90/100 [01:11<00:07,  1.37it/s] 91%|█████████ | 91/100 [01:11<00:06,  1.48it/s] 92%|█████████▏| 92/100 [01:12<00:05,  1.45it/s] 93%|█████████▎| 93/100 [01:13<00:04,  1.47it/s] 94%|█████████▍| 94/100 [01:13<00:04,  1.48it/s] 95%|█████████▌| 95/100 [01:14<00:03,  1.50it/s] 96%|█████████▌| 96/100 [01:14<00:02,  1.58it/s] 97%|█████████▋| 97/100 [01:15<00:01,  1.56it/s] 98%|█████████▊| 98/100 [01:16<00:01,  1.58it/s] 99%|█████████▉| 99/100 [01:16<00:00,  1.53it/s]100%|██████████| 100/100 [01:17<00:00,  1.37it/s]100%|██████████| 100/100 [01:17<00:00,  1.29it/s]
+Number of users per round / total users: 10  /  100
+Finished creating FedAvg server.
+=== FedPP ===
+-------------Round number:  0  -------------
+selected users: [26, 86, 2, 55, 75, 93, 16, 73, 54, 95]
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([323, 16, 32, 32]) torch.Size([323])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+7240 72 72
+all data: 1000
+Local adapation with distilling: 0.001
+training loss: tensor(3.3869) feature loss: tensor(0.3639)
+Local adapation with distilling: 0.001
+training loss: tensor(2.6685) feature loss: tensor(0.4399)
+Local adapation with distilling: 0.001
+training loss: tensor(2.5645) feature loss: tensor(0.4690)
+Local adapation with distilling: 0.001
+training loss: tensor(1.1997) feature loss: tensor(0.4787)
+Local adapation with distilling: 0.001
+training loss: tensor(1.1646) feature loss: tensor(0.4654)
+Local adapation with distilling: 0.001
+training loss: tensor(2.5291) feature loss: tensor(0.4229)
+Local adapation with distilling: 0.001
+training loss: tensor(1.6241) feature loss: tensor(0.3850)
+Local adapation with distilling: 0.001
+training loss: tensor(3.3141) feature loss: tensor(0.3441)
+Local adapation with distilling: 0.001
+training loss: tensor(2.9564) feature loss: tensor(0.4305)
+Local adapation with distilling: 0.001
+training loss: tensor(3.3891) feature loss: tensor(0.3100)
+         GM acc on global data: 0.1215 length of data: 10000
+-------------Round number:  1  -------------
+selected users: [80, 84, 33, 81, 93, 17, 36, 82, 69, 65]
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+5441 72 72
+all data: 1000
+Local adapation with distilling: 0.000982
+training loss: tensor(2.4412) feature loss: tensor(0.4969)
+Local adapation with distilling: 0.000982
+training loss: tensor(2.4748) feature loss: tensor(0.4056)
+Local adapation with distilling: 0.000982
+training loss: tensor(2.2186) feature loss: tensor(0.4808)
+Local adapation with distilling: 0.000982
+training loss: tensor(1.3726) feature loss: tensor(0.6035)
+Local adapation with distilling: 0.000982
+training loss: tensor(2.1780) feature loss: tensor(0.4065)
+Local adapation with distilling: 0.000982
+training loss: tensor(1.9612) feature loss: tensor(0.4150)
+Local adapation with distilling: 0.000982
+training loss: tensor(1.6294) feature loss: tensor(0.4777)
+Local adapation with distilling: 0.000982
+training loss: tensor(3.2220) feature loss: tensor(0.4125)
+Local adapation with distilling: 0.000982
+training loss: tensor(2.0675) feature loss: tensor(0.3879)
+Local adapation with distilling: 0.000982
+training loss: tensor(2.3454) feature loss: tensor(0.5004)
+         GM acc on global data: 0.1301 length of data: 10000
+-------------Round number:  2  -------------
+selected users: [83, 30, 56, 24, 16, 23, 2, 27, 28, 13]
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([876, 16, 32, 32]) torch.Size([876])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([453, 16, 32, 32]) torch.Size([453])
+5619 72 72
+all data: 1000
+Local adapation with distilling: 0.000964
+training loss: tensor(1.8252) feature loss: tensor(0.4387)
+Local adapation with distilling: 0.000964
+training loss: tensor(2.1585) feature loss: tensor(0.4629)
+Local adapation with distilling: 0.000964
+training loss: tensor(1.3369) feature loss: tensor(0.5055)
+Local adapation with distilling: 0.000964
+training loss: tensor(1.2879) feature loss: tensor(0.5337)
+Local adapation with distilling: 0.000964
+training loss: tensor(1.2830) feature loss: tensor(0.4728)
+Local adapation with distilling: 0.000964
+training loss: tensor(3.0754) feature loss: tensor(0.4042)
+Local adapation with distilling: 0.000964
+training loss: tensor(1.7609) feature loss: tensor(0.4117)
+Local adapation with distilling: 0.000964
+training loss: tensor(2.3479) feature loss: tensor(0.5178)
+Local adapation with distilling: 0.000964
+training loss: tensor(1.4994) feature loss: tensor(0.4336)
+Local adapation with distilling: 0.000964
+training loss: tensor(1.8760) feature loss: tensor(0.4043)
+         GM acc on global data: 0.1906 length of data: 10000
+-------------Round number:  3  -------------
+selected users: [93, 67, 6, 64, 96, 83, 98, 42, 25, 15]
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([299, 16, 32, 32]) torch.Size([299])
+torch.Size([1321, 16, 32, 32]) torch.Size([1321])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+4543 72 72
+all data: 1000
+Local adapation with distilling: 0.000946
+training loss: tensor(1.4568) feature loss: tensor(0.4320)
+Local adapation with distilling: 0.000946
+training loss: tensor(1.1871) feature loss: tensor(0.3799)
+Local adapation with distilling: 0.000946
+training loss: tensor(1.3609) feature loss: tensor(0.4232)
+Local adapation with distilling: 0.000946
+training loss: tensor(1.6789) feature loss: tensor(0.5084)
+Local adapation with distilling: 0.000946
+training loss: tensor(0.9374) feature loss: tensor(0.4222)
+Local adapation with distilling: 0.000946
+training loss: tensor(1.5935) feature loss: tensor(0.4904)
+Local adapation with distilling: 0.000946
+training loss: tensor(2.4088) feature loss: tensor(0.4838)
+Local adapation with distilling: 0.000946
+training loss: tensor(1.9715) feature loss: tensor(0.3706)
+Local adapation with distilling: 0.000946
+training loss: tensor(1.4705) feature loss: tensor(0.4232)
+Local adapation with distilling: 0.000946
+training loss: tensor(1.5673) feature loss: tensor(0.3663)
+         GM acc on global data: 0.1798 length of data: 10000
+-------------Round number:  4  -------------
+selected users: [20, 10, 96, 16, 63, 24, 53, 97, 41, 47]
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([1321, 16, 32, 32]) torch.Size([1321])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([689, 16, 32, 32]) torch.Size([689])
+5860 72 72
+all data: 1000
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(2.4675) feature loss: tensor(0.3751)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(2.1366) feature loss: tensor(0.6528)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(0.9136) feature loss: tensor(0.4647)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(1.1871) feature loss: tensor(0.5659)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(1.8048) feature loss: tensor(0.6633)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(1.0727) feature loss: tensor(0.5392)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(2.1336) feature loss: tensor(0.5804)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(3.1340) feature loss: tensor(0.4712)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(1.6403) feature loss: tensor(0.7302)
+Local adapation with distilling: 0.0009280000000000001
+training loss: tensor(1.4142) feature loss: tensor(0.6436)
+         GM acc on global data: 0.1573 length of data: 10000
+-------------Round number:  5  -------------
+selected users: [66, 32, 46, 28, 74, 23, 10, 20, 17, 35]
+torch.Size([352, 16, 32, 32]) torch.Size([352])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([263, 16, 32, 32]) torch.Size([263])
+3825 72 72
+all data: 1000
+Local adapation with distilling: 0.00091
+training loss: tensor(1.7066) feature loss: tensor(0.6481)
+Local adapation with distilling: 0.00091
+training loss: tensor(2.3792) feature loss: tensor(0.6149)
+Local adapation with distilling: 0.00091
+training loss: tensor(1.5643) feature loss: tensor(0.6098)
+Local adapation with distilling: 0.00091
+training loss: tensor(1.3068) feature loss: tensor(0.6107)
+Local adapation with distilling: 0.00091
+training loss: tensor(1.8118) feature loss: tensor(0.6403)
+Local adapation with distilling: 0.00091
+training loss: tensor(3.1508) feature loss: tensor(0.5895)
+Local adapation with distilling: 0.00091
+training loss: tensor(1.8792) feature loss: tensor(0.6242)
+Local adapation with distilling: 0.00091
+training loss: tensor(2.3447) feature loss: tensor(0.5157)
+Local adapation with distilling: 0.00091
+training loss: tensor(1.3293) feature loss: tensor(0.5934)
+Local adapation with distilling: 0.00091
+training loss: tensor(1.8707) feature loss: tensor(0.7062)
+         GM acc on global data: 0.2906 length of data: 10000
+-------------Round number:  6  -------------
+selected users: [17, 34, 0, 45, 60, 86, 20, 47, 44, 81]
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([689, 16, 32, 32]) torch.Size([689])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+5261 72 72
+all data: 1000
+Local adapation with distilling: 0.000892
+training loss: tensor(1.1113) feature loss: tensor(0.4311)
+Local adapation with distilling: 0.000892
+training loss: tensor(0.9231) feature loss: tensor(0.4182)
+Local adapation with distilling: 0.000892
+training loss: tensor(4.6718) feature loss: tensor(0.4007)
+Local adapation with distilling: 0.000892
+training loss: tensor(1.7239) feature loss: tensor(0.2465)
+Local adapation with distilling: 0.000892
+training loss: tensor(2.1766) feature loss: tensor(0.2413)
+Local adapation with distilling: 0.000892
+training loss: tensor(1.2699) feature loss: tensor(0.3489)
+Local adapation with distilling: 0.000892
+training loss: tensor(1.8177) feature loss: tensor(0.2812)
+Local adapation with distilling: 0.000892
+training loss: tensor(0.9911) feature loss: tensor(0.4174)
+Local adapation with distilling: 0.000892
+training loss: tensor(1.1129) feature loss: tensor(0.4171)
+Local adapation with distilling: 0.000892
+training loss: tensor(0.8019) feature loss: tensor(0.4216)
+         GM acc on global data: 0.2388 length of data: 10000
+-------------Round number:  7  -------------
+selected users: [37, 26, 78, 91, 49, 15, 93, 71, 86, 22]
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+4425 72 72
+all data: 1000
+Local adapation with distilling: 0.000874
+training loss: tensor(2.4188) feature loss: tensor(0.5254)
+Local adapation with distilling: 0.000874
+training loss: tensor(5.1346) feature loss: tensor(0.6082)
+Local adapation with distilling: 0.000874
+training loss: tensor(1.5954) feature loss: tensor(0.5080)
+Local adapation with distilling: 0.000874
+training loss: tensor(1.0496) feature loss: tensor(0.5309)
+Local adapation with distilling: 0.000874
+training loss: tensor(1.1865) feature loss: tensor(0.5238)
+Local adapation with distilling: 0.000874
+training loss: tensor(1.6840) feature loss: tensor(0.4349)
+Local adapation with distilling: 0.000874
+training loss: tensor(1.4644) feature loss: tensor(0.5628)
+Local adapation with distilling: 0.000874
+training loss: tensor(2.6989) feature loss: tensor(0.6443)
+Local adapation with distilling: 0.000874
+training loss: tensor(1.3656) feature loss: tensor(0.4763)
+Local adapation with distilling: 0.000874
+training loss: tensor(2.2238) feature loss: tensor(0.6378)
+         GM acc on global data: 0.2766 length of data: 10000
+-------------Round number:  8  -------------
+selected users: [17, 23, 1, 44, 55, 99, 86, 29, 62, 33]
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([52, 16, 32, 32]) torch.Size([52])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+5894 72 72
+all data: 1000
+Local adapation with distilling: 0.000856
+training loss: tensor(1.1006) feature loss: tensor(0.5632)
+Local adapation with distilling: 0.000856
+training loss: tensor(2.5700) feature loss: tensor(0.4558)
+Local adapation with distilling: 0.000856
+training loss: tensor(2.3931) feature loss: tensor(0.5280)
+Local adapation with distilling: 0.000856
+training loss: tensor(1.0756) feature loss: tensor(0.5226)
+Local adapation with distilling: 0.000856
+training loss: tensor(0.8306) feature loss: tensor(0.5525)
+Local adapation with distilling: 0.000856
+training loss: tensor(1.5070) feature loss: tensor(0.6717)
+Local adapation with distilling: 0.000856
+training loss: tensor(1.1571) feature loss: tensor(0.4867)
+Local adapation with distilling: 0.000856
+training loss: tensor(0.9945) feature loss: tensor(0.5557)
+Local adapation with distilling: 0.000856
+training loss: tensor(1.7823) feature loss: tensor(0.6843)
+Local adapation with distilling: 0.000856
+training loss: tensor(1.2196) feature loss: tensor(0.5772)
+         GM acc on global data: 0.2411 length of data: 10000
+-------------Round number:  9  -------------
+selected users: [75, 42, 46, 68, 3, 39, 23, 20, 70, 73]
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+5764 72 72
+all data: 1000
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(0.8752) feature loss: tensor(0.6339)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(2.0123) feature loss: tensor(0.6828)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(1.3632) feature loss: tensor(0.6771)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(1.1139) feature loss: tensor(0.6382)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(2.4113) feature loss: tensor(0.3859)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(1.0904) feature loss: tensor(0.6528)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(2.3559) feature loss: tensor(0.6834)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(2.6246) feature loss: tensor(0.5692)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(2.6061) feature loss: tensor(0.7123)
+Local adapation with distilling: 0.0008380000000000001
+training loss: tensor(3.0643) feature loss: tensor(0.6364)
+         GM acc on global data: 0.2405 length of data: 10000
+-------------Round number:  10  -------------
+selected users: [19, 14, 43, 37, 66, 3, 79, 41, 38, 68]
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([352, 16, 32, 32]) torch.Size([352])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+3805 72 72
+all data: 1000
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(1.6236) feature loss: tensor(0.6236)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(1.7156) feature loss: tensor(0.5778)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(3.1569) feature loss: tensor(0.6115)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(2.3881) feature loss: tensor(0.5650)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(1.9386) feature loss: tensor(0.6588)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(3.2048) feature loss: tensor(0.3870)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(2.3044) feature loss: tensor(0.7248)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(2.0000) feature loss: tensor(0.7178)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(2.1807) feature loss: tensor(0.5715)
+Local adapation with distilling: 0.0008200000000000001
+training loss: tensor(1.1506) feature loss: tensor(0.6079)
+         GM acc on global data: 0.2675 length of data: 10000
+-------------Round number:  11  -------------
+selected users: [46, 49, 22, 58, 41, 98, 62, 29, 30, 51]
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([787, 16, 32, 32]) torch.Size([787])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([762, 16, 32, 32]) torch.Size([762])
+5565 72 72
+all data: 1000
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(1.4749) feature loss: tensor(0.6313)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(1.2925) feature loss: tensor(0.7252)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(1.9502) feature loss: tensor(0.6440)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(1.0695) feature loss: tensor(0.5764)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(1.4836) feature loss: tensor(0.6034)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(2.7460) feature loss: tensor(0.5317)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(1.6288) feature loss: tensor(0.5130)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(1.1699) feature loss: tensor(0.6287)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(2.1983) feature loss: tensor(0.6401)
+Local adapation with distilling: 0.0008020000000000001
+training loss: tensor(1.4130) feature loss: tensor(0.6076)
+         GM acc on global data: 0.3486 length of data: 10000
+-------------Round number:  12  -------------
+selected users: [17, 41, 92, 14, 68, 31, 89, 15, 21, 60]
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([400, 16, 32, 32]) torch.Size([400])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+4031 72 72
+all data: 1000
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(1.0891) feature loss: tensor(0.4464)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(1.3566) feature loss: tensor(0.4993)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(1.2767) feature loss: tensor(0.3877)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(1.2184) feature loss: tensor(0.4297)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(0.8343) feature loss: tensor(0.4073)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(1.3294) feature loss: tensor(0.3657)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(1.1948) feature loss: tensor(0.4689)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(1.3068) feature loss: tensor(0.3361)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(1.4332) feature loss: tensor(0.4173)
+Local adapation with distilling: 0.0007840000000000001
+training loss: tensor(2.1033) feature loss: tensor(0.3132)
+         GM acc on global data: 0.351 length of data: 10000
+-------------Round number:  13  -------------
+selected users: [37, 62, 83, 14, 43, 9, 44, 31, 69, 57]
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([655, 16, 32, 32]) torch.Size([655])
+3834 72 72
+all data: 1000
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.6082) feature loss: tensor(0.3671)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.4139) feature loss: tensor(0.4886)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.3788) feature loss: tensor(0.4648)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.2143) feature loss: tensor(0.4590)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.8631) feature loss: tensor(0.5120)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.9015) feature loss: tensor(0.3165)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.0582) feature loss: tensor(0.4777)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.5076) feature loss: tensor(0.4585)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.1278) feature loss: tensor(0.5429)
+Local adapation with distilling: 0.0007660000000000001
+training loss: tensor(1.0752) feature loss: tensor(0.5058)
+         GM acc on global data: 0.4217 length of data: 10000
+-------------Round number:  14  -------------
+selected users: [24, 39, 35, 44, 55, 70, 82, 40, 91, 65]
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([263, 16, 32, 32]) torch.Size([263])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+7406 72 72
+all data: 1000
+Local adapation with distilling: 0.000748
+training loss: tensor(0.8588) feature loss: tensor(0.5045)
+Local adapation with distilling: 0.000748
+training loss: tensor(0.8449) feature loss: tensor(0.5081)
+Local adapation with distilling: 0.000748
+training loss: tensor(1.3716) feature loss: tensor(0.4344)
+Local adapation with distilling: 0.000748
+training loss: tensor(0.8349) feature loss: tensor(0.4435)
+Local adapation with distilling: 0.000748
+training loss: tensor(0.6411) feature loss: tensor(0.4392)
+Local adapation with distilling: 0.000748
+training loss: tensor(1.8777) feature loss: tensor(0.3420)
+Local adapation with distilling: 0.000748
+training loss: tensor(1.7480) feature loss: tensor(0.4079)
+Local adapation with distilling: 0.000748
+training loss: tensor(1.0995) feature loss: tensor(0.4588)
+Local adapation with distilling: 0.000748
+training loss: tensor(0.8015) feature loss: tensor(0.4633)
+Local adapation with distilling: 0.000748
+training loss: tensor(1.2839) feature loss: tensor(0.4642)
+         GM acc on global data: 0.3963 length of data: 10000
+-------------Round number:  15  -------------
+selected users: [84, 36, 57, 51, 46, 78, 93, 14, 11, 59]
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([655, 16, 32, 32]) torch.Size([655])
+torch.Size([762, 16, 32, 32]) torch.Size([762])
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+torch.Size([131, 16, 32, 32]) torch.Size([131])
+4715 72 72
+all data: 1000
+Local adapation with distilling: 0.00073
+training loss: tensor(1.3451) feature loss: tensor(0.3824)
+Local adapation with distilling: 0.00073
+training loss: tensor(0.9059) feature loss: tensor(0.4145)
+Local adapation with distilling: 0.00073
+training loss: tensor(0.9625) feature loss: tensor(0.4687)
+Local adapation with distilling: 0.00073
+training loss: tensor(1.0856) feature loss: tensor(0.5073)
+Local adapation with distilling: 0.00073
+training loss: tensor(0.9951) feature loss: tensor(0.3763)
+Local adapation with distilling: 0.00073
+training loss: tensor(1.2564) feature loss: tensor(0.3562)
+Local adapation with distilling: 0.00073
+training loss: tensor(1.0680) feature loss: tensor(0.3683)
+Local adapation with distilling: 0.00073
+training loss: tensor(1.1324) feature loss: tensor(0.3697)
+Local adapation with distilling: 0.00073
+training loss: tensor(1.3776) feature loss: tensor(0.3553)
+Local adapation with distilling: 0.00073
+training loss: tensor(2.0509) feature loss: tensor(0.3266)
+         GM acc on global data: 0.4485 length of data: 10000
+-------------Round number:  16  -------------
+selected users: [7, 25, 71, 42, 47, 29, 63, 88, 50, 9]
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([689, 16, 32, 32]) torch.Size([689])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+torch.Size([210, 16, 32, 32]) torch.Size([210])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+3464 72 72
+all data: 1000
+Local adapation with distilling: 0.000712
+training loss: tensor(1.4786) feature loss: tensor(0.1942)
+Local adapation with distilling: 0.000712
+training loss: tensor(0.8779) feature loss: tensor(0.3243)
+Local adapation with distilling: 0.000712
+training loss: tensor(1.3997) feature loss: tensor(0.3325)
+Local adapation with distilling: 0.000712
+training loss: tensor(1.3036) feature loss: tensor(0.2662)
+Local adapation with distilling: 0.000712
+training loss: tensor(0.7292) feature loss: tensor(0.3322)
+Local adapation with distilling: 0.000712
+training loss: tensor(0.7485) feature loss: tensor(0.3497)
+Local adapation with distilling: 0.000712
+training loss: tensor(0.9943) feature loss: tensor(0.3328)
+Local adapation with distilling: 0.000712
+training loss: tensor(1.3527) feature loss: tensor(0.3172)
+Local adapation with distilling: 0.000712
+training loss: tensor(2.4970) feature loss: tensor(0.3015)
+Local adapation with distilling: 0.000712
+training loss: tensor(1.4822) feature loss: tensor(0.1907)
+         GM acc on global data: 0.4076 length of data: 10000
+-------------Round number:  17  -------------
+selected users: [71, 28, 9, 4, 73, 34, 94, 92, 47, 37]
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+torch.Size([156, 16, 32, 32]) torch.Size([156])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([400, 16, 32, 32]) torch.Size([400])
+torch.Size([689, 16, 32, 32]) torch.Size([689])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+4219 72 72
+all data: 1000
+Local adapation with distilling: 0.000694
+training loss: tensor(1.3167) feature loss: tensor(0.3109)
+Local adapation with distilling: 0.000694
+training loss: tensor(0.6893) feature loss: tensor(0.3326)
+Local adapation with distilling: 0.000694
+training loss: tensor(1.4836) feature loss: tensor(0.2314)
+Local adapation with distilling: 0.000694
+training loss: tensor(1.2245) feature loss: tensor(0.3028)
+Local adapation with distilling: 0.000694
+training loss: tensor(1.6087) feature loss: tensor(0.3208)
+Local adapation with distilling: 0.000694
+training loss: tensor(0.6427) feature loss: tensor(0.3335)
+Local adapation with distilling: 0.000694
+training loss: tensor(1.7689) feature loss: tensor(0.2549)
+Local adapation with distilling: 0.000694
+training loss: tensor(0.9508) feature loss: tensor(0.3294)
+Local adapation with distilling: 0.000694
+training loss: tensor(0.7811) feature loss: tensor(0.3901)
+Local adapation with distilling: 0.000694
+training loss: tensor(1.3931) feature loss: tensor(0.2715)
+         GM acc on global data: 0.3693 length of data: 10000
+-------------Round number:  18  -------------
+selected users: [53, 47, 43, 54, 33, 48, 0, 12, 44, 91]
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+torch.Size([689, 16, 32, 32]) torch.Size([689])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([323, 16, 32, 32]) torch.Size([323])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([48, 16, 32, 32]) torch.Size([48])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+4587 72 72
+all data: 1000
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(1.3626) feature loss: tensor(0.4217)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(0.8496) feature loss: tensor(0.4576)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(1.5582) feature loss: tensor(0.4389)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(1.1656) feature loss: tensor(0.3827)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(0.9564) feature loss: tensor(0.4904)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(1.2122) feature loss: tensor(0.4410)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(3.6798) feature loss: tensor(0.4711)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(2.0847) feature loss: tensor(0.3499)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(0.8720) feature loss: tensor(0.4653)
+Local adapation with distilling: 0.0006760000000000001
+training loss: tensor(0.7850) feature loss: tensor(0.4371)
+         GM acc on global data: 0.4164 length of data: 10000
+-------------Round number:  19  -------------
+selected users: [85, 72, 16, 18, 2, 38, 90, 30, 83, 61]
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([206, 16, 32, 32]) torch.Size([206])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([526, 16, 32, 32]) torch.Size([526])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([800, 16, 32, 32]) torch.Size([800])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([711, 16, 32, 32]) torch.Size([711])
+4636 72 72
+all data: 1000
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(1.1699) feature loss: tensor(0.3247)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(1.3304) feature loss: tensor(0.2902)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(0.7200) feature loss: tensor(0.3822)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(0.9554) feature loss: tensor(0.3589)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(1.1123) feature loss: tensor(0.3790)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(1.4782) feature loss: tensor(0.3146)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(0.8210) feature loss: tensor(0.3908)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(1.2385) feature loss: tensor(0.3174)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(1.0592) feature loss: tensor(0.3484)
+Local adapation with distilling: 0.0006580000000000001
+training loss: tensor(0.8858) feature loss: tensor(0.3851)
+         GM acc on global data: 0.4105 length of data: 10000
+-------------Round number:  20  -------------
+selected users: [70, 74, 2, 44, 56, 48, 12, 36, 0, 49]
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([876, 16, 32, 32]) torch.Size([876])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([48, 16, 32, 32]) torch.Size([48])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+4602 72 72
+all data: 1000
+Local adapation with distilling: 0.00064
+training loss: tensor(1.9746) feature loss: tensor(0.2564)
+Local adapation with distilling: 0.00064
+training loss: tensor(0.9588) feature loss: tensor(0.3485)
+Local adapation with distilling: 0.00064
+training loss: tensor(0.8537) feature loss: tensor(0.3393)
+Local adapation with distilling: 0.00064
+training loss: tensor(0.6845) feature loss: tensor(0.3588)
+Local adapation with distilling: 0.00064
+training loss: tensor(0.7619) feature loss: tensor(0.3926)
+Local adapation with distilling: 0.00064
+training loss: tensor(0.9881) feature loss: tensor(0.3892)
+Local adapation with distilling: 0.00064
+training loss: tensor(1.8547) feature loss: tensor(0.2720)
+Local adapation with distilling: 0.00064
+training loss: tensor(0.6189) feature loss: tensor(0.3501)
+Local adapation with distilling: 0.00064
+training loss: tensor(2.7321) feature loss: tensor(0.3860)
+Local adapation with distilling: 0.00064
+training loss: tensor(0.7358) feature loss: tensor(0.3661)
+         GM acc on global data: 0.4038 length of data: 10000
+-------------Round number:  21  -------------
+selected users: [23, 81, 85, 34, 62, 46, 42, 31, 93, 11]
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+4890 72 72
+all data: 1000
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(2.0631) feature loss: tensor(0.2906)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(0.5742) feature loss: tensor(0.3473)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(1.1388) feature loss: tensor(0.3582)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(0.5844) feature loss: tensor(0.3399)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(1.4303) feature loss: tensor(0.3448)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(0.9276) feature loss: tensor(0.3620)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(1.3309) feature loss: tensor(0.3298)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(1.2664) feature loss: tensor(0.3354)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(0.9462) feature loss: tensor(0.3506)
+Local adapation with distilling: 0.0006220000000000002
+training loss: tensor(1.2003) feature loss: tensor(0.3909)
+         GM acc on global data: 0.3637 length of data: 10000
+-------------Round number:  22  -------------
+selected users: [2, 49, 82, 31, 37, 12, 87, 42, 99, 85]
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([48, 16, 32, 32]) torch.Size([48])
+torch.Size([93, 16, 32, 32]) torch.Size([93])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+2498 72 72
+all data: 1000
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(0.7390) feature loss: tensor(0.3103)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(0.6415) feature loss: tensor(0.3888)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(1.5195) feature loss: tensor(0.3610)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(1.0575) feature loss: tensor(0.3435)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(1.3142) feature loss: tensor(0.3082)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(1.5991) feature loss: tensor(0.2379)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(1.6937) feature loss: tensor(0.3409)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(1.1627) feature loss: tensor(0.3296)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(0.8398) feature loss: tensor(0.3843)
+Local adapation with distilling: 0.0006040000000000002
+training loss: tensor(0.9213) feature loss: tensor(0.3164)
+         GM acc on global data: 0.408 length of data: 10000
+-------------Round number:  23  -------------
+selected users: [26, 80, 82, 68, 77, 37, 3, 55, 20, 17]
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([693, 16, 32, 32]) torch.Size([693])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+4978 72 72
+all data: 1000
+Local adapation with distilling: 0.000586
+training loss: tensor(7.5721) feature loss: tensor(0.5188)
+Local adapation with distilling: 0.000586
+training loss: tensor(1.5343) feature loss: tensor(0.5200)
+Local adapation with distilling: 0.000586
+training loss: tensor(2.6350) feature loss: tensor(0.6963)
+Local adapation with distilling: 0.000586
+training loss: tensor(1.0017) feature loss: tensor(0.5781)
+Local adapation with distilling: 0.000586
+training loss: tensor(1.1613) feature loss: tensor(0.6594)
+Local adapation with distilling: 0.000586
+training loss: tensor(1.8299) feature loss: tensor(0.5340)
+Local adapation with distilling: 0.000586
+training loss: tensor(2.6100) feature loss: tensor(0.3836)
+Local adapation with distilling: 0.000586
+training loss: tensor(0.8342) feature loss: tensor(0.6136)
+Local adapation with distilling: 0.000586
+training loss: tensor(3.0199) feature loss: tensor(0.4521)
+Local adapation with distilling: 0.000586
+training loss: tensor(1.2262) feature loss: tensor(0.5730)
+         GM acc on global data: 0.3372 length of data: 10000
+-------------Round number:  24  -------------
+selected users: [26, 31, 37, 86, 76, 14, 88, 48, 71, 67]
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([210, 16, 32, 32]) torch.Size([210])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+5282 72 72
+all data: 1000
+Local adapation with distilling: 0.000568
+training loss: tensor(6.7843) feature loss: tensor(0.6368)
+Local adapation with distilling: 0.000568
+training loss: tensor(2.1614) feature loss: tensor(0.5884)
+Local adapation with distilling: 0.000568
+training loss: tensor(2.2168) feature loss: tensor(0.4902)
+Local adapation with distilling: 0.000568
+training loss: tensor(1.6554) feature loss: tensor(0.5536)
+Local adapation with distilling: 0.000568
+training loss: tensor(1.0567) feature loss: tensor(0.5958)
+Local adapation with distilling: 0.000568
+training loss: tensor(1.8540) feature loss: tensor(0.6752)
+Local adapation with distilling: 0.000568
+training loss: tensor(2.1646) feature loss: tensor(0.6453)
+Local adapation with distilling: 0.000568
+training loss: tensor(1.7074) feature loss: tensor(0.6240)
+Local adapation with distilling: 0.000568
+training loss: tensor(2.3666) feature loss: tensor(0.5589)
+Local adapation with distilling: 0.000568
+training loss: tensor(1.1492) feature loss: tensor(0.5390)
+         GM acc on global data: 0.3316 length of data: 10000
+-------------Round number:  25  -------------
+selected users: [41, 29, 33, 65, 74, 6, 57, 89, 87, 98]
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([655, 16, 32, 32]) torch.Size([655])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([93, 16, 32, 32]) torch.Size([93])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+4477 72 72
+all data: 1000
+Local adapation with distilling: 0.00055
+training loss: tensor(1.0770) feature loss: tensor(0.4477)
+Local adapation with distilling: 0.00055
+training loss: tensor(0.9915) feature loss: tensor(0.4620)
+Local adapation with distilling: 0.00055
+training loss: tensor(1.0266) feature loss: tensor(0.4333)
+Local adapation with distilling: 0.00055
+training loss: tensor(1.3264) feature loss: tensor(0.4642)
+Local adapation with distilling: 0.00055
+training loss: tensor(1.2665) feature loss: tensor(0.3565)
+Local adapation with distilling: 0.00055
+training loss: tensor(1.3385) feature loss: tensor(0.4578)
+Local adapation with distilling: 0.00055
+training loss: tensor(0.9167) feature loss: tensor(0.4746)
+Local adapation with distilling: 0.00055
+training loss: tensor(1.2028) feature loss: tensor(0.4280)
+Local adapation with distilling: 0.00055
+training loss: tensor(1.8829) feature loss: tensor(0.3706)
+Local adapation with distilling: 0.00055
+training loss: tensor(2.4016) feature loss: tensor(0.4112)
+         GM acc on global data: 0.4305 length of data: 10000
+-------------Round number:  26  -------------
+selected users: [8, 69, 84, 41, 25, 5, 63, 95, 33, 70]
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+4629 72 72
+all data: 1000
+Local adapation with distilling: 0.000532
+training loss: tensor(0.7359) feature loss: tensor(0.3761)
+Local adapation with distilling: 0.000532
+training loss: tensor(0.8125) feature loss: tensor(0.3213)
+Local adapation with distilling: 0.000532
+training loss: tensor(1.3700) feature loss: tensor(0.3105)
+Local adapation with distilling: 0.000532
+training loss: tensor(0.8219) feature loss: tensor(0.3528)
+Local adapation with distilling: 0.000532
+training loss: tensor(0.9245) feature loss: tensor(0.4230)
+Local adapation with distilling: 0.000532
+training loss: tensor(1.2568) feature loss: tensor(0.3605)
+Local adapation with distilling: 0.000532
+training loss: tensor(1.0151) feature loss: tensor(0.3572)
+Local adapation with distilling: 0.000532
+training loss: tensor(1.9376) feature loss: tensor(0.2131)
+Local adapation with distilling: 0.000532
+training loss: tensor(0.7733) feature loss: tensor(0.3328)
+Local adapation with distilling: 0.000532
+training loss: tensor(1.8962) feature loss: tensor(0.2513)
+         GM acc on global data: 0.4764 length of data: 10000
+-------------Round number:  27  -------------
+selected users: [89, 68, 43, 50, 40, 95, 27, 85, 22, 44]
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+4268 72 72
+all data: 1000
+Local adapation with distilling: 0.000514
+training loss: tensor(0.8311) feature loss: tensor(0.3910)
+Local adapation with distilling: 0.000514
+training loss: tensor(0.7212) feature loss: tensor(0.4237)
+Local adapation with distilling: 0.000514
+training loss: tensor(1.0802) feature loss: tensor(0.3570)
+Local adapation with distilling: 0.000514
+training loss: tensor(1.8026) feature loss: tensor(0.3464)
+Local adapation with distilling: 0.000514
+training loss: tensor(0.9632) feature loss: tensor(0.3672)
+Local adapation with distilling: 0.000514
+training loss: tensor(1.6467) feature loss: tensor(0.3089)
+Local adapation with distilling: 0.000514
+training loss: tensor(2.6805) feature loss: tensor(0.3983)
+Local adapation with distilling: 0.000514
+training loss: tensor(1.0260) feature loss: tensor(0.3858)
+Local adapation with distilling: 0.000514
+training loss: tensor(0.9653) feature loss: tensor(0.3636)
+Local adapation with distilling: 0.000514
+training loss: tensor(0.8031) feature loss: tensor(0.3755)
+         GM acc on global data: 0.4827 length of data: 10000
+-------------Round number:  28  -------------
+selected users: [67, 14, 0, 86, 13, 18, 30, 36, 52, 95]
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([453, 16, 32, 32]) torch.Size([453])
+torch.Size([526, 16, 32, 32]) torch.Size([526])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+4830 72 72
+all data: 1000
+Local adapation with distilling: 0.000496
+training loss: tensor(0.6887) feature loss: tensor(0.2648)
+Local adapation with distilling: 0.000496
+training loss: tensor(0.9968) feature loss: tensor(0.2840)
+Local adapation with distilling: 0.000496
+training loss: tensor(1.3552) feature loss: tensor(0.1967)
+Local adapation with distilling: 0.000496
+training loss: tensor(0.7177) feature loss: tensor(0.2433)
+Local adapation with distilling: 0.000496
+training loss: tensor(1.0350) feature loss: tensor(0.2473)
+Local adapation with distilling: 0.000496
+training loss: tensor(0.7574) feature loss: tensor(0.2727)
+Local adapation with distilling: 0.000496
+training loss: tensor(1.5709) feature loss: tensor(0.2461)
+Local adapation with distilling: 0.000496
+training loss: tensor(0.5477) feature loss: tensor(0.2534)
+Local adapation with distilling: 0.000496
+training loss: tensor(0.5371) feature loss: tensor(0.2583)
+Local adapation with distilling: 0.000496
+training loss: tensor(1.4262) feature loss: tensor(0.1722)
+         GM acc on global data: 0.4457 length of data: 10000
+-------------Round number:  29  -------------
+selected users: [73, 8, 10, 7, 19, 71, 92, 25, 38, 12]
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([400, 16, 32, 32]) torch.Size([400])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([48, 16, 32, 32]) torch.Size([48])
+3653 72 72
+all data: 1000
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(1.7565) feature loss: tensor(0.3360)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(0.5871) feature loss: tensor(0.3177)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(1.7714) feature loss: tensor(0.3412)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(1.5400) feature loss: tensor(0.3027)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(0.7885) feature loss: tensor(0.2910)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(1.3932) feature loss: tensor(0.3572)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(1.0216) feature loss: tensor(0.3939)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(0.7349) feature loss: tensor(0.3558)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(1.4566) feature loss: tensor(0.3164)
+Local adapation with distilling: 0.0004780000000000001
+training loss: tensor(1.8141) feature loss: tensor(0.3640)
+         GM acc on global data: 0.4213 length of data: 10000
+-------------Round number:  30  -------------
+selected users: [20, 91, 34, 52, 8, 74, 21, 88, 80, 89]
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([210, 16, 32, 32]) torch.Size([210])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+6374 72 72
+all data: 1000
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(1.3255) feature loss: tensor(0.2892)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(0.6493) feature loss: tensor(0.3184)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(0.5137) feature loss: tensor(0.3138)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(0.5713) feature loss: tensor(0.3352)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(0.5341) feature loss: tensor(0.3222)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(0.9345) feature loss: tensor(0.3036)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(0.8691) feature loss: tensor(0.2853)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(1.7571) feature loss: tensor(0.3830)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(0.9879) feature loss: tensor(0.3303)
+Local adapation with distilling: 0.00046000000000000007
+training loss: tensor(0.7324) feature loss: tensor(0.3613)
+         GM acc on global data: 0.4253 length of data: 10000
+-------------Round number:  31  -------------
+selected users: [17, 33, 76, 3, 56, 0, 37, 8, 60, 67]
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([876, 16, 32, 32]) torch.Size([876])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+6796 72 72
+all data: 1000
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(0.8950) feature loss: tensor(0.3953)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(0.8775) feature loss: tensor(0.4332)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(0.7026) feature loss: tensor(0.3880)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(1.8489) feature loss: tensor(0.2402)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(0.6949) feature loss: tensor(0.3827)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(1.6736) feature loss: tensor(0.3546)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(1.6127) feature loss: tensor(0.3118)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(0.6223) feature loss: tensor(0.3856)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(1.9106) feature loss: tensor(0.2619)
+Local adapation with distilling: 0.00044200000000000006
+training loss: tensor(0.8522) feature loss: tensor(0.3785)
+         GM acc on global data: 0.4171 length of data: 10000
+-------------Round number:  32  -------------
+selected users: [22, 39, 85, 97, 55, 33, 80, 13, 27, 96]
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([453, 16, 32, 32]) torch.Size([453])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+torch.Size([1321, 16, 32, 32]) torch.Size([1321])
+7202 72 72
+all data: 1000
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(1.0143) feature loss: tensor(0.4266)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(0.9253) feature loss: tensor(0.4577)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(1.2872) feature loss: tensor(0.3595)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(6.0447) feature loss: tensor(0.4824)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(0.6968) feature loss: tensor(0.4106)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(0.8983) feature loss: tensor(0.3840)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(1.4044) feature loss: tensor(0.4202)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(1.7432) feature loss: tensor(0.4434)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(1.8620) feature loss: tensor(0.4693)
+Local adapation with distilling: 0.00042400000000000006
+training loss: tensor(0.7215) feature loss: tensor(0.3778)
+         GM acc on global data: 0.456 length of data: 10000
+-------------Round number:  33  -------------
+selected users: [56, 90, 95, 82, 60, 71, 6, 81, 2, 70]
+torch.Size([876, 16, 32, 32]) torch.Size([876])
+torch.Size([800, 16, 32, 32]) torch.Size([800])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+4294 72 72
+all data: 1000
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(0.8174) feature loss: tensor(0.4833)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(1.0028) feature loss: tensor(0.5385)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(2.3913) feature loss: tensor(0.2401)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(1.9244) feature loss: tensor(0.3531)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(1.8774) feature loss: tensor(0.2081)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(1.7486) feature loss: tensor(0.3908)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(1.4982) feature loss: tensor(0.4616)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(0.7194) feature loss: tensor(0.4379)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(1.0844) feature loss: tensor(0.3687)
+Local adapation with distilling: 0.00040600000000000006
+training loss: tensor(2.8383) feature loss: tensor(0.3884)
+         GM acc on global data: 0.4267 length of data: 10000
+-------------Round number:  34  -------------
+selected users: [14, 74, 15, 4, 32, 59, 91, 10, 50, 53]
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([156, 16, 32, 32]) torch.Size([156])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([131, 16, 32, 32]) torch.Size([131])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+3512 72 72
+all data: 1000
+Local adapation with distilling: 0.000388
+training loss: tensor(1.2808) feature loss: tensor(0.4587)
+Local adapation with distilling: 0.000388
+training loss: tensor(1.0228) feature loss: tensor(0.3345)
+Local adapation with distilling: 0.000388
+training loss: tensor(1.4715) feature loss: tensor(0.2820)
+Local adapation with distilling: 0.000388
+training loss: tensor(1.7099) feature loss: tensor(0.3752)
+Local adapation with distilling: 0.000388
+training loss: tensor(4.8612) feature loss: tensor(0.4155)
+Local adapation with distilling: 0.000388
+training loss: tensor(1.9231) feature loss: tensor(0.4161)
+Local adapation with distilling: 0.000388
+training loss: tensor(0.7783) feature loss: tensor(0.4904)
+Local adapation with distilling: 0.000388
+training loss: tensor(1.4584) feature loss: tensor(0.4344)
+Local adapation with distilling: 0.000388
+training loss: tensor(2.0455) feature loss: tensor(0.3762)
+Local adapation with distilling: 0.000388
+training loss: tensor(1.1816) feature loss: tensor(0.3832)
+         GM acc on global data: 0.4887 length of data: 10000
+-------------Round number:  35  -------------
+selected users: [40, 71, 98, 27, 70, 31, 10, 24, 51, 35]
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([762, 16, 32, 32]) torch.Size([762])
+torch.Size([263, 16, 32, 32]) torch.Size([263])
+3798 72 72
+all data: 1000
+Local adapation with distilling: 0.00037
+training loss: tensor(1.0249) feature loss: tensor(0.3682)
+Local adapation with distilling: 0.00037
+training loss: tensor(1.4976) feature loss: tensor(0.2935)
+Local adapation with distilling: 0.00037
+training loss: tensor(2.1415) feature loss: tensor(0.3092)
+Local adapation with distilling: 0.00037
+training loss: tensor(1.5602) feature loss: tensor(0.3128)
+Local adapation with distilling: 0.00037
+training loss: tensor(2.0391) feature loss: tensor(0.2045)
+Local adapation with distilling: 0.00037
+training loss: tensor(1.2275) feature loss: tensor(0.3115)
+Local adapation with distilling: 0.00037
+training loss: tensor(1.6436) feature loss: tensor(0.3262)
+Local adapation with distilling: 0.00037
+training loss: tensor(0.6635) feature loss: tensor(0.3416)
+Local adapation with distilling: 0.00037
+training loss: tensor(0.8429) feature loss: tensor(0.4183)
+Local adapation with distilling: 0.00037
+training loss: tensor(1.4716) feature loss: tensor(0.3367)
+         GM acc on global data: 0.5298 length of data: 10000
+-------------Round number:  36  -------------
+selected users: [59, 42, 2, 27, 28, 75, 58, 68, 52, 74]
+torch.Size([131, 16, 32, 32]) torch.Size([131])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([787, 16, 32, 32]) torch.Size([787])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+7563 72 72
+all data: 1000
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(1.4420) feature loss: tensor(0.2137)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(1.2274) feature loss: tensor(0.2207)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(0.8377) feature loss: tensor(0.2770)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(1.3212) feature loss: tensor(0.2789)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(0.6186) feature loss: tensor(0.2613)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(0.4885) feature loss: tensor(0.2782)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(0.5722) feature loss: tensor(0.2728)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(0.5409) feature loss: tensor(0.2670)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(0.5122) feature loss: tensor(0.2612)
+Local adapation with distilling: 0.0003520000000000001
+training loss: tensor(0.8263) feature loss: tensor(0.2249)
+         GM acc on global data: 0.4915 length of data: 10000
+-------------Round number:  37  -------------
+selected users: [61, 49, 86, 78, 5, 91, 81, 82, 89, 18]
+torch.Size([711, 16, 32, 32]) torch.Size([711])
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([526, 16, 32, 32]) torch.Size([526])
+6174 72 72
+all data: 1000
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(0.7097) feature loss: tensor(0.2676)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(0.6529) feature loss: tensor(0.2690)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(0.8363) feature loss: tensor(0.2413)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(0.9480) feature loss: tensor(0.2343)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(1.0302) feature loss: tensor(0.3006)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(0.5419) feature loss: tensor(0.2728)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(0.5473) feature loss: tensor(0.2734)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(1.1785) feature loss: tensor(0.1831)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(0.7398) feature loss: tensor(0.2473)
+Local adapation with distilling: 0.0003340000000000001
+training loss: tensor(0.7273) feature loss: tensor(0.2538)
+         GM acc on global data: 0.5092 length of data: 10000
+-------------Round number:  38  -------------
+selected users: [40, 73, 49, 45, 64, 16, 69, 17, 72, 66]
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([299, 16, 32, 32]) torch.Size([299])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([206, 16, 32, 32]) torch.Size([206])
+torch.Size([352, 16, 32, 32]) torch.Size([352])
+4085 72 72
+all data: 1000
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(0.9351) feature loss: tensor(0.2936)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(1.5319) feature loss: tensor(0.2422)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(0.6660) feature loss: tensor(0.3110)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(1.5361) feature loss: tensor(0.1790)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(1.0337) feature loss: tensor(0.2618)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(0.7664) feature loss: tensor(0.3276)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(0.8557) feature loss: tensor(0.3172)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(0.8016) feature loss: tensor(0.3702)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(1.2118) feature loss: tensor(0.2452)
+Local adapation with distilling: 0.0003160000000000001
+training loss: tensor(0.9312) feature loss: tensor(0.2901)
+         GM acc on global data: 0.5147 length of data: 10000
+-------------Round number:  39  -------------
+selected users: [22, 53, 84, 57, 87, 58, 29, 21, 85, 79]
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([655, 16, 32, 32]) torch.Size([655])
+torch.Size([93, 16, 32, 32]) torch.Size([93])
+torch.Size([787, 16, 32, 32]) torch.Size([787])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+4420 72 72
+all data: 1000
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(0.7103) feature loss: tensor(0.2223)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(0.8733) feature loss: tensor(0.2078)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(1.0433) feature loss: tensor(0.1772)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(0.5040) feature loss: tensor(0.1999)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(1.2084) feature loss: tensor(0.1739)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(0.4479) feature loss: tensor(0.2013)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(0.4632) feature loss: tensor(0.2135)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(0.8354) feature loss: tensor(0.1800)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(0.8097) feature loss: tensor(0.2065)
+Local adapation with distilling: 0.00029800000000000003
+training loss: tensor(0.8794) feature loss: tensor(0.2322)
+         GM acc on global data: 0.5029 length of data: 10000
+-------------Round number:  40  -------------
+selected users: [79, 75, 63, 15, 38, 11, 40, 45, 39, 62]
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+6090 72 72
+all data: 1000
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(1.2366) feature loss: tensor(0.3403)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(0.5473) feature loss: tensor(0.3477)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(1.0261) feature loss: tensor(0.3986)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(1.4545) feature loss: tensor(0.3272)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(1.7994) feature loss: tensor(0.4018)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(1.3596) feature loss: tensor(0.4293)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(1.1081) feature loss: tensor(0.3987)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(1.7824) feature loss: tensor(0.3066)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(0.7242) feature loss: tensor(0.3820)
+Local adapation with distilling: 0.00028000000000000003
+training loss: tensor(1.3819) feature loss: tensor(0.4040)
+         GM acc on global data: 0.5143 length of data: 10000
+-------------Round number:  41  -------------
+selected users: [42, 94, 37, 6, 79, 32, 24, 0, 33, 93]
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+3797 72 72
+all data: 1000
+Local adapation with distilling: 0.000262
+training loss: tensor(1.2057) feature loss: tensor(0.3013)
+Local adapation with distilling: 0.000262
+training loss: tensor(1.0686) feature loss: tensor(0.3488)
+Local adapation with distilling: 0.000262
+training loss: tensor(1.5334) feature loss: tensor(0.2457)
+Local adapation with distilling: 0.000262
+training loss: tensor(0.6813) feature loss: tensor(0.3278)
+Local adapation with distilling: 0.000262
+training loss: tensor(1.0709) feature loss: tensor(0.2759)
+Local adapation with distilling: 0.000262
+training loss: tensor(1.9123) feature loss: tensor(0.2741)
+Local adapation with distilling: 0.000262
+training loss: tensor(0.5513) feature loss: tensor(0.2943)
+Local adapation with distilling: 0.000262
+training loss: tensor(2.3260) feature loss: tensor(0.3412)
+Local adapation with distilling: 0.000262
+training loss: tensor(0.7106) feature loss: tensor(0.2743)
+Local adapation with distilling: 0.000262
+training loss: tensor(0.7274) feature loss: tensor(0.2824)
+         GM acc on global data: 0.521 length of data: 10000
+-------------Round number:  42  -------------
+selected users: [83, 53, 70, 45, 44, 39, 22, 80, 10, 0]
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+4518 72 72
+all data: 1000
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(0.8206) feature loss: tensor(0.2219)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(1.0287) feature loss: tensor(0.2322)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(1.0698) feature loss: tensor(0.1323)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(1.2816) feature loss: tensor(0.1258)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(0.6973) feature loss: tensor(0.2811)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(0.5334) feature loss: tensor(0.2787)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(0.8351) feature loss: tensor(0.2985)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(1.0855) feature loss: tensor(0.3004)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(0.9164) feature loss: tensor(0.2924)
+Local adapation with distilling: 0.0002440000000000001
+training loss: tensor(1.8050) feature loss: tensor(0.2688)
+         GM acc on global data: 0.5412 length of data: 10000
+-------------Round number:  43  -------------
+selected users: [20, 2, 15, 22, 57, 91, 69, 55, 11, 79]
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([655, 16, 32, 32]) torch.Size([655])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+6392 72 72
+all data: 1000
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(1.9572) feature loss: tensor(0.1955)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(0.8837) feature loss: tensor(0.3121)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(1.4003) feature loss: tensor(0.2357)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(0.8809) feature loss: tensor(0.3934)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(0.7709) feature loss: tensor(0.3168)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(0.6206) feature loss: tensor(0.3405)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(0.8433) feature loss: tensor(0.4128)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(0.5440) feature loss: tensor(0.3176)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(1.2374) feature loss: tensor(0.3166)
+Local adapation with distilling: 0.0002260000000000001
+training loss: tensor(1.2077) feature loss: tensor(0.2960)
+         GM acc on global data: 0.547 length of data: 10000
+-------------Round number:  44  -------------
+selected users: [42, 54, 27, 93, 39, 65, 7, 26, 24, 60]
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([323, 16, 32, 32]) torch.Size([323])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+4175 72 72
+all data: 1000
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(0.9219) feature loss: tensor(0.2435)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(1.1391) feature loss: tensor(0.1895)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(1.5093) feature loss: tensor(0.2565)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(0.6021) feature loss: tensor(0.2522)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(0.4975) feature loss: tensor(0.3084)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(0.9168) feature loss: tensor(0.2069)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(1.3158) feature loss: tensor(0.1349)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(2.5097) feature loss: tensor(0.1986)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(0.4649) feature loss: tensor(0.2788)
+Local adapation with distilling: 0.00020800000000000007
+training loss: tensor(1.1797) feature loss: tensor(0.1282)
+         GM acc on global data: 0.5166 length of data: 10000
+-------------Round number:  45  -------------
+selected users: [0, 1, 62, 76, 37, 99, 78, 38, 2, 84]
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([52, 16, 32, 32]) torch.Size([52])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+5172 72 72
+all data: 1000
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(1.7202) feature loss: tensor(0.3683)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(1.6233) feature loss: tensor(0.2178)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(1.0922) feature loss: tensor(0.2789)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(0.5413) feature loss: tensor(0.3426)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(1.4978) feature loss: tensor(0.2610)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(1.3430) feature loss: tensor(0.3757)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(1.1194) feature loss: tensor(0.2831)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(1.4359) feature loss: tensor(0.2928)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(0.8662) feature loss: tensor(0.3133)
+Local adapation with distilling: 0.00019000000000000006
+training loss: tensor(1.4907) feature loss: tensor(0.2953)
+         GM acc on global data: 0.4752 length of data: 10000
+-------------Round number:  46  -------------
+selected users: [71, 33, 37, 10, 44, 34, 24, 98, 73, 95]
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+4731 72 72
+all data: 1000
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(1.3878) feature loss: tensor(0.2828)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(0.7532) feature loss: tensor(0.2983)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(1.4413) feature loss: tensor(0.2091)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(1.5171) feature loss: tensor(0.3369)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(0.7295) feature loss: tensor(0.3233)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(0.6227) feature loss: tensor(0.3006)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(0.5621) feature loss: tensor(0.2914)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(1.9909) feature loss: tensor(0.2952)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(1.3526) feature loss: tensor(0.2517)
+Local adapation with distilling: 0.00017200000000000003
+training loss: tensor(2.2684) feature loss: tensor(0.2180)
+         GM acc on global data: 0.5445 length of data: 10000
+-------------Round number:  47  -------------
+selected users: [17, 90, 94, 86, 63, 5, 38, 14, 40, 47]
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([800, 16, 32, 32]) torch.Size([800])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([689, 16, 32, 32]) torch.Size([689])
+4585 72 72
+all data: 1000
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(0.7638) feature loss: tensor(0.2530)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(0.7459) feature loss: tensor(0.2617)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(2.5425) feature loss: tensor(0.1838)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(0.9309) feature loss: tensor(0.2125)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(0.9669) feature loss: tensor(0.2777)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(0.9470) feature loss: tensor(0.2571)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(1.4514) feature loss: tensor(0.1964)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(1.1331) feature loss: tensor(0.2605)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(0.9120) feature loss: tensor(0.2194)
+Local adapation with distilling: 0.00015400000000000003
+training loss: tensor(0.7485) feature loss: tensor(0.2529)
+         GM acc on global data: 0.5336 length of data: 10000
+-------------Round number:  48  -------------
+selected users: [93, 5, 71, 9, 11, 79, 69, 8, 59, 63]
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([131, 16, 32, 32]) torch.Size([131])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+4144 72 72
+all data: 1000
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(0.7476) feature loss: tensor(0.2156)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(1.0893) feature loss: tensor(0.2844)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(1.4271) feature loss: tensor(0.2702)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(1.5410) feature loss: tensor(0.2479)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(1.0195) feature loss: tensor(0.2439)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(1.0526) feature loss: tensor(0.2350)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(0.6908) feature loss: tensor(0.2244)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(0.5138) feature loss: tensor(0.2194)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(1.5478) feature loss: tensor(0.2711)
+Local adapation with distilling: 0.00013600000000000013
+training loss: tensor(0.6930) feature loss: tensor(0.2429)
+         GM acc on global data: 0.5442 length of data: 10000
+-------------Round number:  49  -------------
+selected users: [76, 25, 28, 75, 81, 47, 41, 22, 29, 1]
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([689, 16, 32, 32]) torch.Size([689])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([52, 16, 32, 32]) torch.Size([52])
+10746 72 72
+all data: 1000
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.4292) feature loss: tensor(0.2421)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.8929) feature loss: tensor(0.2349)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.6527) feature loss: tensor(0.2309)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.4813) feature loss: tensor(0.2385)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.7419) feature loss: tensor(0.2698)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.7213) feature loss: tensor(0.2403)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.8590) feature loss: tensor(0.2294)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.6677) feature loss: tensor(0.2356)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(0.6709) feature loss: tensor(0.2379)
+Local adapation with distilling: 0.0001180000000000001
+training loss: tensor(1.9347) feature loss: tensor(0.1327)
+         GM acc on global data: 0.5389 length of data: 10000
+-------------Round number:  50  -------------
+selected users: [80, 79, 25, 15, 39, 40, 53, 17, 57, 50]
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([655, 16, 32, 32]) torch.Size([655])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+4488 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1028) feature loss: tensor(0.2880)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9712) feature loss: tensor(0.2207)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8102) feature loss: tensor(0.2316)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0974) feature loss: tensor(0.1557)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5884) feature loss: tensor(0.2748)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8091) feature loss: tensor(0.2573)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9804) feature loss: tensor(0.2112)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7360) feature loss: tensor(0.3043)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6377) feature loss: tensor(0.2432)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0405) feature loss: tensor(0.1599)
+         GM acc on global data: 0.5691 length of data: 10000
+-------------Round number:  51  -------------
+selected users: [71, 43, 11, 83, 78, 19, 80, 4, 79, 75]
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([156, 16, 32, 32]) torch.Size([156])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+5134 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3120) feature loss: tensor(0.1846)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1112) feature loss: tensor(0.2271)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2271) feature loss: tensor(0.1900)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9596) feature loss: tensor(0.2176)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0761) feature loss: tensor(0.1794)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1745) feature loss: tensor(0.2205)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0837) feature loss: tensor(0.1915)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3018) feature loss: tensor(0.1611)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8833) feature loss: tensor(0.1707)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4273) feature loss: tensor(0.2419)
+         GM acc on global data: 0.5503 length of data: 10000
+-------------Round number:  52  -------------
+selected users: [82, 8, 44, 19, 2, 73, 37, 89, 67, 18]
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([526, 16, 32, 32]) torch.Size([526])
+4667 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6677) feature loss: tensor(0.1819)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5142) feature loss: tensor(0.1904)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6251) feature loss: tensor(0.2072)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8992) feature loss: tensor(0.1885)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7388) feature loss: tensor(0.1840)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3825) feature loss: tensor(0.1513)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3387) feature loss: tensor(0.1557)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9561) feature loss: tensor(0.2336)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8222) feature loss: tensor(0.1865)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8080) feature loss: tensor(0.1864)
+         GM acc on global data: 0.55 length of data: 10000
+-------------Round number:  53  -------------
+selected users: [19, 78, 64, 3, 71, 32, 68, 42, 55, 97]
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([299, 16, 32, 32]) torch.Size([299])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+4767 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0406) feature loss: tensor(0.2897)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2887) feature loss: tensor(0.2447)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3505) feature loss: tensor(0.2997)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.5077) feature loss: tensor(0.2331)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6270) feature loss: tensor(0.2646)
+Local adapation with distilling: 0.0001
+training loss: tensor(3.5485) feature loss: tensor(0.3277)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9380) feature loss: tensor(0.3947)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7568) feature loss: tensor(0.2560)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6242) feature loss: tensor(0.3127)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.5735) feature loss: tensor(0.2811)
+         GM acc on global data: 0.5054 length of data: 10000
+-------------Round number:  54  -------------
+selected users: [36, 70, 48, 94, 81, 46, 38, 29, 34, 22]
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+6414 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6645) feature loss: tensor(0.2548)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6723) feature loss: tensor(0.1878)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1358) feature loss: tensor(0.2843)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7044) feature loss: tensor(0.2055)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5849) feature loss: tensor(0.2507)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8966) feature loss: tensor(0.2308)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9488) feature loss: tensor(0.2061)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7022) feature loss: tensor(0.2454)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5555) feature loss: tensor(0.2537)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8435) feature loss: tensor(0.2810)
+         GM acc on global data: 0.5169 length of data: 10000
+-------------Round number:  55  -------------
+selected users: [28, 92, 98, 95, 84, 34, 38, 76, 17, 78]
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([400, 16, 32, 32]) torch.Size([400])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+7034 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5955) feature loss: tensor(0.2535)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8447) feature loss: tensor(0.2213)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3457) feature loss: tensor(0.1828)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4743) feature loss: tensor(0.1407)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0856) feature loss: tensor(0.1875)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4693) feature loss: tensor(0.2543)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9231) feature loss: tensor(0.1875)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4439) feature loss: tensor(0.2721)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8072) feature loss: tensor(0.2973)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9316) feature loss: tensor(0.1994)
+         GM acc on global data: 0.5396 length of data: 10000
+-------------Round number:  56  -------------
+selected users: [92, 79, 23, 68, 52, 38, 73, 9, 59, 27]
+torch.Size([400, 16, 32, 32]) torch.Size([400])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+torch.Size([131, 16, 32, 32]) torch.Size([131])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+3691 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0807) feature loss: tensor(0.3448)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1415) feature loss: tensor(0.2583)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7729) feature loss: tensor(0.1968)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6832) feature loss: tensor(0.3386)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6357) feature loss: tensor(0.3178)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1803) feature loss: tensor(0.2359)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3536) feature loss: tensor(0.2322)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6061) feature loss: tensor(0.1560)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7181) feature loss: tensor(0.2962)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3173) feature loss: tensor(0.2749)
+         GM acc on global data: 0.5234 length of data: 10000
+-------------Round number:  57  -------------
+selected users: [52, 17, 41, 3, 8, 98, 59, 20, 67, 7]
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([131, 16, 32, 32]) torch.Size([131])
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+4169 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4601) feature loss: tensor(0.1980)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7004) feature loss: tensor(0.2213)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8120) feature loss: tensor(0.1825)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6115) feature loss: tensor(0.0765)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4550) feature loss: tensor(0.1925)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4459) feature loss: tensor(0.1362)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1003) feature loss: tensor(0.1490)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1810) feature loss: tensor(0.1201)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7275) feature loss: tensor(0.1832)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4888) feature loss: tensor(0.1042)
+         GM acc on global data: 0.4994 length of data: 10000
+-------------Round number:  58  -------------
+selected users: [43, 58, 8, 31, 70, 45, 69, 95, 50, 4]
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([787, 16, 32, 32]) torch.Size([787])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+torch.Size([156, 16, 32, 32]) torch.Size([156])
+3531 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7562) feature loss: tensor(0.1695)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5193) feature loss: tensor(0.1654)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3323) feature loss: tensor(0.1624)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7765) feature loss: tensor(0.1497)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7855) feature loss: tensor(0.1071)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1902) feature loss: tensor(0.0953)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5681) feature loss: tensor(0.1629)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0025) feature loss: tensor(0.1185)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3691) feature loss: tensor(0.1279)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0809) feature loss: tensor(0.1684)
+         GM acc on global data: 0.5052 length of data: 10000
+-------------Round number:  59  -------------
+selected users: [38, 46, 24, 87, 30, 85, 16, 96, 18, 99]
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([93, 16, 32, 32]) torch.Size([93])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([1321, 16, 32, 32]) torch.Size([1321])
+torch.Size([526, 16, 32, 32]) torch.Size([526])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+5477 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1735) feature loss: tensor(0.1980)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8491) feature loss: tensor(0.2316)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6159) feature loss: tensor(0.2467)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.5630) feature loss: tensor(0.1923)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6346) feature loss: tensor(0.1926)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1377) feature loss: tensor(0.1955)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6399) feature loss: tensor(0.2406)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5504) feature loss: tensor(0.2364)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7554) feature loss: tensor(0.2201)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1236) feature loss: tensor(0.2296)
+         GM acc on global data: 0.4918 length of data: 10000
+-------------Round number:  60  -------------
+selected users: [88, 4, 79, 14, 55, 3, 19, 28, 94, 25]
+torch.Size([210, 16, 32, 32]) torch.Size([210])
+torch.Size([156, 16, 32, 32]) torch.Size([156])
+torch.Size([274, 16, 32, 32]) torch.Size([274])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+5149 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2899) feature loss: tensor(0.2090)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3062) feature loss: tensor(0.1820)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9399) feature loss: tensor(0.2049)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1410) feature loss: tensor(0.2559)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4577) feature loss: tensor(0.2522)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.5355) feature loss: tensor(0.1333)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7841) feature loss: tensor(0.2224)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5935) feature loss: tensor(0.2440)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.4173) feature loss: tensor(0.1551)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7600) feature loss: tensor(0.2354)
+         GM acc on global data: 0.5108 length of data: 10000
+-------------Round number:  61  -------------
+selected users: [83, 1, 55, 9, 31, 28, 96, 29, 86, 63]
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([52, 16, 32, 32]) torch.Size([52])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([1321, 16, 32, 32]) torch.Size([1321])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+6906 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7980) feature loss: tensor(0.1340)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2578) feature loss: tensor(0.1413)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3029) feature loss: tensor(0.1759)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1605) feature loss: tensor(0.0685)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8148) feature loss: tensor(0.1454)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3985) feature loss: tensor(0.1464)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4462) feature loss: tensor(0.1740)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5048) feature loss: tensor(0.1910)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7713) feature loss: tensor(0.1317)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7006) feature loss: tensor(0.1764)
+         GM acc on global data: 0.4799 length of data: 10000
+-------------Round number:  62  -------------
+selected users: [76, 48, 62, 80, 29, 99, 60, 89, 39, 69]
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+7444 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5145) feature loss: tensor(0.3131)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1677) feature loss: tensor(0.2701)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8951) feature loss: tensor(0.2603)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2635) feature loss: tensor(0.3150)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7116) feature loss: tensor(0.3082)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3682) feature loss: tensor(0.3480)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7250) feature loss: tensor(0.1957)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1163) feature loss: tensor(0.3386)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7656) feature loss: tensor(0.3086)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7176) feature loss: tensor(0.2701)
+         GM acc on global data: 0.513 length of data: 10000
+-------------Round number:  63  -------------
+selected users: [64, 59, 63, 2, 80, 20, 18, 48, 72, 51]
+torch.Size([299, 16, 32, 32]) torch.Size([299])
+torch.Size([131, 16, 32, 32]) torch.Size([131])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([37, 16, 32, 32]) torch.Size([37])
+torch.Size([526, 16, 32, 32]) torch.Size([526])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([206, 16, 32, 32]) torch.Size([206])
+torch.Size([762, 16, 32, 32]) torch.Size([762])
+3628 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9943) feature loss: tensor(0.1774)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.0645) feature loss: tensor(0.2321)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8725) feature loss: tensor(0.2309)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8324) feature loss: tensor(0.2236)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1032) feature loss: tensor(0.2422)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6363) feature loss: tensor(0.1347)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7923) feature loss: tensor(0.2701)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0316) feature loss: tensor(0.2311)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0719) feature loss: tensor(0.1906)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8014) feature loss: tensor(0.2906)
+         GM acc on global data: 0.5698 length of data: 10000
+-------------Round number:  64  -------------
+selected users: [17, 22, 60, 92, 23, 19, 71, 94, 40, 49]
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([400, 16, 32, 32]) torch.Size([400])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+3586 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6129) feature loss: tensor(0.2464)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6598) feature loss: tensor(0.2230)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9917) feature loss: tensor(0.0729)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7873) feature loss: tensor(0.2132)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4324) feature loss: tensor(0.1390)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6767) feature loss: tensor(0.2093)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9716) feature loss: tensor(0.1345)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.8437) feature loss: tensor(0.1633)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6676) feature loss: tensor(0.1882)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5705) feature loss: tensor(0.2790)
+         GM acc on global data: 0.5732 length of data: 10000
+-------------Round number:  65  -------------
+selected users: [37, 81, 39, 61, 76, 90, 27, 86, 28, 69]
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([711, 16, 32, 32]) torch.Size([711])
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([800, 16, 32, 32]) torch.Size([800])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+9238 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9775) feature loss: tensor(0.1105)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4077) feature loss: tensor(0.1886)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5405) feature loss: tensor(0.2103)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6562) feature loss: tensor(0.2193)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3411) feature loss: tensor(0.2010)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6374) feature loss: tensor(0.2245)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1280) feature loss: tensor(0.1716)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7714) feature loss: tensor(0.1612)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4508) feature loss: tensor(0.1850)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5823) feature loss: tensor(0.1714)
+         GM acc on global data: 0.5697 length of data: 10000
+-------------Round number:  66  -------------
+selected users: [8, 93, 4, 5, 52, 41, 0, 73, 88, 68]
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([156, 16, 32, 32]) torch.Size([156])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([210, 16, 32, 32]) torch.Size([210])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+5281 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4588) feature loss: tensor(0.2172)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7319) feature loss: tensor(0.1986)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1543) feature loss: tensor(0.1685)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6118) feature loss: tensor(0.1970)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4932) feature loss: tensor(0.2443)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7637) feature loss: tensor(0.2043)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.5325) feature loss: tensor(0.1786)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0090) feature loss: tensor(0.1362)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8704) feature loss: tensor(0.1519)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5015) feature loss: tensor(0.2206)
+         GM acc on global data: 0.5643 length of data: 10000
+-------------Round number:  67  -------------
+selected users: [17, 24, 64, 93, 97, 29, 3, 70, 82, 11]
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([299, 16, 32, 32]) torch.Size([299])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+3824 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5068) feature loss: tensor(0.2666)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4617) feature loss: tensor(0.2502)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7372) feature loss: tensor(0.2505)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5565) feature loss: tensor(0.2482)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.6334) feature loss: tensor(0.1523)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4716) feature loss: tensor(0.2316)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6415) feature loss: tensor(0.2325)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.9461) feature loss: tensor(0.2472)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8577) feature loss: tensor(0.1965)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8480) feature loss: tensor(0.2302)
+         GM acc on global data: 0.5493 length of data: 10000
+-------------Round number:  68  -------------
+selected users: [29, 30, 16, 5, 38, 71, 76, 94, 99, 95]
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+6173 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4754) feature loss: tensor(0.2231)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3018) feature loss: tensor(0.1931)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4961) feature loss: tensor(0.2009)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5601) feature loss: tensor(0.2255)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9689) feature loss: tensor(0.1875)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8191) feature loss: tensor(0.1530)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3376) feature loss: tensor(0.2190)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.9245) feature loss: tensor(0.1695)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9181) feature loss: tensor(0.3020)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2991) feature loss: tensor(0.1262)
+         GM acc on global data: 0.5244 length of data: 10000
+-------------Round number:  69  -------------
+selected users: [72, 31, 13, 83, 33, 8, 26, 89, 64, 97]
+torch.Size([206, 16, 32, 32]) torch.Size([206])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([453, 16, 32, 32]) torch.Size([453])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([299, 16, 32, 32]) torch.Size([299])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+3781 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9048) feature loss: tensor(0.1932)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9534) feature loss: tensor(0.2218)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1555) feature loss: tensor(0.2106)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8722) feature loss: tensor(0.2231)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6733) feature loss: tensor(0.2513)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5324) feature loss: tensor(0.2519)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.5771) feature loss: tensor(0.2006)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8422) feature loss: tensor(0.2505)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8280) feature loss: tensor(0.2053)
+Local adapation with distilling: 0.0001
+training loss: tensor(3.0723) feature loss: tensor(0.2102)
+         GM acc on global data: 0.5924 length of data: 10000
+-------------Round number:  70  -------------
+selected users: [81, 43, 88, 32, 50, 71, 73, 55, 42, 2]
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([210, 16, 32, 32]) torch.Size([210])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+5068 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6240) feature loss: tensor(0.3190)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9831) feature loss: tensor(0.2389)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2655) feature loss: tensor(0.2409)
+Local adapation with distilling: 0.0001
+training loss: tensor(3.5535) feature loss: tensor(0.2210)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4806) feature loss: tensor(0.1895)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1789) feature loss: tensor(0.1622)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2694) feature loss: tensor(0.1533)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4662) feature loss: tensor(0.2641)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3181) feature loss: tensor(0.2014)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7846) feature loss: tensor(0.2246)
+         GM acc on global data: 0.5597 length of data: 10000
+-------------Round number:  71  -------------
+selected users: [41, 84, 98, 42, 75, 25, 60, 19, 52, 29]
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+6417 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7739) feature loss: tensor(0.2215)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2682) feature loss: tensor(0.2470)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3079) feature loss: tensor(0.2257)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2269) feature loss: tensor(0.2227)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4912) feature loss: tensor(0.2669)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8103) feature loss: tensor(0.2374)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4942) feature loss: tensor(0.1894)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7932) feature loss: tensor(0.2508)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6198) feature loss: tensor(0.3117)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6116) feature loss: tensor(0.2649)
+         GM acc on global data: 0.5547 length of data: 10000
+-------------Round number:  72  -------------
+selected users: [76, 82, 43, 16, 84, 95, 78, 91, 30, 22]
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+6915 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4094) feature loss: tensor(0.2882)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2521) feature loss: tensor(0.2069)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8005) feature loss: tensor(0.2970)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5623) feature loss: tensor(0.2456)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7047) feature loss: tensor(0.2068)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6726) feature loss: tensor(0.1634)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8995) feature loss: tensor(0.2233)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5544) feature loss: tensor(0.2614)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3564) feature loss: tensor(0.2222)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6377) feature loss: tensor(0.3076)
+         GM acc on global data: 0.5518 length of data: 10000
+-------------Round number:  73  -------------
+selected users: [49, 14, 34, 70, 90, 35, 68, 76, 80, 9]
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([800, 16, 32, 32]) torch.Size([800])
+torch.Size([263, 16, 32, 32]) torch.Size([263])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([2848, 16, 32, 32]) torch.Size([2848])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+7845 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6762) feature loss: tensor(0.2398)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9782) feature loss: tensor(0.1644)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4686) feature loss: tensor(0.2025)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.5224) feature loss: tensor(0.0921)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5816) feature loss: tensor(0.2583)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9819) feature loss: tensor(0.1485)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5138) feature loss: tensor(0.2069)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3441) feature loss: tensor(0.2093)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9606) feature loss: tensor(0.1771)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0537) feature loss: tensor(0.0824)
+         GM acc on global data: 0.537 length of data: 10000
+-------------Round number:  74  -------------
+selected users: [85, 64, 63, 80, 6, 12, 43, 17, 7, 8]
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([299, 16, 32, 32]) torch.Size([299])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([48, 16, 32, 32]) torch.Size([48])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+4108 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7369) feature loss: tensor(0.1639)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6953) feature loss: tensor(0.1428)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6309) feature loss: tensor(0.1866)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7919) feature loss: tensor(0.1715)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7149) feature loss: tensor(0.1788)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4230) feature loss: tensor(0.1188)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6624) feature loss: tensor(0.1906)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6207) feature loss: tensor(0.2577)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3070) feature loss: tensor(0.0893)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4328) feature loss: tensor(0.1994)
+         GM acc on global data: 0.5878 length of data: 10000
+-------------Round number:  75  -------------
+selected users: [36, 7, 6, 45, 56, 54, 22, 37, 53, 68]
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([876, 16, 32, 32]) torch.Size([876])
+torch.Size([323, 16, 32, 32]) torch.Size([323])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+5060 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4762) feature loss: tensor(0.1868)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4167) feature loss: tensor(0.0806)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5896) feature loss: tensor(0.1596)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1802) feature loss: tensor(0.0891)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5320) feature loss: tensor(0.1838)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0094) feature loss: tensor(0.1295)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6254) feature loss: tensor(0.1951)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1098) feature loss: tensor(0.0913)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8121) feature loss: tensor(0.1457)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4458) feature loss: tensor(0.2040)
+         GM acc on global data: 0.563 length of data: 10000
+-------------Round number:  76  -------------
+selected users: [38, 37, 32, 50, 10, 94, 19, 44, 86, 23]
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([524, 16, 32, 32]) torch.Size([524])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+3090 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1266) feature loss: tensor(0.1443)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9746) feature loss: tensor(0.1154)
+Local adapation with distilling: 0.0001
+training loss: tensor(3.0599) feature loss: tensor(0.1341)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1745) feature loss: tensor(0.1246)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0384) feature loss: tensor(0.1931)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3640) feature loss: tensor(0.2347)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6013) feature loss: tensor(0.1602)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5676) feature loss: tensor(0.1899)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7279) feature loss: tensor(0.1599)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2327) feature loss: tensor(0.1128)
+         GM acc on global data: 0.568 length of data: 10000
+-------------Round number:  77  -------------
+selected users: [5, 93, 41, 96, 16, 42, 81, 91, 50, 58]
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([516, 16, 32, 32]) torch.Size([516])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([1321, 16, 32, 32]) torch.Size([1321])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+torch.Size([787, 16, 32, 32]) torch.Size([787])
+7115 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7227) feature loss: tensor(0.2026)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7227) feature loss: tensor(0.2019)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7845) feature loss: tensor(0.1902)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4861) feature loss: tensor(0.2134)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5964) feature loss: tensor(0.2064)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0836) feature loss: tensor(0.1797)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4509) feature loss: tensor(0.2177)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4616) feature loss: tensor(0.2054)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1650) feature loss: tensor(0.1297)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6304) feature loss: tensor(0.2253)
+         GM acc on global data: 0.5412 length of data: 10000
+-------------Round number:  78  -------------
+selected users: [9, 46, 7, 63, 15, 2, 74, 31, 5, 36]
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+torch.Size([582, 16, 32, 32]) torch.Size([582])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+3990 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9332) feature loss: tensor(0.0963)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7038) feature loss: tensor(0.1831)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9627) feature loss: tensor(0.0856)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6282) feature loss: tensor(0.1909)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7595) feature loss: tensor(0.1151)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6286) feature loss: tensor(0.1827)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7087) feature loss: tensor(0.1424)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7862) feature loss: tensor(0.1432)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6761) feature loss: tensor(0.2121)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4413) feature loss: tensor(0.1953)
+         GM acc on global data: 0.5587 length of data: 10000
+-------------Round number:  79  -------------
+selected users: [68, 18, 86, 60, 56, 32, 30, 24, 45, 92]
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([526, 16, 32, 32]) torch.Size([526])
+torch.Size([437, 16, 32, 32]) torch.Size([437])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([876, 16, 32, 32]) torch.Size([876])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([1084, 16, 32, 32]) torch.Size([1084])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([400, 16, 32, 32]) torch.Size([400])
+4967 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6966) feature loss: tensor(0.3953)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7307) feature loss: tensor(0.3214)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8145) feature loss: tensor(0.2378)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3226) feature loss: tensor(0.2329)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6265) feature loss: tensor(0.3520)
+Local adapation with distilling: 0.0001
+training loss: tensor(3.6499) feature loss: tensor(0.3015)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2944) feature loss: tensor(0.3303)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6631) feature loss: tensor(0.3165)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3558) feature loss: tensor(0.1896)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9726) feature loss: tensor(0.3960)
+         GM acc on global data: 0.5296 length of data: 10000
+-------------Round number:  80  -------------
+selected users: [37, 65, 95, 53, 66, 30, 73, 85, 45, 36]
+torch.Size([139, 16, 32, 32]) torch.Size([139])
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+torch.Size([352, 16, 32, 32]) torch.Size([352])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+2854 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0278) feature loss: tensor(0.2177)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7331) feature loss: tensor(0.2429)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2118) feature loss: tensor(0.2153)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8260) feature loss: tensor(0.2694)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8351) feature loss: tensor(0.2561)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1084) feature loss: tensor(0.2110)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2003) feature loss: tensor(0.2483)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8263) feature loss: tensor(0.2359)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1412) feature loss: tensor(0.2163)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4525) feature loss: tensor(0.2499)
+         GM acc on global data: 0.52 length of data: 10000
+-------------Round number:  81  -------------
+selected users: [73, 89, 41, 78, 51, 21, 30, 69, 8, 5]
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([762, 16, 32, 32]) torch.Size([762])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+4837 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0042) feature loss: tensor(0.2233)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6009) feature loss: tensor(0.2171)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6661) feature loss: tensor(0.2213)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7333) feature loss: tensor(0.2032)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6395) feature loss: tensor(0.2864)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8130) feature loss: tensor(0.1755)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8576) feature loss: tensor(0.1735)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6407) feature loss: tensor(0.2103)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3909) feature loss: tensor(0.2149)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6801) feature loss: tensor(0.2114)
+         GM acc on global data: 0.5426 length of data: 10000
+-------------Round number:  82  -------------
+selected users: [72, 33, 58, 2, 55, 84, 54, 75, 28, 40]
+torch.Size([206, 16, 32, 32]) torch.Size([206])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([787, 16, 32, 32]) torch.Size([787])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([323, 16, 32, 32]) torch.Size([323])
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+8334 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1550) feature loss: tensor(0.1951)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6297) feature loss: tensor(0.2477)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6118) feature loss: tensor(0.2578)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7011) feature loss: tensor(0.2171)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4233) feature loss: tensor(0.2454)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0778) feature loss: tensor(0.2455)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1019) feature loss: tensor(0.1804)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4292) feature loss: tensor(0.2476)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5105) feature loss: tensor(0.2439)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7322) feature loss: tensor(0.2460)
+         GM acc on global data: 0.5537 length of data: 10000
+-------------Round number:  83  -------------
+selected users: [6, 65, 95, 84, 61, 12, 30, 69, 35, 1]
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([711, 16, 32, 32]) torch.Size([711])
+torch.Size([48, 16, 32, 32]) torch.Size([48])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([263, 16, 32, 32]) torch.Size([263])
+torch.Size([52, 16, 32, 32]) torch.Size([52])
+3112 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4387) feature loss: tensor(0.1597)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5460) feature loss: tensor(0.1385)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0178) feature loss: tensor(0.0803)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6529) feature loss: tensor(0.1341)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5612) feature loss: tensor(0.2161)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9827) feature loss: tensor(0.0894)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0945) feature loss: tensor(0.1268)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4693) feature loss: tensor(0.1585)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8959) feature loss: tensor(0.1317)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3362) feature loss: tensor(0.0931)
+         GM acc on global data: 0.5542 length of data: 10000
+-------------Round number:  84  -------------
+selected users: [94, 55, 80, 1, 90, 11, 32, 8, 6, 82]
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([319, 16, 32, 32]) torch.Size([319])
+torch.Size([52, 16, 32, 32]) torch.Size([52])
+torch.Size([800, 16, 32, 32]) torch.Size([800])
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+5516 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7680) feature loss: tensor(0.0975)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3052) feature loss: tensor(0.1697)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8057) feature loss: tensor(0.1933)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1973) feature loss: tensor(0.0770)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5404) feature loss: tensor(0.1913)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6365) feature loss: tensor(0.1753)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.8112) feature loss: tensor(0.1509)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3311) feature loss: tensor(0.1671)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4914) feature loss: tensor(0.1754)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2348) feature loss: tensor(0.1670)
+         GM acc on global data: 0.5354 length of data: 10000
+-------------Round number:  85  -------------
+selected users: [81, 25, 40, 87, 41, 23, 10, 89, 50, 54]
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([337, 16, 32, 32]) torch.Size([337])
+torch.Size([93, 16, 32, 32]) torch.Size([93])
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+torch.Size([323, 16, 32, 32]) torch.Size([323])
+4179 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5764) feature loss: tensor(0.2551)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7179) feature loss: tensor(0.2252)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8352) feature loss: tensor(0.2074)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.6216) feature loss: tensor(0.1404)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7804) feature loss: tensor(0.2219)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.4006) feature loss: tensor(0.1175)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.5160) feature loss: tensor(0.2552)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7869) feature loss: tensor(0.2589)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7560) feature loss: tensor(0.1739)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1923) feature loss: tensor(0.2001)
+         GM acc on global data: 0.5583 length of data: 10000
+-------------Round number:  86  -------------
+selected users: [69, 74, 34, 68, 42, 0, 32, 88, 8, 3]
+torch.Size([584, 16, 32, 32]) torch.Size([584])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([993, 16, 32, 32]) torch.Size([993])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([171, 16, 32, 32]) torch.Size([171])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([210, 16, 32, 32]) torch.Size([210])
+torch.Size([1059, 16, 32, 32]) torch.Size([1059])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+5149 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4597) feature loss: tensor(0.1493)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5680) feature loss: tensor(0.1229)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3660) feature loss: tensor(0.1718)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4014) feature loss: tensor(0.1719)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9189) feature loss: tensor(0.1136)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2055) feature loss: tensor(0.1130)
+Local adapation with distilling: 0.0001
+training loss: tensor(3.1075) feature loss: tensor(0.1196)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8383) feature loss: tensor(0.1311)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3394) feature loss: tensor(0.1664)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1338) feature loss: tensor(0.0560)
+         GM acc on global data: 0.5616 length of data: 10000
+-------------Round number:  87  -------------
+selected users: [16, 81, 85, 32, 39, 25, 26, 29, 65, 7]
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([1283, 16, 32, 32]) torch.Size([1283])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([845, 16, 32, 32]) torch.Size([845])
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+torch.Size([110, 16, 32, 32]) torch.Size([110])
+5691 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5230) feature loss: tensor(0.2071)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3890) feature loss: tensor(0.2024)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6957) feature loss: tensor(0.1622)
+Local adapation with distilling: 0.0001
+training loss: tensor(3.0504) feature loss: tensor(0.1651)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5210) feature loss: tensor(0.2109)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5558) feature loss: tensor(0.1872)
+Local adapation with distilling: 0.0001
+training loss: tensor(4.8922) feature loss: tensor(0.1280)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5074) feature loss: tensor(0.2027)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5641) feature loss: tensor(0.1721)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1973) feature loss: tensor(0.1149)
+         GM acc on global data: 0.5642 length of data: 10000
+-------------Round number:  88  -------------
+selected users: [95, 53, 43, 84, 2, 74, 55, 31, 54, 97]
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([262, 16, 32, 32]) torch.Size([262])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([271, 16, 32, 32]) torch.Size([271])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([2015, 16, 32, 32]) torch.Size([2015])
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([323, 16, 32, 32]) torch.Size([323])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+4292 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2459) feature loss: tensor(0.1237)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8868) feature loss: tensor(0.2203)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0205) feature loss: tensor(0.2884)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9835) feature loss: tensor(0.2392)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7593) feature loss: tensor(0.2530)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7948) feature loss: tensor(0.2446)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4364) feature loss: tensor(0.2864)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8696) feature loss: tensor(0.2382)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0673) feature loss: tensor(0.1966)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.8603) feature loss: tensor(0.1454)
+         GM acc on global data: 0.5645 length of data: 10000
+-------------Round number:  89  -------------
+selected users: [65, 21, 87, 6, 46, 74, 44, 60, 72, 5]
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([93, 16, 32, 32]) torch.Size([93])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+torch.Size([530, 16, 32, 32]) torch.Size([530])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([206, 16, 32, 32]) torch.Size([206])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+3471 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6259) feature loss: tensor(0.1667)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9471) feature loss: tensor(0.1549)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1082) feature loss: tensor(0.1873)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6442) feature loss: tensor(0.1904)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6610) feature loss: tensor(0.1934)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7766) feature loss: tensor(0.1856)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5619) feature loss: tensor(0.2289)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0207) feature loss: tensor(0.1030)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2423) feature loss: tensor(0.1438)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7364) feature loss: tensor(0.2290)
+         GM acc on global data: 0.5908 length of data: 10000
+-------------Round number:  90  -------------
+selected users: [25, 85, 96, 89, 65, 94, 5, 35, 36, 92]
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([1321, 16, 32, 32]) torch.Size([1321])
+torch.Size([523, 16, 32, 32]) torch.Size([523])
+torch.Size([356, 16, 32, 32]) torch.Size([356])
+torch.Size([125, 16, 32, 32]) torch.Size([125])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([263, 16, 32, 32]) torch.Size([263])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([400, 16, 32, 32]) torch.Size([400])
+5168 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4766) feature loss: tensor(0.1527)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6759) feature loss: tensor(0.1386)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3652) feature loss: tensor(0.1679)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5818) feature loss: tensor(0.1780)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4883) feature loss: tensor(0.1368)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9896) feature loss: tensor(0.0922)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5774) feature loss: tensor(0.1537)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0044) feature loss: tensor(0.1331)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3614) feature loss: tensor(0.1656)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6134) feature loss: tensor(0.1518)
+         GM acc on global data: 0.5534 length of data: 10000
+-------------Round number:  91  -------------
+selected users: [75, 25, 3, 52, 78, 54, 59, 26, 62, 97]
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([56, 16, 32, 32]) torch.Size([56])
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([323, 16, 32, 32]) torch.Size([323])
+torch.Size([131, 16, 32, 32]) torch.Size([131])
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+5261 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4044) feature loss: tensor(0.2457)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5584) feature loss: tensor(0.2168)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2069) feature loss: tensor(0.1680)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5557) feature loss: tensor(0.2869)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8316) feature loss: tensor(0.1916)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8905) feature loss: tensor(0.1839)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7183) feature loss: tensor(0.3347)
+Local adapation with distilling: 0.0001
+training loss: tensor(3.6347) feature loss: tensor(0.2787)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8184) feature loss: tensor(0.2450)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.5197) feature loss: tensor(0.1492)
+         GM acc on global data: 0.5476 length of data: 10000
+-------------Round number:  92  -------------
+selected users: [25, 99, 73, 61, 66, 36, 23, 83, 77, 6]
+torch.Size([484, 16, 32, 32]) torch.Size([484])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([711, 16, 32, 32]) torch.Size([711])
+torch.Size([352, 16, 32, 32]) torch.Size([352])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([693, 16, 32, 32]) torch.Size([693])
+torch.Size([538, 16, 32, 32]) torch.Size([538])
+4675 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5665) feature loss: tensor(0.2018)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9541) feature loss: tensor(0.2208)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2057) feature loss: tensor(0.1670)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5675) feature loss: tensor(0.2393)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8809) feature loss: tensor(0.1847)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4366) feature loss: tensor(0.2062)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.2243) feature loss: tensor(0.1333)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9812) feature loss: tensor(0.1722)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5798) feature loss: tensor(0.1965)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4676) feature loss: tensor(0.1941)
+         GM acc on global data: 0.5515 length of data: 10000
+-------------Round number:  93  -------------
+selected users: [75, 82, 56, 27, 42, 35, 1, 97, 66, 61]
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([111, 16, 32, 32]) torch.Size([111])
+torch.Size([876, 16, 32, 32]) torch.Size([876])
+torch.Size([269, 16, 32, 32]) torch.Size([269])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([263, 16, 32, 32]) torch.Size([263])
+torch.Size([52, 16, 32, 32]) torch.Size([52])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+torch.Size([352, 16, 32, 32]) torch.Size([352])
+torch.Size([711, 16, 32, 32]) torch.Size([711])
+5262 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3387) feature loss: tensor(0.2231)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3328) feature loss: tensor(0.2378)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5233) feature loss: tensor(0.2304)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.0141) feature loss: tensor(0.2739)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0589) feature loss: tensor(0.2743)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1046) feature loss: tensor(0.1940)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3435) feature loss: tensor(0.2250)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.0534) feature loss: tensor(0.2481)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7083) feature loss: tensor(0.2010)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4623) feature loss: tensor(0.2139)
+         GM acc on global data: 0.5609 length of data: 10000
+-------------Round number:  94  -------------
+selected users: [13, 73, 5, 18, 99, 48, 23, 4, 35, 17]
+torch.Size([453, 16, 32, 32]) torch.Size([453])
+torch.Size([117, 16, 32, 32]) torch.Size([117])
+torch.Size([479, 16, 32, 32]) torch.Size([479])
+torch.Size([526, 16, 32, 32]) torch.Size([526])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([70, 16, 32, 32]) torch.Size([70])
+torch.Size([156, 16, 32, 32]) torch.Size([156])
+torch.Size([263, 16, 32, 32]) torch.Size([263])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+3275 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7823) feature loss: tensor(0.1753)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1247) feature loss: tensor(0.1595)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7372) feature loss: tensor(0.1969)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6960) feature loss: tensor(0.2247)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8498) feature loss: tensor(0.2054)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7494) feature loss: tensor(0.1621)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.7602) feature loss: tensor(0.1257)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1506) feature loss: tensor(0.1776)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9986) feature loss: tensor(0.1711)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6516) feature loss: tensor(0.2097)
+         GM acc on global data: 0.5717 length of data: 10000
+-------------Round number:  95  -------------
+selected users: [88, 9, 1, 60, 95, 26, 45, 71, 44, 21]
+torch.Size([210, 16, 32, 32]) torch.Size([210])
+torch.Size([120, 16, 32, 32]) torch.Size([120])
+torch.Size([52, 16, 32, 32]) torch.Size([52])
+torch.Size([15, 16, 32, 32]) torch.Size([15])
+torch.Size([32, 16, 32, 32]) torch.Size([32])
+torch.Size([72, 16, 32, 32]) torch.Size([72])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([159, 16, 32, 32]) torch.Size([159])
+torch.Size([668, 16, 32, 32]) torch.Size([668])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+1727 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6156) feature loss: tensor(0.1785)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7614) feature loss: tensor(0.0987)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8700) feature loss: tensor(0.1127)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6679) feature loss: tensor(0.1001)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9057) feature loss: tensor(0.1098)
+Local adapation with distilling: 0.0001
+training loss: tensor(2.2644) feature loss: tensor(0.1325)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7335) feature loss: tensor(0.1188)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7565) feature loss: tensor(0.1339)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3522) feature loss: tensor(0.1608)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5613) feature loss: tensor(0.1391)
+         GM acc on global data: 0.5693 length of data: 10000
+-------------Round number:  96  -------------
+selected users: [41, 28, 52, 15, 87, 17, 75, 42, 45, 49]
+torch.Size([502, 16, 32, 32]) torch.Size([502])
+torch.Size([951, 16, 32, 32]) torch.Size([951])
+torch.Size([1078, 16, 32, 32]) torch.Size([1078])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([93, 16, 32, 32]) torch.Size([93])
+torch.Size([543, 16, 32, 32]) torch.Size([543])
+torch.Size([2441, 16, 32, 32]) torch.Size([2441])
+torch.Size([147, 16, 32, 32]) torch.Size([147])
+torch.Size([122, 16, 32, 32]) torch.Size([122])
+torch.Size([695, 16, 32, 32]) torch.Size([695])
+6785 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6488) feature loss: tensor(0.1602)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4487) feature loss: tensor(0.1741)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4567) feature loss: tensor(0.2231)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7574) feature loss: tensor(0.1113)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9339) feature loss: tensor(0.0969)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5318) feature loss: tensor(0.1752)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3113) feature loss: tensor(0.1878)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8714) feature loss: tensor(0.1294)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8327) feature loss: tensor(0.0795)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5837) feature loss: tensor(0.2070)
+         GM acc on global data: 0.5636 length of data: 10000
+-------------Round number:  97  -------------
+selected users: [31, 43, 64, 56, 85, 2, 70, 21, 34, 50]
+torch.Size([211, 16, 32, 32]) torch.Size([211])
+torch.Size([372, 16, 32, 32]) torch.Size([372])
+torch.Size([299, 16, 32, 32]) torch.Size([299])
+torch.Size([876, 16, 32, 32]) torch.Size([876])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+torch.Size([457, 16, 32, 32]) torch.Size([457])
+torch.Size([90, 16, 32, 32]) torch.Size([90])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([118, 16, 32, 32]) torch.Size([118])
+4301 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7062) feature loss: tensor(0.1180)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7225) feature loss: tensor(0.1752)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7771) feature loss: tensor(0.1185)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4447) feature loss: tensor(0.1656)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7203) feature loss: tensor(0.1433)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6054) feature loss: tensor(0.1714)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7631) feature loss: tensor(0.0787)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6440) feature loss: tensor(0.1196)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3627) feature loss: tensor(0.1702)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.3689) feature loss: tensor(0.1261)
+         GM acc on global data: 0.5669 length of data: 10000
+-------------Round number:  98  -------------
+selected users: [11, 48, 97, 14, 22, 36, 99, 47, 33, 81]
+torch.Size([240, 16, 32, 32]) torch.Size([240])
+torch.Size([309, 16, 32, 32]) torch.Size([309])
+torch.Size([40, 16, 32, 32]) torch.Size([40])
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([718, 16, 32, 32]) torch.Size([718])
+torch.Size([979, 16, 32, 32]) torch.Size([979])
+torch.Size([359, 16, 32, 32]) torch.Size([359])
+torch.Size([689, 16, 32, 32]) torch.Size([689])
+torch.Size([546, 16, 32, 32]) torch.Size([546])
+torch.Size([1216, 16, 32, 32]) torch.Size([1216])
+5450 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.9270) feature loss: tensor(0.1579)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6256) feature loss: tensor(0.1568)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1177) feature loss: tensor(0.0563)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6747) feature loss: tensor(0.1556)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6394) feature loss: tensor(0.1797)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3664) feature loss: tensor(0.1774)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5844) feature loss: tensor(0.1909)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5301) feature loss: tensor(0.1759)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.5010) feature loss: tensor(0.1724)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3477) feature loss: tensor(0.1804)
+         GM acc on global data: 0.57 length of data: 10000
+-------------Round number:  99  -------------
+selected users: [14, 34, 30, 78, 16, 15, 91, 38, 10, 85]
+torch.Size([354, 16, 32, 32]) torch.Size([354])
+torch.Size([1363, 16, 32, 32]) torch.Size([1363])
+torch.Size([257, 16, 32, 32]) torch.Size([257])
+torch.Size([277, 16, 32, 32]) torch.Size([277])
+torch.Size([830, 16, 32, 32]) torch.Size([830])
+torch.Size([213, 16, 32, 32]) torch.Size([213])
+torch.Size([1199, 16, 32, 32]) torch.Size([1199])
+torch.Size([239, 16, 32, 32]) torch.Size([239])
+torch.Size([513, 16, 32, 32]) torch.Size([513])
+torch.Size([238, 16, 32, 32]) torch.Size([238])
+5483 72 72
+all data: 1000
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7011) feature loss: tensor(0.1687)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.3802) feature loss: tensor(0.1986)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1153) feature loss: tensor(0.1375)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.6605) feature loss: tensor(0.1463)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4603) feature loss: tensor(0.1890)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.8615) feature loss: tensor(0.1178)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.4428) feature loss: tensor(0.1955)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1892) feature loss: tensor(0.1955)
+Local adapation with distilling: 0.0001
+training loss: tensor(1.1790) feature loss: tensor(0.1924)
+Local adapation with distilling: 0.0001
+training loss: tensor(0.7127) feature loss: tensor(0.1674)
+         GM acc on global data: 0.5717 length of data: 10000
