@@ -88,11 +88,8 @@ python main.py     --dataset Cifar10 \
 
 - Some running logs are saved under `\log_all\`. We visualise the training process of CIFAR10 with Quantity(3) splits as blew,
 
-![cifar10_q3](cifar10_q3.png)
-
-![training_CIFAR10_qua3](training_CIFAR10_qua3.png)
-
-
+<img src="cifar10_q3.png" width="200" />
+<img src="training_CIFAR10_qua3.png" width="200" />
 
 - Privacy protection evaluation is also provide:
   - Data Reconstruction Attack: `python FLAlgorithms\trainmodel\Test_reconstruction.py`
