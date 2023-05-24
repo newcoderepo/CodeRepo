@@ -7,19 +7,19 @@ This is the code repository for NeurIPS2023 submission #6537 *Sharing Deep Featu
 
 ### Environment requirements
 
-Python >= 3.6
+- Python >= 3.6
 
-Torch >= 1.9.0
+- Torch >= 1.9.0
 
-torchvision >= 0.6.0
+- torchvision >= 0.6.0
 
-torchaudio >= 0.9.0
+- torchaudio >= 0.9.0
 
-numpy >= 1.8.1
+- numpy >= 1.8.1
 
-scikit-learn >= 0.22.1
+- scikit-learn >= 0.22.1
 
-pandas >= 1.03
+- pandas >= 1.03
 
 
 
