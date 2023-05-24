@@ -48,7 +48,7 @@ python main.py --dataset Cifar10 \
 			   --personal_learning_rate 0.001 \
 			   --modelname MOBNET \
 			   --algorithm FLea \
-               --loss CE_CE_KL \
+                           --loss CE_CE_KL \
 			   --layer 1 \
 			   --fea_percent 0.1 \
 			   --seed 0 
@@ -74,7 +74,7 @@ python main.py --dataset Cifar10 \
 			   --modelname MOBNET \
 			   --algorithm FLea \
 			   --is_interpolated True \
-               --loss CE_CE_KL \
+                           --loss CE_CE_KL \
 			   --layer 1 \
 			   --fea_percent 0.1 \
 			   --seed 0  
